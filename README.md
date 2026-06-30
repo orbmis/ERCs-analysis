@@ -8,6 +8,29 @@ The work is packaged as a skill (`erc-dataset`) and driven autonomously with Cla
 `/goal` command, which keeps the agent working across turns until a verifiable completion
 condition is met.
 
+> ## 📊 Read the analysis
+>
+> The dataset has been built **and analyzed**. The full write-up is:
+>
+> ### → **[`analysis/ERC_REPORT.md`](analysis/ERC_REPORT.md)** — the consolidated report
+>
+> A single, coherent read of nine analyses of all 600 ERCs. Headline findings:
+>
+> - **A tiny core carries the whole ecosystem** — four standards (ERC-165/721/20/1155, plus EIP-712) anchor the entire dependency graph, and the same handful dominate authorship, discussion, *and* on-chain adoption (millions of deployments) while ~596 ERCs have no measurable mainnet footprint.
+> - **Only ~23% of ERCs ever reach Final** — survival analysis says fewer than a third ever will; ~70% of the 2018–2021 boom cohorts went Stagnant; 78% of authors write exactly one ERC.
+> - **The frontier rotated to agents & accounts** — account-abstraction and agentic standards are the newest, slowest, longest, most-debated, and *least-tested* work; ERC-4337 on-chain usage grew ~240× from 2023→2025, **adoption lagging standardization by 2–4 years**.
+> - **Discussion confers legitimacy, not delay** — engagement rises monotonically toward Final and silence is near-fatal (10% finalization), but debate *volume* has no bearing on finalization speed.
+>
+> Seven standalone sub-reports under [`analysis/`](analysis/) carry the detail:
+> [foundation](analysis/ERC_ANALYSIS.md) ·
+> [network / survival / predictor deep dives](analysis/FURTHER_ANALYSIS.md) ·
+> [external-EIP graph](analysis/EXTERNAL_EIP_GRAPH.md) ·
+> [time-series eras](analysis/TIMESERIES_ANALYSIS.md) ·
+> [discussion engagement](analysis/DISCUSSION_ANALYSIS.md) ·
+> [on-chain adoption](analysis/ONCHAIN_ADOPTION.md) ·
+> [build report](_run_report.md).
+> 38 figures live in [`analysis/figures/`](analysis/figures/); every statistic is reproducible from the scripts (see [Reproducing the analysis](#reproducing-the-analysis)).
+
 ---
 
 ## What it produces
@@ -197,19 +220,22 @@ Haiku-dominated batch like this is cheap per token.
 
 ## Extending the dataset
 
-**Optional Pass C — git-derived temporal fields.** The source files carry only *current* status.
-For a true status-transition time-series, derive from `git log --follow`: transition dates parsed
-from diffs to the `status:` line, `time_to_final` (days from `created` to Final), plus
-`last_modified`, `commit_count`, and `distinct_committers`. This is what turns the snapshot into a
-genuine time-series — request it explicitly, as it materially increases run time.
+**Pass C — git-derived temporal fields. ✓ Done** (`erc_temporal.csv`). Status-transition dates,
+`time_to_final` (days from `created` to Final), `last_modified`, `commit_count`, and
+`distinct_committers`, mined from `git log --follow` over the source repo's history. This turns the
+snapshot into a genuine time-series and underpins the lifecycle/survival analysis.
 
-**External enrichment (later join, keyed on `erc`).** Not part of the local run, but the fields
-that separate *proposed* from *adopted*: on-chain adoption (deployments / usage via Dune,
-BundleBear) and discussion-thread volume (ethereum-magicians, via the `discussions-to` link).
+**External enrichment (joined on `erc`). ✓ Done** — the fields that separate *proposed* from
+*adopted*: **on-chain adoption** (`erc_adoption.csv`, deployments/usage via Dune —
+see [`ONCHAIN_ADOPTION.md`](analysis/ONCHAIN_ADOPTION.md)) and **discussion-thread volume**
+(`erc_discussions.csv`, ethereum-magicians + GitHub via the `discussions-to` link —
+see [`DISCUSSION_ANALYSIS.md`](analysis/DISCUSSION_ANALYSIS.md)).
 
 ---
 
 ## Analysis the dataset supports
+
+*All of the following were carried out — see **[`analysis/ERC_REPORT.md`](analysis/ERC_REPORT.md)** for the consolidated write-up and the linked sub-reports for detail.*
 
 - **Topic composition over time** — `topic` × `created` (year/quarter): how the standards body's
   focus has shifted (e.g. the rise of account-abstraction and agentic-workflow ERCs).
@@ -223,6 +249,26 @@ BundleBear) and discussion-thread volume (ethereum-magicians, via the `discussio
   topics and cohorts.
 - **Straddle / boundary standards** — non-empty `topic_secondary`: ERCs that bridge two domains,
   often the most architecturally interesting.
+
+---
+
+## Reproducing the analysis
+
+The analysis layer is plain Python (stdlib + `matplotlib`, `networkx`, `scikit-learn`, `scipy`).
+Each script reads the CSVs and writes figures/metrics under `analysis/`:
+
+| Script | Produces |
+|---|---|
+| `pass_ad.py`, `pass_c.py`, `merge.py` | the dataset (`erc_dataset.csv`, `erc_temporal.csv`) |
+| `compute.py` | foundation analysis ([`ERC_ANALYSIS.md`](analysis/ERC_ANALYSIS.md)) |
+| `further.py` | networks, survival, predictor, retention ([`FURTHER_ANALYSIS.md`](analysis/FURTHER_ANALYSIS.md)) |
+| `timeseries.py` | topic eras over time ([`TIMESERIES_ANALYSIS.md`](analysis/TIMESERIES_ANALYSIS.md)) |
+| `build_ext_graph.py` | external-EIP graph completion ([`EXTERNAL_EIP_GRAPH.md`](analysis/EXTERNAL_EIP_GRAPH.md)) |
+| `fetch_discussions.py`, `analyze_discussions.py` | discussion engagement ([`DISCUSSION_ANALYSIS.md`](analysis/DISCUSSION_ANALYSIS.md)) |
+| `run_dune.py`, `build_adoption.py` | on-chain adoption ([`ONCHAIN_ADOPTION.md`](analysis/ONCHAIN_ADOPTION.md)) |
+
+The on-chain pass needs a Dune API key, read from a **gitignored** `.dune_key` (or `DUNE_API_KEY`
+env var) — never committed. The discussion pass is resumable (per-thread cache, gitignored).
 
 ---
 
