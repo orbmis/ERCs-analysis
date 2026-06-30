@@ -1,0 +1,253 @@
+{
+ "n": 600,
+ "topic_temporal_stats": [
+  {
+   "topic": "other",
+   "n": 9,
+   "first": 2017.96,
+   "p25": 2018.78,
+   "median": 2021.58,
+   "p75": 2024.59,
+   "iqr_years": 5.81,
+   "peak_year": 2018,
+   "peak_count": 2,
+   "recent_share": 0.333
+  },
+  {
+   "topic": "governance",
+   "n": 10,
+   "first": 2018.51,
+   "p25": 2020.51,
+   "median": 2022.13,
+   "p75": 2022.53,
+   "iqr_years": 2.02,
+   "peak_year": 2022,
+   "peak_count": 3,
+   "recent_share": 0.2
+  },
+  {
+   "topic": "reputation-identity",
+   "n": 39,
+   "first": 2016.26,
+   "p25": 2018.78,
+   "median": 2022.25,
+   "p75": 2023.48,
+   "iqr_years": 4.7,
+   "peak_year": 2022,
+   "peak_count": 11,
+   "recent_share": 0.179
+  },
+  {
+   "topic": "security-permissions",
+   "n": 57,
+   "first": 2016.05,
+   "p25": 2021.77,
+   "median": 2022.69,
+   "p75": 2024.08,
+   "iqr_years": 2.3,
+   "peak_year": 2022,
+   "peak_count": 17,
+   "recent_share": 0.281
+  },
+  {
+   "topic": "nft",
+   "n": 136,
+   "first": 2018.06,
+   "p25": 2022.2,
+   "median": 2022.76,
+   "p75": 2023.57,
+   "iqr_years": 1.37,
+   "peak_year": 2022,
+   "peak_count": 51,
+   "recent_share": 0.162
+  },
+  {
+   "topic": "infrastructure-meta",
+   "n": 175,
+   "first": 2016.04,
+   "p25": 2020.04,
+   "median": 2023.06,
+   "p75": 2024.72,
+   "iqr_years": 4.68,
+   "peak_year": 2024,
+   "peak_count": 31,
+   "recent_share": 0.366
+  },
+  {
+   "topic": "defi",
+   "n": 37,
+   "first": 2018.01,
+   "p25": 2021.26,
+   "median": 2023.19,
+   "p75": 2023.93,
+   "iqr_years": 2.67,
+   "peak_year": 2023,
+   "peak_count": 12,
+   "recent_share": 0.189
+  },
+  {
+   "topic": "tokens-fungible",
+   "n": 71,
+   "first": 2015.88,
+   "p25": 2020.28,
+   "median": 2023.24,
+   "p75": 2024.32,
+   "iqr_years": 4.04,
+   "peak_year": 2023,
+   "peak_count": 13,
+   "recent_share": 0.338
+  },
+  {
+   "topic": "rwa",
+   "n": 13,
+   "first": 2018.12,
+   "p25": 2020.69,
+   "median": 2023.4,
+   "p75": 2025.44,
+   "iqr_years": 4.75,
+   "peak_year": 2018,
+   "peak_count": 3,
+   "recent_share": 0.385
+  },
+  {
+   "topic": "account-abstraction",
+   "n": 44,
+   "first": 2018.34,
+   "p25": 2023.11,
+   "median": 2023.95,
+   "p75": 2024.75,
+   "iqr_years": 1.64,
+   "peak_year": 2023,
+   "peak_count": 14,
+   "recent_share": 0.477
+  },
+  {
+   "topic": "agentic-workflows",
+   "n": 9,
+   "first": 2024.28,
+   "p25": 2025.4,
+   "median": 2025.61,
+   "p75": 2025.77,
+   "iqr_years": 0.38,
+   "peak_year": 2025,
+   "peak_count": 5,
+   "recent_share": 1.0
+  }
+ ],
+ "eras": {
+  "k": 4,
+  "silhouette": 0.0,
+  "detail": [
+   {
+    "era": 1,
+    "span": "2015H2\u20132020H2",
+    "n_ercs": 145,
+    "dominant": [
+     "infrastructure-meta (56, 39%)",
+     "tokens-fungible (22, 15%)",
+     "reputation-identity (17, 12%)"
+    ]
+   },
+   {
+    "era": 2,
+    "span": "2021H1\u20132022H2",
+    "n_ercs": 155,
+    "dominant": [
+     "nft (63, 41%)",
+     "infrastructure-meta (29, 19%)",
+     "security-permissions (20, 13%)"
+    ]
+   },
+   {
+    "era": 3,
+    "span": "2023H1\u20132024H1",
+    "n_ercs": 170,
+    "dominant": [
+     "nft (52, 31%)",
+     "infrastructure-meta (38, 22%)",
+     "tokens-fungible (21, 12%)"
+    ]
+   },
+   {
+    "era": 4,
+    "span": "2024H2\u20132026H1",
+    "n_ercs": 130,
+    "dominant": [
+     "infrastructure-meta (52, 40%)",
+     "tokens-fungible (16, 12%)",
+     "account-abstraction (14, 11%)"
+    ]
+   }
+  ]
+ },
+ "peak_quarter": {
+  "tokens-fungible": {
+   "quarter": "2023Q2",
+   "count": 9
+  },
+  "infrastructure-meta": {
+   "quarter": "2024Q4",
+   "count": 10
+  },
+  "reputation-identity": {
+   "quarter": "2018Q3",
+   "count": 4
+  },
+  "security-permissions": {
+   "quarter": "2022Q3",
+   "count": 13
+  },
+  "nft": {
+   "quarter": "2022Q3",
+   "count": 22
+  },
+  "defi": {
+   "quarter": "2023Q4",
+   "count": 6
+  },
+  "rwa": {
+   "quarter": "2018Q1",
+   "count": 1
+  },
+  "account-abstraction": {
+   "quarter": "2023Q3",
+   "count": 5
+  },
+  "governance": {
+   "quarter": "2018Q3",
+   "count": 2
+  },
+  "agentic-workflows": {
+   "quarter": "2025Q3",
+   "count": 3
+  },
+  "other": {
+   "quarter": "2024Q3",
+   "count": 2
+  }
+ },
+ "period_era": {
+  "2015H2": 0,
+  "2016H1": 0,
+  "2016H2": 0,
+  "2017H1": 0,
+  "2017H2": 0,
+  "2018H1": 0,
+  "2018H2": 0,
+  "2019H1": 0,
+  "2019H2": 0,
+  "2020H1": 0,
+  "2020H2": 0,
+  "2021H1": 1,
+  "2021H2": 1,
+  "2022H1": 1,
+  "2022H2": 1,
+  "2023H1": 2,
+  "2023H2": 2,
+  "2024H1": 2,
+  "2024H2": 3,
+  "2025H1": 3,
+  "2025H2": 3,
+  "2026H1": 3
+ }
+}
