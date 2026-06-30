@@ -1,0 +1,510 @@
+{
+ "erc_nodes": 600,
+ "external_eip_nodes": 36,
+ "external_resolved": 27,
+ "external_unresolved": 9,
+ "unresolved_list": [
+  672,
+  677,
+  735,
+  780,
+  827,
+  1643,
+  1644,
+  2158,
+  7939
+ ],
+ "total_edges": 897,
+ "combined_top25": [
+  {
+   "id": 165,
+   "kind": "ERC",
+   "title": "Standard Interface Detection",
+   "in_degree": 177,
+   "pagerank": 0.122,
+   "status": "Final"
+  },
+  {
+   "id": 721,
+   "kind": "ERC",
+   "title": "Non-Fungible Token Standard",
+   "in_degree": 145,
+   "pagerank": 0.0506,
+   "status": "Final"
+  },
+  {
+   "id": 20,
+   "kind": "ERC",
+   "title": "Token Standard",
+   "in_degree": 104,
+   "pagerank": 0.0449,
+   "status": "Final"
+  },
+  {
+   "id": 1155,
+   "kind": "ERC",
+   "title": "Multi Token Standard",
+   "in_degree": 60,
+   "pagerank": 0.0158,
+   "status": "Final"
+  },
+  {
+   "id": 712,
+   "kind": "EIP",
+   "title": "Typed structured data hashing and signing",
+   "in_degree": 43,
+   "pagerank": 0.019,
+   "status": "Final"
+  },
+  {
+   "id": 155,
+   "kind": "EIP",
+   "title": "Simple replay attack protection",
+   "in_degree": 27,
+   "pagerank": 0.0235,
+   "status": "Final"
+  },
+  {
+   "id": 1271,
+   "kind": "ERC",
+   "title": "Standard Signature Validation Method for Contracts",
+   "in_degree": 27,
+   "pagerank": 0.0091,
+   "status": "Final"
+  },
+  {
+   "id": 137,
+   "kind": "ERC",
+   "title": "Ethereum Domain Name Service - Specification",
+   "in_degree": 19,
+   "pagerank": 0.0114,
+   "status": "Final"
+  },
+  {
+   "id": 4337,
+   "kind": "ERC",
+   "title": "Account Abstraction Using Alt Mempool",
+   "in_degree": 14,
+   "pagerank": 0.0061,
+   "status": "Final"
+  },
+  {
+   "id": 191,
+   "kind": "ERC",
+   "title": "Signed Data Standard",
+   "in_degree": 12,
+   "pagerank": 0.0122,
+   "status": "Final"
+  },
+  {
+   "id": 173,
+   "kind": "ERC",
+   "title": "Contract Ownership Standard",
+   "in_degree": 10,
+   "pagerank": 0.004,
+   "status": "Final"
+  },
+  {
+   "id": 55,
+   "kind": "ERC",
+   "title": "Mixed-case checksum address encoding",
+   "in_degree": 9,
+   "pagerank": 0.0043,
+   "status": "Final"
+  },
+  {
+   "id": 7930,
+   "kind": "ERC",
+   "title": "Interoperable Addresses",
+   "in_degree": 9,
+   "pagerank": 0.0052,
+   "status": "Review"
+  },
+  {
+   "id": 4626,
+   "kind": "ERC",
+   "title": "Tokenized Vaults",
+   "in_degree": 8,
+   "pagerank": 0.0037,
+   "status": "Final"
+  },
+  {
+   "id": 2612,
+   "kind": "ERC",
+   "title": "Permit Extension for EIP-20 Signed Approvals",
+   "in_degree": 7,
+   "pagerank": 0.0041,
+   "status": "Final"
+  },
+  {
+   "id": 7702,
+   "kind": "EIP",
+   "title": "Set Code for EOAs",
+   "in_degree": 7,
+   "pagerank": 0.006,
+   "status": "Final"
+  },
+  {
+   "id": 5792,
+   "kind": "EIP",
+   "title": "Wallet Call API",
+   "in_degree": 7,
+   "pagerank": 0.0029,
+   "status": "Final"
+  },
+  {
+   "id": 1167,
+   "kind": "ERC",
+   "title": "Minimal Proxy Contract",
+   "in_degree": 6,
+   "pagerank": 0.0017,
+   "status": "Final"
+  },
+  {
+   "id": 1967,
+   "kind": "ERC",
+   "title": "Proxy Storage Slots",
+   "in_degree": 6,
+   "pagerank": 0.0026,
+   "status": "Final"
+  },
+  {
+   "id": 2771,
+   "kind": "ERC",
+   "title": "Secure Protocol for Native Meta Transactions",
+   "in_degree": 5,
+   "pagerank": 0.0027,
+   "status": "Final"
+  },
+  {
+   "id": 4844,
+   "kind": "EIP",
+   "title": "Shard Blob Transactions",
+   "in_degree": 5,
+   "pagerank": 0.0059,
+   "status": "Final"
+  },
+  {
+   "id": 1066,
+   "kind": "ERC",
+   "title": "Status Codes",
+   "in_degree": 5,
+   "pagerank": 0.0028,
+   "status": "Stagnant"
+  },
+  {
+   "id": 1193,
+   "kind": "EIP",
+   "title": "Ethereum Provider JavaScript API",
+   "in_degree": 5,
+   "pagerank": 0.005,
+   "status": "Final"
+  },
+  {
+   "id": 5750,
+   "kind": "ERC",
+   "title": "General Extensibility for Method Behaviors",
+   "in_degree": 5,
+   "pagerank": 0.0029,
+   "status": "Final"
+  },
+  {
+   "id": 681,
+   "kind": "ERC",
+   "title": "URL Format for Transaction Requests",
+   "in_degree": 4,
+   "pagerank": 0.002,
+   "status": "Final"
+  }
+ ],
+ "external_eip_ranking": [
+  {
+   "eip": 712,
+   "title": "Typed structured data hashing and signing",
+   "in_degree": 43,
+   "pagerank": 0.019,
+   "overall_rank": 5,
+   "status": "Final"
+  },
+  {
+   "eip": 155,
+   "title": "Simple replay attack protection",
+   "in_degree": 27,
+   "pagerank": 0.0235,
+   "overall_rank": 6,
+   "status": "Final"
+  },
+  {
+   "eip": 7702,
+   "title": "Set Code for EOAs",
+   "in_degree": 7,
+   "pagerank": 0.006,
+   "overall_rank": 16,
+   "status": "Final"
+  },
+  {
+   "eip": 5792,
+   "title": "Wallet Call API",
+   "in_degree": 7,
+   "pagerank": 0.0029,
+   "overall_rank": 17,
+   "status": "Final"
+  },
+  {
+   "eip": 1193,
+   "title": "Ethereum Provider JavaScript API",
+   "in_degree": 5,
+   "pagerank": 0.005,
+   "overall_rank": 23,
+   "status": "Final"
+  },
+  {
+   "eip": 4844,
+   "title": "Shard Blob Transactions",
+   "in_degree": 5,
+   "pagerank": 0.0059,
+   "overall_rank": 21,
+   "status": "Final"
+  },
+  {
+   "eip": 1153,
+   "title": "Transient storage opcodes",
+   "in_degree": 3,
+   "pagerank": 0.0017,
+   "overall_rank": 38,
+   "status": "Final"
+  },
+  {
+   "eip": 214,
+   "title": "New opcode STATICCALL",
+   "in_degree": 3,
+   "pagerank": 0.1054,
+   "overall_rank": 29,
+   "status": "Final"
+  },
+  {
+   "eip": 1014,
+   "title": "Skinny CREATE2",
+   "in_degree": 3,
+   "pagerank": 0.0019,
+   "overall_rank": 35,
+   "status": "Final"
+  },
+  {
+   "eip": 2,
+   "title": "Homestead Hard-fork Changes",
+   "in_degree": 2,
+   "pagerank": 0.0042,
+   "overall_rank": 43,
+   "status": "Final"
+  },
+  {
+   "eip": 140,
+   "title": "REVERT instruction",
+   "in_degree": 2,
+   "pagerank": 0.0023,
+   "overall_rank": 45,
+   "status": "Final"
+  },
+  {
+   "eip": 196,
+   "title": "Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128",
+   "in_degree": 2,
+   "pagerank": 0.0012,
+   "overall_rank": 47,
+   "status": "Final"
+  },
+  {
+   "eip": 197,
+   "title": "Precompiled contracts for optimal ate pairing check on the elliptic curve alt_bn128",
+   "in_degree": 2,
+   "pagerank": 0.0012,
+   "overall_rank": 48,
+   "status": "Final"
+  },
+  {
+   "eip": 211,
+   "title": "\"New opcodes: RETURNDATASIZE and RETURNDATACOPY\"",
+   "in_degree": 2,
+   "pagerank": 0.0024,
+   "overall_rank": 49,
+   "status": "Final"
+  },
+  {
+   "eip": 7,
+   "title": "DELEGATECALL",
+   "in_degree": 1,
+   "pagerank": 0.0009,
+   "overall_rank": 73,
+   "status": "Final"
+  },
+  {
+   "eip": 3855,
+   "title": "PUSH0 instruction",
+   "in_degree": 1,
+   "pagerank": 0.0009,
+   "overall_rank": 115,
+   "status": "Final"
+  },
+  {
+   "eip": 150,
+   "title": "Gas cost changes for IO-heavy operations",
+   "in_degree": 1,
+   "pagerank": 0.0009,
+   "overall_rank": 76,
+   "status": "Final"
+  },
+  {
+   "eip": 170,
+   "title": "Contract code size limit",
+   "in_degree": 1,
+   "pagerank": 0.0014,
+   "overall_rank": 77,
+   "status": "Final"
+  },
+  {
+   "eip": 1344,
+   "title": "ChainID opcode",
+   "in_degree": 1,
+   "pagerank": 0.0011,
+   "overall_rank": 102,
+   "status": "Final"
+  },
+  {
+   "eip": 3074,
+   "title": "AUTH and AUTHCALL opcodes",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 282,
+   "status": "Withdrawn"
+  },
+  {
+   "eip": 7939,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 568,
+   "status": ""
+  },
+  {
+   "eip": 780,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 223,
+   "status": ""
+  },
+  {
+   "eip": 3085,
+   "title": "wallet_addEthereumChain RPC Method",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 284,
+   "status": "Stagnant"
+  },
+  {
+   "eip": 658,
+   "title": "Embedding transaction status code in receipts",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 205,
+   "status": "Final"
+  },
+  {
+   "eip": 672,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 209,
+   "status": ""
+  },
+  {
+   "eip": 6049,
+   "title": "Deprecate SELFDESTRUCT",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 613,
+   "status": "Final"
+  },
+  {
+   "eip": 677,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 211,
+   "status": ""
+  },
+  {
+   "eip": 827,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 235,
+   "status": ""
+  },
+  {
+   "eip": 1102,
+   "title": "Opt-in account exposure",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 303,
+   "status": "Stagnant"
+  },
+  {
+   "eip": 2255,
+   "title": "Wallet Permissions System",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 154,
+   "status": "Final"
+  },
+  {
+   "eip": 7503,
+   "title": "Zero-Knowledge Wormholes",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 349,
+   "status": "Stagnant"
+  },
+  {
+   "eip": 735,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 220,
+   "status": ""
+  },
+  {
+   "eip": 1643,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 507,
+   "status": ""
+  },
+  {
+   "eip": 1644,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 508,
+   "status": ""
+  },
+  {
+   "eip": 2158,
+   "title": "(unresolved)",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 146,
+   "status": ""
+  },
+  {
+   "eip": 6780,
+   "title": "SELFDESTRUCT only in same transaction",
+   "in_degree": 0,
+   "pagerank": 0.0008,
+   "overall_rank": 201,
+   "status": "Final"
+  }
+ ]
+}

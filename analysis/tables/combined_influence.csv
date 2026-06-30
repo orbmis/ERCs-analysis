@@ -1,0 +1,26 @@
+id,kind,title,in_degree,pagerank,status
+165,ERC,Standard Interface Detection,177,0.122,Final
+721,ERC,Non-Fungible Token Standard,145,0.0506,Final
+20,ERC,Token Standard,104,0.0449,Final
+1155,ERC,Multi Token Standard,60,0.0158,Final
+712,EIP,Typed structured data hashing and signing,43,0.019,Final
+155,EIP,Simple replay attack protection,27,0.0235,Final
+1271,ERC,Standard Signature Validation Method for Contracts,27,0.0091,Final
+137,ERC,Ethereum Domain Name Service - Specification,19,0.0114,Final
+4337,ERC,Account Abstraction Using Alt Mempool,14,0.0061,Final
+191,ERC,Signed Data Standard,12,0.0122,Final
+173,ERC,Contract Ownership Standard,10,0.004,Final
+55,ERC,Mixed-case checksum address encoding,9,0.0043,Final
+7930,ERC,Interoperable Addresses,9,0.0052,Review
+4626,ERC,Tokenized Vaults,8,0.0037,Final
+2612,ERC,Permit Extension for EIP-20 Signed Approvals,7,0.0041,Final
+7702,EIP,Set Code for EOAs,7,0.006,Final
+5792,EIP,Wallet Call API,7,0.0029,Final
+1167,ERC,Minimal Proxy Contract,6,0.0017,Final
+1967,ERC,Proxy Storage Slots,6,0.0026,Final
+2771,ERC,Secure Protocol for Native Meta Transactions,5,0.0027,Final
+4844,EIP,Shard Blob Transactions,5,0.0059,Final
+1066,ERC,Status Codes,5,0.0028,Stagnant
+1193,EIP,Ethereum Provider JavaScript API,5,0.005,Final
+5750,ERC,General Extensibility for Method Behaviors,5,0.0029,Final
+681,ERC,URL Format for Transaction Requests,4,0.002,Final
