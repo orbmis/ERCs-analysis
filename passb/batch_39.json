@@ -1,0 +1,137 @@
+{
+  "8152": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2535, 8153, 1822, 8167, 7201, 8042, 6049, 6780, 3855, 7939, 1167],
+    "one_line_summary": "Content-addressable logic modules for deterministic proxy architecture deployment across chains.",
+    "notes": "Focuses on deployment and bytecode identity, not token or account functionality. Infrastructure-meta for cross-chain logic reuse."
+  },
+  "8153": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2535, 1538, 7201, 8042],
+    "one_line_summary": "Facet-based diamonds with on-chain selector discovery and deployment simplification.",
+    "notes": "Extends ERC-2535 diamond pattern with facet introspection; process/infrastructure-level standard."
+  },
+  "8161": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7540, 165],
+    "one_line_summary": "Optional transferability of pending ERC-7540 vault deposit and redeem requests.",
+    "notes": "Extends ERC-7540 async vault requests with transfer capability; DeFi vault primitive."
+  },
+  "8167": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2535, 7702, 7201, 8042],
+    "one_line_summary": "Modular dispatch proxy standard with selector-based delegate routing and upgrade history.",
+    "notes": "Generic proxy architecture beyond diamonds; cross-cutting infrastructure pattern."
+  },
+  "8179": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4844, 7588],
+    "one_line_summary": "Minimal on-chain declaration of field element sub-ranges within EIP-4844 blobs.",
+    "notes": "Infrastructure for blob space coordination; meta-level data availability mechanism."
+  },
+  "8180": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4844, 8179, 3722, 7847, 712, 155],
+    "one_line_summary": "Authenticated messaging over EIP-4844 blobs with on-chain decoder and signature registry.",
+    "notes": "Extends ERC-8179 for blob-based messaging; infrastructure-level messaging primitive."
+  },
+  "8183": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 8004],
+    "one_line_summary": "Job escrow with evaluator attestation for autonomous agent commerce workflows.",
+    "notes": "Agent-to-human or agent-to-agent job execution with escrowed budget; agentic coordination."
+  },
+  "8196": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 191, 712, 4337, 8004, 8126],
+    "one_line_summary": "Policy-bound transaction execution for AI agents with verifiable credential delegation.",
+    "notes": "Layer 3 execute in modular trust stack; agent authorization with policy enforcement."
+  },
+  "8199": {
+    "topic": "account-abstraction",
+    "topic_secondary": "agentic-workflows",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 173, 8023],
+    "one_line_summary": "Sandboxed smart wallet for secure agentic automation with time-gated permission checks.",
+    "notes": "AA wallet variant for agent execution; isolation and time-bounded delegation."
+  },
+  "8217": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [8004, 721, 1155, 6909],
+    "one_line_summary": "Agent identity bindings to external NFT or token controllers via metadata registry.",
+    "notes": "Extends ERC-8004 agent identity with external token binding; identity composition."
+  },
+  "8226": {
+    "topic": "rwa",
+    "topic_secondary": "agentic-workflows",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 20, 721, 1155, 7943, 3643, 8004],
+    "one_line_summary": "Compliance delegation layer for AI agents operating on tokenized regulated assets.",
+    "notes": "Mandate framework for agents over RWA tokens; regulatory scoped delegation."
+  },
+  "8255": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 2612],
+    "one_line_summary": "ERC-20 approvals with bounded expiration duration and revoking legacy spender support.",
+    "notes": "Token approval extension; security-focused fungible token enhancement."
+  },
+  "8257": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [150, 165, 712, 1967],
+    "one_line_summary": "Permissionless on-chain registry for AI agent tools with predicate-based access control.",
+    "notes": "Cross-cutting tool discovery and access gating; infrastructure for agent tooling."
+  },
+  "8273": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1153, 8004, 7702, 4337],
+    "one_line_summary": "On-chain agent attestation registry with transaction-scoped authorization via transient storage.",
+    "notes": "Per-operation attestation for agent authorization; agentic action gating with TEE/ZK evidence."
+  },
+  "8290": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7503, 155, 712],
+    "one_line_summary": "Shielded note teleportation between UTXO privacy protocols without public withdrawals.",
+    "notes": "Privacy protocol composability mechanism; cross-chain privacy infrastructure."
+  }
+}

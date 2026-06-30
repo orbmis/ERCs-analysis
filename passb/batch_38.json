@@ -1,0 +1,137 @@
+{
+  "8086": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Privacy-preserving fungible token interface using zero-knowledge proofs for confidential transfers.",
+    "notes": "Foundational privacy layer for wrapper protocols and dual-mode tokens; defines IZRC20 interface with commitment-based transfers."
+  },
+  "8092": {
+    "topic": "security-permissions",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 1271, 6492, 7930],
+    "one_line_summary": "Standard for establishing and verifying associations between blockchain accounts with signature support.",
+    "notes": "Uses EIP-712 for signatures, supports EIP-1271 contract validation; enables sub-account identity inheritance and delegation."
+  },
+  "8100": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155],
+    "one_line_summary": "XML template interface for contracts to expose canonical state representation without gas cost.",
+    "notes": "Off-chain rendering via XML bindings; supports versioned and hashed state extensions; includes optional partial view interface."
+  },
+  "8106": {
+    "topic": "rwa",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Event-driven compliance framework for RWA tokens with entity classification and audit events.",
+    "notes": "Distinguishes Compliance Entities from Decentralized Entities; soft policy flags via events without enforcement reverts."
+  },
+  "8107": {
+    "topic": "reputation-identity",
+    "topic_secondary": "agentic-workflows",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 712, 1271, 8001],
+    "one_line_summary": "Web of trust validation registry using ENS names for multi-party agent coordination.",
+    "notes": "GnuPG-style trust model; four trust levels; integrates with ERC-8001 coordination hooks; requires EIP-712 signatures."
+  },
+  "8109": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Simplified diamond proxy architecture with standardized introspection functions and per-function events.",
+    "notes": "Withdrawal reason: Superseded by EIP-8153; refinement of ERC-2535 with simpler terminology and events."
+  },
+  "8110": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2535, 8042],
+    "one_line_summary": "Domain architecture pattern for Diamond storage organization using ERC-8042 identifiers.",
+    "notes": "Separates storage ownership from facet logic; defines domain naming conventions and upgrade scenarios; fully backward-compatible."
+  },
+  "8111": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Compressed ECDSA signatures binding y-parity to reduce size and eliminate malleability.",
+    "notes": "Reduces 96-byte signatures to 64 bytes; restricts v to 27 for non-malleable signatures; valid with ecrecover."
+  },
+  "8113": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4626, 7540],
+    "one_line_summary": "Series Accounting method for collecting performance fees in ERC-7540 async vaults.",
+    "notes": "Solves free-rider problem in yield vaults; maintains independent series with unique highwater marks; consolidation mechanism."
+  },
+  "8117": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 1191],
+    "one_line_summary": "Display format for addresses with leading zeros using subscript or parenthesis notation to prevent poisoning.",
+    "notes": "Subscript (0x0₈) for UI, parenthesis (0x0(8)) for ASCII; threshold n≥4; improves security of gas-optimized addresses."
+  },
+  "8119": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard formats for parameterized string keys in EVM key-value storage.",
+    "notes": "Supports slash/colon form (single param) and bracket form (multiple params); ASCII label restrictions; UTF-8 parameters."
+  },
+  "8121": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [3668, 7930],
+    "one_line_summary": "Hooks for cross-chain function calls with ERC-7930 addresses enabling ERC-3668 resolution.",
+    "notes": "Fully specifies function calls across chains; includes optional selector for type safety; supports read and write operations."
+  },
+  "8122": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "agentic-workflows",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [6909, 7930, 8048, 8049, 8127],
+    "one_line_summary": "Minimal gas-efficient registry for discovering AI agents using ERC-6909.",
+    "notes": "Agents as tokens with single owners; onchain metadata via ERC-8048; supports custom deployments beyond singleton models."
+  },
+  "8126": {
+    "topic": "reputation-identity",
+    "topic_secondary": "agentic-workflows",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 191, 712, 721, 3009, 8004],
+    "one_line_summary": "Multi-layer AI agent verification (ETV, MCV, SCV, WAV, WV) with unified risk scoring.",
+    "notes": "Privacy-first via ZKPs; 0-100 risk score; integrates with ERC-8004; optional quantum cryptography support (QCV)."
+  },
+  "8127": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7930],
+    "one_line_summary": "Human-readable token identifiers combining optional alias, token ID, and ERC-7930 registry address.",
+    "notes": "Format: [alias.]token-id@registry; enables usable naming for NFTs, RWAs, agents; portable across systems."
+  }
+}

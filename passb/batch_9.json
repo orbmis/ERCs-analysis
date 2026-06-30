@@ -1,0 +1,137 @@
+{
+  "2980": {
+    "topic": "rwa",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Swiss-law-compliant asset token with whitelist/frozenlist restrictions extending ERC-20.",
+    "notes": "Specifies security-token mechanics for regulated asset issuance; overlaps with fungible tokens but primary purpose is RWA compliance."
+  },
+  "2981": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Standardized royalty payment mechanism for NFTs via royaltyInfo interface.",
+    "notes": "Universal standard works with 721, 1155, and any asset type; enables secondary-market royalty enforcement."
+  },
+  "3000": {
+    "topic": "governance",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Optimistic enactment governance standard with schedule/execute/challenge/resolve pattern.",
+    "notes": "Designed for off-chain governance with on-chain challenge/response mechanics; infrastructure for DAO execution."
+  },
+  "3005": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Batched meta-transaction extension for ERC-20 enabling gasless multi-sender token transfers.",
+    "notes": "Reduces relayer gas costs; not DeFi-specific, focuses on token transfer mechanism extension."
+  },
+  "3009": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 712],
+    "one_line_summary": "ERC-20 meta-transaction extension using EIP-712 signatures for atomic transfers and approvals.",
+    "notes": "Random nonces, valid-after/valid-before windows; complements ERC-2612 with different nonce model."
+  },
+  "3135": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Exclusive claimable token for micropayment channels via signed off-chain messages.",
+    "notes": "Primary use: payment systems and micropayments; extends ERC-20 with deposit/claim/withdraw mechanics."
+  },
+  "3156": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Standard interfaces and process for single-asset flash loans with lender/borrower callback pattern.",
+    "notes": "Core DeFi primitive; specifies flashFee, maxFlashLoan, and onFlashLoan callback mechanics."
+  },
+  "3224": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [191],
+    "one_line_summary": "Compute human-readable descriptions for signable data via eipXXXDescribe contract methods.",
+    "notes": "Wallet UX enhancement; allows dApps to provide meaningful signing descriptions without malicious contract protection."
+  },
+  "3234": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Batch flash loans for simultaneous multi-asset lending via standard lender/borrower interfaces.",
+    "notes": "Extends single-asset ERC-3156 to multi-token case; use case: simultaneous platform refinancing."
+  },
+  "3386": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155, 165],
+    "one_line_summary": "Wrapper converting ERC-721/ERC-1155 NFTs to fungible ERC-20 derivative tokens via pooling.",
+    "notes": "Primary purpose is NFT fractionalization; secondary fungible aspect via derivative tokens."
+  },
+  "3440": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 721],
+    "one_line_summary": "ERC-721 editions extension enabling artists to designate originals and sign limited editions.",
+    "notes": "ERC-712 signed provenance for digital art; limited-edition print management with immutable signatures."
+  },
+  "3448": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Minimal bytecode proxy standard supporting immutable metadata attachment to proxy contracts.",
+    "notes": "Low-level proxy pattern; enables metadata discovery without separate storage; used by factory patterns."
+  },
+  "3450": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standardized Shamir secret sharing scheme for splitting BIP-39 mnemonics into recoverable shares.",
+    "notes": "Key management utility; applies Shamir's in GF(256) to mnemonic entropy; T-of-N threshold recovery."
+  },
+  "3475": {
+    "topic": "defi",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "Abstract storage bonds standard with configurable metadata, multiple nonces, and batch issuance/redemption.",
+    "notes": "Tokenized obligations with complex redemption logic; primary purpose is DeFi bonds; compatible with 20/721/1155."
+  },
+  "3525": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721],
+    "one_line_summary": "Semi-fungible token combining ERC-721 identity with ERC-20 value via slot-based fungibility model.",
+    "notes": "Tokens with same SLOT are fungible on value; bridges NFT qualitative attributes with fungible quantitative features."
+  }
+}

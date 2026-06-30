@@ -1,0 +1,137 @@
+{
+  "5313": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 173],
+    "one_line_summary": "Minimal interface for identifying accounts that control contracts.",
+    "notes": "Slimmed-down alternative to ERC-173; does not implement ERC-165 for backward compatibility with existing markets."
+  },
+  "5334": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension adding time-limited user role with restricted permissions.",
+    "notes": "Supports role-based access control for NFTs; user role separates usage from ownership."
+  },
+  "5375": {
+    "topic": "nft",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 155, 712, 721, 1155],
+    "one_line_summary": "Standard for storing NFT authorship info and consent proofs in metadata.",
+    "notes": "Uses ERC-712 signed messages to prove author consent without requiring on-chain transactions from authors."
+  },
+  "5380": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1046],
+    "one_line_summary": "ERC-721 extension enabling token owners to grant limited usage rights to others.",
+    "notes": "Allows granular entitlements separate from ownership, with optional enumerable and metadata extensions."
+  },
+  "5409": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "ERC-1155 extension adding ownerOf to support non-fungible tokens within ERC-1155.",
+    "notes": "Enables detecting unique tokens and retrieving owner on-chain without implementing ERC-721."
+  },
+  "5437": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Interface for expressing security contact via asymmetric encryption keys.",
+    "notes": "Provides standardized channel for security researchers to report vulnerabilities; supports GPG and future schemes."
+  },
+  "5453": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 712, 1271, 5750],
+    "one_line_summary": "General permit protocol for approving any function call via signatures.",
+    "notes": "Extends ERC-5750; supports multi-sig and threshold approvals in single transaction; supersedes ERC-2612 scope."
+  },
+  "5484": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Soulbound NFT standard with immutable ownership and predetermined burn authorization.",
+    "notes": "Non-transferable credentials; burn authority immutable after issuance; extends ERC-721."
+  },
+  "5485": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [5247],
+    "one_line_summary": "Interface for declaring contract sovereignty, jurisdiction, accreditation, and enforcement pathways.",
+    "notes": "Bridges real-world legal frameworks with on-chain systems; supports regulated and institutional use cases."
+  },
+  "5489": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension embedding hyperlinks in NFTs for rich content attachments.",
+    "notes": "Allows NFT owners to authorize addressees to manage URL slots; enables metadata-like customization."
+  },
+  "5496": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1271, 1155],
+    "one_line_summary": "ERC-721 extension for managing shareable, time-limited privileges attached to tokens.",
+    "notes": "Privileges can be cloned and distributed; separate from ownership; supports on-chain and off-chain utilities."
+  },
+  "5501": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 4400, 4907],
+    "one_line_summary": "ERC-721 extension adding time-limited user role for rental and delegation scenarios.",
+    "notes": "Borrowed flag prevents owner override during rental; owner retains NFT for airdrops; optional balance and terminable extensions."
+  },
+  "5505": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [1155],
+    "one_line_summary": "ERC-1155 extension enabling forced acquisition of fractionalized asset-backed NFTs.",
+    "notes": "Addresses fractionalization deadlock; enables majority holders to acquire remaining shares at TWAP price."
+  },
+  "5507": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155],
+    "one_line_summary": "Refund interface for ERC-20, ERC-721, and ERC-1155 tokens during initial offerings.",
+    "notes": "Funds escrowed until deadline; supports compliance with EU distance selling regulations; includes batch refund optional extensions."
+  },
+  "5516": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Non-transferable multi-owner soulbound tokens for credentials and certificates.",
+    "notes": "Supports multi-cohort issuance via deterministic tokenId; irreversible renunciation; enables account recovery via multi-owner binding."
+  }
+}

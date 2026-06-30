@@ -1,0 +1,137 @@
+{
+  "20": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard interface for tokens with transfer and approval functions.",
+    "notes": "Core foundational ERC; implements allowance-based approvals for delegated transfers."
+  },
+  "55": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Mixed-case checksum address encoding for error detection.",
+    "notes": "Encoding/addressing standard; enables 15 check bits per address reducing typo errors."
+  },
+  "67": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [681],
+    "one_line_summary": "URI scheme for encoding Ethereum transactions with metadata and bytecode.",
+    "notes": "Withdrawn; superseded by EIP-681. Format for wallet transaction requests."
+  },
+  "137": {
+    "topic": "reputation-identity",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Ethereum Name Service registry, resolver, and registrar architecture.",
+    "notes": "Foundational naming infrastructure; enables human-readable address resolution via hierarchical domain system."
+  },
+  "162": {
+    "topic": "reputation-identity",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Initial ENS hash registrar implementing Vickrey auction for name allocation.",
+    "notes": "Implements auction mechanism for .eth domain registration; deed-based collateral model."
+  },
+  "165": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [214],
+    "one_line_summary": "Standard interface detection method for contracts using interface identifiers.",
+    "notes": "Foundational meta-protocol; enables contracts to query/publish supported interfaces via XOR of function selectors."
+  },
+  "173": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Contract ownership standard with transfer mechanism and owner query.",
+    "notes": "Generic access control for single-owner pattern; widely reused in contract governance."
+  },
+  "181": {
+    "topic": "reputation-identity",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "ENS reverse resolution enabling human-readable names for Ethereum addresses.",
+    "notes": "Extends ENS to support addr.reverse lookups; allows addresses to claim authoritative names."
+  },
+  "190": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Ethereum smart contract packaging standard with release lockfile specification.",
+    "notes": "Meta-standard for contract distribution; enables deterministic builds and bytecode verification."
+  },
+  "191": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard for signed data format preventing replay attacks and signature ambiguity.",
+    "notes": "Defines 0x19 prefix scheme with version bytes; supports personal_sign and structured data contexts."
+  },
+  "205": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 181],
+    "one_line_summary": "ENS resolver profile for storing and retrieving contract ABIs onchain.",
+    "notes": "Multiple encoding formats (JSON, zlib, CBOR, URI); enables interface discovery via ENS."
+  },
+  "223": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Token standard with transaction handler callback for safe contract deposits.",
+    "notes": "Requires tokenReceived callback; eliminates stuck-token problem by making transfer atomic."
+  },
+  "600": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "BIP32/BIP43 purpose allocation scheme for deterministic Ethereum wallets.",
+    "notes": "Defines m/43'/60'/EIP' derivation hierarchy; tailored to account-based model."
+  },
+  "601": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "BIP32 hierarchical path for deterministic Ethereum wallets with multi-account support.",
+    "notes": "Four-level path m/43'/60'/EIP'/wallet'; enables multiple identities per seed."
+  },
+  "634": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 165],
+    "one_line_summary": "ENS resolver profile for arbitrary key-value text record storage.",
+    "notes": "Extends ENS with metadata; supports global keys (avatar, email) and service-specific namespaces."
+  }
+}

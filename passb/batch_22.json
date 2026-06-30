@@ -1,0 +1,137 @@
+{
+  "6900": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 1271, 165, 1167, 6492],
+    "one_line_summary": "Modular interfaces for smart contract accounts and modules with upgradable execution logic.",
+    "notes": "Extends ERC-4337 with modular architecture separating validation, execution, and hooks into composable modules."
+  },
+  "6909": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1155, 165, 721, 20],
+    "one_line_summary": "Minimal multi-token standard combining ERC-20 allowance and ERC-1155 operator models without callbacks.",
+    "notes": "Removes batch operations and mandatory callbacks from ERC-1155; hybrid operator-approval permission system."
+  },
+  "6932": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension enabling subscription-based access requiring periodic automatic payments.",
+    "notes": "Adds subscribe/unsubscribe mechanics for recurring payments without manual intervention."
+  },
+  "6944": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4804, 5219],
+    "one_line_summary": "ERC-4804 resolveMode extension for ERC-5219 contract resource requests.",
+    "notes": "Minimal extension defining resolveMode return value for ERC-5219 resolution compatibility."
+  },
+  "6956": {
+    "topic": "nft",
+    "topic_secondary": "rwa",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 5192, 6982, 6454, 5484],
+    "one_line_summary": "NFT standard anchoring tokens 1:1 to physical/digital assets with oracle-attested ownership transfers.",
+    "notes": "Permissionless transfers via attestations; designed for phygitals and off-chain asset tokenization."
+  },
+  "6960": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "Dual-layer token combining ERC-20/721/1155 with mainId/subId classification for RWAs.",
+    "notes": "Hierarchical token classification enabling fractional ownership of complex assets."
+  },
+  "6981": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [1167, 1271, 6492],
+    "one_line_summary": "Registry generating deterministic smart contract addresses for future-owned user accounts.",
+    "notes": "Enables on-chain asset reception before account control assumption via signature verification."
+  },
+  "6982": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Gas-efficient ERC-721 locking mechanism with DefaultLocked event on deployment.",
+    "notes": "Emits status changes only for specific tokens; useful for non-transferable/soulbound NFTs."
+  },
+  "6997": {
+    "topic": "nft",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 with validation step for transfers and approvals to prevent wallet draining.",
+    "notes": "Pending validations require authorization before execution; enables externalized validation."
+  },
+  "7007": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension for verifiable AI-generated content using zkML and opML proofs.",
+    "notes": "Indexes tokens by prompt; supports optional Enumerable and Updatable extensions for opML scenarios."
+  },
+  "7015": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 155, 712, 721, 1155],
+    "one_line_summary": "NFT creator attribution via EIP-712 signed CreatorAttribution event at deployment.",
+    "notes": "Allows correct creator attribution even when non-creator wallet deploys contract."
+  },
+  "7053": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Interoperable digital media indexing using CIDs and Commit events across EVM chains.",
+    "notes": "Universal indexing method for traceability and discovery of digital media assets."
+  },
+  "7066": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 locking extension preventing transfers while preserving utility during collateralization.",
+    "notes": "Enables NFT-collateralized loans, rentals, and BNPL without asset escrow; locker controls unlock."
+  },
+  "7085": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155],
+    "one_line_summary": "Establishes relationships and quantifiable attributes between ERC-721/1155 tokens.",
+    "notes": "Enables NFT graphs with derivative relationships and attribute metadata."
+  },
+  "7087": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [6860],
+    "one_line_summary": "Query parameters for specifying MIME type of web3:// URL responses in auto mode.",
+    "notes": "Extends ERC-6860 with mime.content, mime.type, and mime.dataurl parameters."
+  }
+}

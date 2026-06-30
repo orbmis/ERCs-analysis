@@ -1,0 +1,137 @@
+{
+  "1155": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155, 1538],
+    "one_line_summary": "Multi-token standard supporting fungible, non-fungible, and semi-fungible tokens in a single contract.",
+    "notes": "Supports both batch transfers and hybrid fungible/non-fungible token implementations in one contract."
+  },
+  "1167": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [211],
+    "one_line_summary": "Minimal proxy contract bytecode for cheap, immutable contract cloning.",
+    "notes": "Uses delegatecall for low-gas proxy deployment; bytecode-level specification enables direct bytecode interrogation."
+  },
+  "1175": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Wallet and shop standard for ERC-20 tokens enabling single-call payments.",
+    "notes": "Proposes infrastructure for commerce using ERC-20 tokens; status is Stagnant."
+  },
+  "1178": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Multi-class fungible token standard supporting multiple token classes within one contract.",
+    "notes": "Allows tokens to be fungible within same class but non-fungible across classes; status is Stagnant."
+  },
+  "1185": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Storage of DNS records within ENS resolver profile for domain name resolution.",
+    "notes": "Extends ENS with DNS record storage; operates at record-set level rather than zone level."
+  },
+  "1191": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 155],
+    "one_line_summary": "Chain-aware checksum encoding for Ethereum addresses to prevent cross-network fund loss.",
+    "notes": "Extends EIP-55 with chain ID to distinguish addresses across different networks."
+  },
+  "1202": {
+    "topic": "governance",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 777, 5247, 5269, 5453],
+    "one_line_summary": "Voting interface standard for on-chain governance with vote casting and result tracking.",
+    "notes": "Defines voting API with support for single/multi-vote, weights, and delegation; leaves proposals out of scope."
+  },
+  "1203": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1178],
+    "one_line_summary": "Multi-class token standard extending ERC-20 with support for multiple fungible token classes.",
+    "notes": "Hybrid of ERC-20 and ERC-721 with optional class conversion; maintains ERC-20 backwards compatibility."
+  },
+  "1207": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "DAuth access delegation standard for authorizing contracts to access user data and assets.",
+    "notes": "Distributed authorization without access tokens; inspired by OAuth but decentralized on-chain."
+  },
+  "1261": {
+    "topic": "reputation-identity",
+    "topic_secondary": "governance",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 173, 721, 725],
+    "one_line_summary": "Membership Verification Token standard for non-transferable, revocable membership proof.",
+    "notes": "Non-transferable tokens with attributes; enables permissioned governance and compliance applications."
+  },
+  "1271": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712],
+    "one_line_summary": "Standard signature validation method for smart contracts to verify signed messages.",
+    "notes": "Enables contract-based signature verification via isValidSignature() function; context-dependent validation."
+  },
+  "1319": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 926, 1123],
+    "one_line_summary": "Smart contract package registry interface for publishing and retrieving versioned contract packages.",
+    "notes": "Read/write API for package registries with semver versioning support; companion to EIP-1123."
+  },
+  "1328": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "WalletConnect URI format specification for QR code-based wallet connection initiation.",
+    "notes": "Defines URI syntax for v1.0 and v2.0 protocols; enables app-to-wallet communication via QR/link."
+  },
+  "1337": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "Subscription payment standard enabling recurring blockchain-based subscription transactions.",
+    "notes": "Uses signed hashes for replay-able transactions; enables SaaS business models on-chain; status is Stagnant."
+  },
+  "1363": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 223, 677, 721],
+    "one_line_summary": "Payable token standard enabling callbacks after transfer or approval in single transaction.",
+    "notes": "Inspired by ERC-721 receiver pattern; maintains ERC-20 backwards compatibility with added callback support."
+  }
+}

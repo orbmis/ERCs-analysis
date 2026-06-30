@@ -1,0 +1,137 @@
+{
+  "7857": {
+    "topic": "nft",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "NFT standard for AI agents with private metadata and verifiable data transfer.",
+    "notes": "Introduces privacy-preserving verification (TEE/ZKP) for agent metadata. Supports data cloning and authorization mechanisms. Complex cryptographic design for intellectual property protection."
+  },
+  "7858": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 2135, 7578, 6093],
+    "one_line_summary": "Extends ERC-721 with expiration mechanism for time-limited NFTs and SBTs.",
+    "notes": "Supports both block-based and timestamp-based expiration. Includes epoch-based extension for batch expiry management. Backward compatible with ERC-721."
+  },
+  "7861": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension for verifiable credentials with encryption and revocation support.",
+    "notes": "Enables on-chain credential management with W3C framework alignment. Supports encrypted storage and selective disclosure via ZK proofs. Credential revocation via burning."
+  },
+  "7866": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 137],
+    "one_line_summary": "Decentralized user profiles as SBTs with dApp-specific avatars and cross-chain support.",
+    "notes": "Registry/resolver architecture inspired by ENS. Supports privacy controls for avatar visibility. Off-chain metadata storage (IPFS/Arweave). DIDs for global identification."
+  },
+  "7871": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [191, 712, 5792],
+    "one_line_summary": "Unified JSON-RPC method for wallet message signing supporting multiple EIP-191 versions.",
+    "notes": "Consolidates personal_sign, typed data signing under single wallet_sign method. Supports EIP-5792 capabilities. Extensible for future EIP-191 versions."
+  },
+  "7876": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 3085],
+    "one_line_summary": "Unified JSON configuration specification for EVM networks with extension support.",
+    "notes": "Standardizes network configuration format for DApps. Includes RPC, contracts, explorers, native currency. Supports EIP-3085 alignment with extensibility via custom properties."
+  },
+  "7878": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155],
+    "one_line_summary": "Inheritance mechanism for tokens via Wills and executors enabling post-mortem transfers.",
+    "notes": "Mimics real-world Will execution with moratorium period safety buffer. Flexible executor model. Compatible with ERC-20, ERC-721, ERC-1155."
+  },
+  "7884": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [3668],
+    "one_line_summary": "Protocol for redirecting write operations to external systems (L2, L1, databases).",
+    "notes": "Enables off-chain/cross-chain operation routing. Uses view functions for determining handlers. Supports storage proofs for database authorization. EIP-712 typed signatures for security."
+  },
+  "7887": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 7540],
+    "one_line_summary": "Cancelation extension for ERC-7540 asynchronous tokenized vaults.",
+    "notes": "Adds async cancelation flows with pending/claimable/claimed states. Blocks new requests during cancelation. Complements ERC-7540 vault design."
+  },
+  "7888": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Storage-based cross-rollup messaging using state commitments and StateProver contracts.",
+    "notes": "Trustless interop via storage proofs. Supports various state commitment types (block hashes, state roots). Upgradeable StateProver pattern. Receiver/Broadcaster architecture."
+  },
+  "7891": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 6150],
+    "one_line_summary": "Hierarchical NFTs enabling splitting and merging with fractional ownership tracking.",
+    "notes": "Extends ERC-721 and ERC-6150. Supports share redistribution and fractional ownership. Enables dynamic asset restructuring for real estate and gaming use cases."
+  },
+  "7893": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "Standardized DeFi protocol solvency proof with verifiable health metrics and risk alerts.",
+    "notes": "Oracle-based asset/liability tracking with solvency ratio calculation (105% min threshold). Multi-tier risk alerts (CRITICAL, HIGH_RISK, WARNING). Historical data for trend analysis. ERC-165 support."
+  },
+  "7895": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "JSON-RPC method for wallets to create and track hierarchical smart accounts.",
+    "notes": "Enables universal wallets to manage app-embedded accounts. Supports three use cases: deployed, create, undeployed. Complements EIP-5792 capabilities framework."
+  },
+  "7897": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1167, 4337, 6551, 7656],
+    "one_line_summary": "Registry for modular services linked to ERC-4337 wallets using ERC-1167 proxies (WITHDRAWN).",
+    "notes": "Creates deterministic CREATE2 addresses for wallet-linked services. ERC-1167 minimal proxies with immutable data. Note: Proposal withdrawn; functionality achievable via ERC-7656."
+  },
+  "7902": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [5792, 7702],
+    "one_line_summary": "EIP-5792 capabilities for Account Abstraction including EIP-7702 auth, Paymaster, gas overrides.",
+    "notes": "Enables dApp/wallet negotiation of AA features. Supports EIP-7702 authorization, static Paymaster config, validity time ranges, multidimensional nonce, gas param overrides."
+  }
+}

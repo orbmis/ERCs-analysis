@@ -1,0 +1,137 @@
+{
+  "1592": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 902, 1066, 1175],
+    "one_line_summary": "Transfer rules interface for ERC20 tokens with composable rule engine.",
+    "notes": "Bridges regulatory compliance with ERC20; rules externalized for reusability."
+  },
+  "1613": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1077],
+    "one_line_summary": "Gas stations network enabling gasless transactions via relayed nodes.",
+    "notes": "Meta-transaction network with relay nodes; compatible with EIP-1077."
+  },
+  "1616": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 735, 780],
+    "one_line_summary": "Registry for querying attribute metadata assigned to Ethereum accounts.",
+    "notes": "Light-weight abstraction for account metadata; replaces ERC-735/780 complexity."
+  },
+  "1620": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Money streaming using block numbers for continuous time-based payments.",
+    "notes": "Enables salary/subscription payments; block-time based rather than timestamp."
+  },
+  "1633": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721],
+    "one_line_summary": "Fractional ownership of ERC-721 NFTs represented as ERC-20 fungible shares.",
+    "notes": "Re-Fungible Token enables shared NFT ownership via fungible token."
+  },
+  "1710": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 831],
+    "one_line_summary": "Standardized URL format for opening dapps in web3 browsers.",
+    "notes": "dapp:// protocol with optional chain_id parameter; avoids ethereum: conflicts."
+  },
+  "1753": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "license-permits",
+    "referenced_ercs": [],
+    "one_line_summary": "Smart contract interface for government license and permit issuance.",
+    "notes": "Government licensing system on-chain; specific to regulatory compliance domain."
+  },
+  "1761": {
+    "topic": "security-permissions",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Scoped approval interface restricting token transfers by defined scope.",
+    "notes": "Generalizes approval restrictions; useful for multi-domain token systems."
+  },
+  "1775": {
+    "topic": "security-permissions",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2255, 1102, 1581, 600, 601],
+    "one_line_summary": "Application-specific wallet accounts derived per dapp for isolation.",
+    "notes": "App keys enable per-app accounts without prompting; keccak256 based derivation."
+  },
+  "1812": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 735, 780, 1056],
+    "one_line_summary": "Off-chain verifiable claims using EIP-712 signed typed data.",
+    "notes": "Reusable claims supporting delegation; avoids on-chain PII storage."
+  },
+  "1820": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 214, 820, 672],
+    "one_line_summary": "Universal registry for interface implementation discovery across addresses.",
+    "notes": "Supersedes ERC-820; fixes Solidity 0.5 incompatibility; universal deployment."
+  },
+  "1822": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Universal proxy standard enabling unlimited contract upgrades via delegatecall.",
+    "notes": "UUPS pattern with compatibility checks; uses keccak256(PROXIABLE) storage slot."
+  },
+  "1844": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 165],
+    "one_line_summary": "ENS resolver interface for discovering contract interfaces by name.",
+    "notes": "Enables metadata association with ENS names/addresses via resolver."
+  },
+  "1900": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2158],
+    "one_line_summary": "Decentralized type system registry for standardizing on-chain data definitions.",
+    "notes": "Foundation for World Computer type system; basis for dType ecosystem."
+  },
+  "1921": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1900],
+    "one_line_summary": "Extension enabling registration of smart contract functions in dType registry.",
+    "notes": "Complements ERC-1900; supports pure/view function discovery and composition."
+  }
+}

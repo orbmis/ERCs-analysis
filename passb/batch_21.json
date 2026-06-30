@@ -1,0 +1,137 @@
+{
+  "6672": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension enabling NFTs to be redeemed multiple times for physical or digital items.",
+    "notes": "Adds redemption tracking and status management on-chain, with optional metadata schema extension."
+  },
+  "6682": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 3156],
+    "one_line_summary": "Extends ERC-3156 flashloans to support NFT flashloans with configurable fee tokens.",
+    "notes": "Primary purpose is enabling NFT flashloans; extends existing flashloan standard rather than creating token standard."
+  },
+  "6734": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155],
+    "one_line_summary": "JSON schema for canonical token lists across L1, L2, and sidechains with DIDs and URI identifiers.",
+    "notes": "Uses JSON-LD and W3C standards for interoperability; defines tokens across multi-chain systems."
+  },
+  "6735": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55],
+    "one_line_summary": "Deterministic EVM address aliasing for identifying same account across L1, L2, and sidechains.",
+    "notes": "Enables cross-chain address translation using offset-based alias scheme; based on existing L2 patterns."
+  },
+  "6785": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension providing utility description and historical access information for NFTs.",
+    "notes": "Adds utility metadata tracking with history; aims to prevent scams by capturing utility terms on-chain."
+  },
+  "6786": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [165, 2981],
+    "one_line_summary": "Registry for paying and tracking royalties owed to NFT creators independent of marketplace.",
+    "notes": "Extends ERC-2981 with cumulative payment tracking; enables anyone to pay royalties retroactively."
+  },
+  "6787": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Order book DEX interface with two-phase withdrawal mechanism protecting users and exchange assets.",
+    "notes": "Addresses security concerns specific to order book DEXs with forced withdrawal validation periods."
+  },
+  "6806": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension tracking duration and holder of NFT ownership for reward or access logic.",
+    "notes": "Simple interface returning current holder and holding duration in seconds; supports whitelisting certain addresses."
+  },
+  "6808": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension with optional security via two key wallets controlling transfers and approvals.",
+    "notes": "Adds binding, approval, and transfer restrictions; includes safeFallback and resetBindings for recovery; fully backward compatible."
+  },
+  "6809": {
+    "topic": "nft",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension with optional security via two key wallets controlling token transfers and approvals.",
+    "notes": "Parallel to ERC-6808 for NFTs; adds binding, transfer, approval conditions; includes recovery mechanisms."
+  },
+  "6821": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 634, 3770, 4804],
+    "one_line_summary": "Maps ENS names to contract addresses in Web3 URLs via contentcontract text record and chain-specific addressing.",
+    "notes": "Extension to ERC-4804 enabling human-readable Web3 URL contracts via ENS; supports ERC-3770 chain-specific addresses."
+  },
+  "6823": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "Storage slot retrieval function for ERC-20/721/1155 mapping enabling accurate off-chain transaction simulation.",
+    "notes": "Adds getTokenLocationRoot() function to retrieve mapping storage slot; reduces simulation reliance on events."
+  },
+  "6860": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Translates HTTP-style Web3 URLs to EVM call messages supporting manual and auto resolve modes.",
+    "notes": "Update to ERC-4804 with clarifications and format specifications; supports ENS names and cross-chain calls."
+  },
+  "6864": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension enabling upgrade/downgrade of tokens while preserving balances across implementations.",
+    "notes": "Allows non-proxy upgrade pattern on existing ERC-20 contracts; includes optional see-through functions for combined balances."
+  },
+  "6865": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712],
+    "one_line_summary": "On-chain EIP-712 visualization function returning structured asset impact data to prevent signing scams.",
+    "notes": "Shifts EIP-712 visualization responsibility from wallets to protocols; returns assetsIn, assetsOut, and liveness information."
+  }
+}

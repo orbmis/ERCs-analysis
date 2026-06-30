@@ -1,0 +1,137 @@
+{
+  "1922": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [165, 196, 197],
+    "one_line_summary": "Standard interface for zk-SNARK verifier contracts.",
+    "notes": "Defines generic verify() interface for elliptic curve pairing verification; designed for private transactions and scaling."
+  },
+  "1923": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 196, 197],
+    "one_line_summary": "Registry for zk-SNARK verification activity and verifier contracts.",
+    "notes": "Enables registration and attestation of proofs; complements ERC-1922."
+  },
+  "1948": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension allowing dynamic bytes32 data storage per token.",
+    "notes": "Addresses use cases like cross-chain tokens and evolving metadata; extends read/write data functions."
+  },
+  "1967": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard storage slots for proxy contract metadata (implementation, admin, beacon).",
+    "notes": "Enables block explorers and tools to extract proxy info; addresses storage collision risks with compiler-allocated slots."
+  },
+  "1973": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Scalable per-block token reward distribution using round masks and participant masks.",
+    "notes": "Solves gas limit problem for rewards across tens of thousands of participants; uses pull-based system."
+  },
+  "1996": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension enabling holds/escrows on token balances with notary-based release.",
+    "notes": "Guarantees future transfer; supports partial execution and perpetual holds; addresses KYC/AML use cases."
+  },
+  "2009": {
+    "topic": "security-permissions",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1066],
+    "one_line_summary": "Decentralized compliance service for checking transfer/mint/burn permissions on regulated tokens.",
+    "notes": "Generic implementation; supports multiple tokens; maintains accumulated compliance state."
+  },
+  "2018": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1996],
+    "one_line_summary": "Extends ERC-1996 with clearing process for off-chain regulatory checks before transfer.",
+    "notes": "Two-step transfer with clearing agent decision; complements holds for regulated transfers."
+  },
+  "2019": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension for token wallet funding requests with operator authorization.",
+    "notes": "Enables decentralized fund request workflow with instructions for payment routing; operator-driven execution."
+  },
+  "2020": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 1066, 1996, 2009, 2018, 2019, 2021],
+    "one_line_summary": "Unified regulated e-money token combining compliance, holds, clearing, funding, and payouts.",
+    "notes": "Integrates ERC-1996, ERC-2018, ERC-2019, ERC-2021 for fully compliant digital currency issuance."
+  },
+  "2021": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 1066, 1996],
+    "one_line_summary": "ERC-20 extension enabling token payout/withdrawal requests with operator authorization.",
+    "notes": "Complements funding; supports partial fund placement in suspense before final execution/rejection."
+  },
+  "2098": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2],
+    "one_line_summary": "Compact secp256k1 signature encoding reducing 65 bytes to 64 by embedding yParity in s.",
+    "notes": "Saves gas and transaction size; yParity hijacks top bit of s; imminent for meta-transactions."
+  },
+  "2135": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Interface for consumable assets (e.g., tickets) extending ERC-721/ERC-1155.",
+    "notes": "Enables consumption via consume() function; emits transfer to zero address on consumption; use-case agnostic."
+  },
+  "2157": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1900],
+    "one_line_summary": "Standardized storage contract ABI for dType instances enabling deterministic data addressability.",
+    "notes": "Separates data from logic; CRUD pattern; enables type-specific data retrieval on-chain."
+  },
+  "2193": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 1900, 2157],
+    "one_line_summary": "Human-readable resource identifiers for dType data using semantic separators (./@/#//).",
+    "notes": "Addresses any on-chain resource type; signature-based ownership verification; prevents replay attacks."
+  }
+}

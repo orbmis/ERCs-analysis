@@ -1,0 +1,137 @@
+{
+  "7390": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 1155],
+    "one_line_summary": "Standard interface for vanilla options on ERC-20 tokens with time-limited exercise windows.",
+    "notes": "Requires ERC-1155 for fractional option ownership. Supports both call and put options with writer collateralization."
+  },
+  "7399": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 3156],
+    "one_line_summary": "Standardized interface for flash loans with flexible lender and borrower architecture.",
+    "notes": "Successor to ERC-3156. Supports multiple assets and callback functions with fee collection."
+  },
+  "7401": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 6059],
+    "one_line_summary": "Parent-controlled NFT nesting allowing tokens to own other tokens with propose-accept pattern.",
+    "notes": "Supersedes ERC-6059. Fixes interface ID mismatch. Enables bundling, collecting, membership, and delegation use cases."
+  },
+  "7405": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [191, 1967, 4337],
+    "one_line_summary": "Portable smart contract accounts enabling migration between wallets via ERC-1967 proxy layer.",
+    "notes": "Uses migration keys and time locks for security. Requires shared registry for tracking migrations."
+  },
+  "7406": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Multi-namespace onchain registry with key-value mapping structure supporting versioning and versioning.",
+    "notes": "Enables flexible data management. Supports namespace-based data organization and history tracking."
+  },
+  "7409": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155, 6381],
+    "one_line_summary": "Public emote repository allowing reactions to NFTs using Unicode emoji at deterministic address.",
+    "notes": "Supersedes ERC-6381. Uses string for emojis instead of bytes4. Supports presigned emotes and bulk operations."
+  },
+  "7410": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "ERC-20 extension enabling spenders to decrease allowance autonomously without owner approval.",
+    "notes": "Addresses security by allowing spenders to revoke excessive allowances. Nullifies infinite approvals."
+  },
+  "7412": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [3668],
+    "one_line_summary": "On-demand off-chain data retrieval via oracle contracts with multicall prepending pattern.",
+    "notes": "Alternative to ERC-3668. Enables cross-chain reads without callback complexity. Supports fee collection."
+  },
+  "7417": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 223],
+    "one_line_summary": "Token converter enabling 1:1 conversion between ERC-20 and ERC-223 tokens with wrapper contracts.",
+    "notes": "Solves token standard interoperability. One ERC-223 wrapper per ERC-20 token. Supports bidirectional conversion."
+  },
+  "7425": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 4626],
+    "one_line_summary": "Tokenized reserve fund extension of ERC-4626 with stakeholder governance and transparent asset tracking.",
+    "notes": "Enables proposal-based reserve withdrawals. Stakeholders participate through share minting."
+  },
+  "7432": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Role management for NFTs with automatic expiration and custom data supporting permissioned utility sharing.",
+    "notes": "Roles expire automatically. Supports revocable and non-revocable roles. Includes metadata extension for role descriptions."
+  },
+  "7439": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension preventing ticket scalping through status tracking and authorized reseller transfers.",
+    "notes": "Restricts transfers to authorized platforms only. Defines token statuses: Sold, Resell, Void, Redeemed."
+  },
+  "7444": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Standard interface for querying maturity timestamp of time-locked assets for valuation purposes.",
+    "notes": "Enables Black-Scholes valuation of locked assets. Works with ERC-721 and ERC-1155 time-locked tokens."
+  },
+  "7484": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 7579],
+    "one_line_summary": "Registry and adapter interface for modular smart accounts to verify module security via attestations.",
+    "notes": "Includes singleton registry reference implementation. Supports attester thresholds and module type validation."
+  },
+  "7496": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Extension for ERC-721 and ERC-1155 enabling dynamic onchain traits with marketplace sale validation.",
+    "notes": "Supports multiple data types: string, decimal, boolean, epochSeconds. Includes validateOnSale property."
+  }
+}

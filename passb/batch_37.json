@@ -1,0 +1,137 @@
+{
+  "8033": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 8004, 5732, 162],
+    "one_line_summary": "Multi-agent councils resolve queries using commit-reveal-judge flows with bonded incentives.",
+    "notes": "Introduces role separation between Info Agents (submitters) and Judge Agents (aggregators). Dispute mechanism and reputation integration with ERC-8004 are optional. Core flow uses commit-reveal-judge pattern."
+  },
+  "8034": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 712, 5521, 721, 2981],
+    "one_line_summary": "Royalty distribution for Referable NFTs supporting multiple recipients and DAG-based propagation.",
+    "notes": "Standalone from ERC-2981. Includes EIP-712 signature-based configuration. Primary royalty cap of 10% (1000 bps). Reference depth limited to ≤3 to control gas costs."
+  },
+  "8040": {
+    "topic": "rwa",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155, 165],
+    "one_line_summary": "Overlay interface for ESG asset tokenization with lifecycle states and attestation recording.",
+    "notes": "Metadata bound via SHA3-512 digests. Post-quantum ready. Lifecycle: issued → audited → retired (irreversible). Works with ERC-20, ERC-721, ERC-1155."
+  },
+  "8041": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [7572, 8004, 8119],
+    "one_line_summary": "Fixed-supply collections of Agent NFTs registered in ERC-8004 with mint number tracking.",
+    "notes": "Supports multiple collections per agent via ERC-8119 parameterized keys. Collection metadata stored in agent's onchain metadata. Mint numbers 1-indexed and immutable."
+  },
+  "8042": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7201, 2535],
+    "one_line_summary": "Standardizes diamond storage pattern using keccak256 hash of human-readable identifiers for storage locations.",
+    "notes": "ASCII-restricted identifiers recommended. Simpler alternative to ERC-7201 for new projects. Formula: keccak256(identifier). Backward compatible with existing diamond storage deployments."
+  },
+  "8047": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155, 5615],
+    "one_line_summary": "DAG-based token enabling hierarchical traceability with O(1) forensic enforcement for compliance.",
+    "notes": "Inherits from ERC-1155 and ERC-5615. Soft-delete burning preserves lineage. Token Policy Enforcement (TPEn) uses bitmasks for efficient level-based freezing. Constant-time enforcement relative to DAG size."
+  },
+  "8048": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 7930, 8119],
+    "one_line_summary": "Onchain key-value metadata store for ERC-721, ERC-1155, ERC-6909 tokens with optional Diamond Storage.",
+    "notes": "Supports parameterized keys per ERC-8119. Optional metadata contract reference via ERC-7930 interoperable addresses. ERC-721T profile reserves keys for agent metadata."
+  },
+  "8049": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Contract-level onchain metadata with optional Diamond Storage for predictable storage locations.",
+    "notes": "Key-value store (string→bytes). Optional metadata hooks via ERC-8121. Diamond Storage namespace: 'erc8049.contract.metadata.storage'."
+  },
+  "8054": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Checkpoint-based ERC-20 enabling efficient token forking to distribute new tokens to existing holders.",
+    "notes": "Forked tokens inherit balances from checkpoint via lazy loading. Zero-gas distribution to holders without airdrops/claims. Checkpoint nonce prevents reorg/MEV vulnerabilities."
+  },
+  "8056": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "ERC-20 extension with updatable multiplier for UI amounts enabling stock splits without minting.",
+    "notes": "Multiplier uses 18 decimals (1e18=1.0). Optional conversion and balances extensions. Separate UI functions preserve backward compatibility. Planned effective timestamp for delayed updates."
+  },
+  "8063": {
+    "topic": "governance",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "ERC-20 tokens representing group membership with threshold-based access control and tiered privileges.",
+    "notes": "Token balance = membership level. Applications define thresholds. Optional isMember() introspection. Any ERC-20 can be a Group. No minting/burning mandate."
+  },
+  "8065": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155, 6909, 7503],
+    "one_line_summary": "Permissionless zero-knowledge wrapper enabling privacy for existing tokens via burn-and-remint flows.",
+    "notes": "Supports ERC-20, ERC-721, ERC-1155, ERC-6909. Relayer-enabled remint. Commitment schemes flexible (Merkle trees or accumulators). Dual workflows: ZWToken-aware and unaware."
+  },
+  "8074": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712],
+    "one_line_summary": "Convention for self-describing structured data in bytes using 4-byte EIP-712 selectors and canonical wrapper.",
+    "notes": "Single-payload: selector + abi.encode(fields). Multi-payload: DataList(bytes[]) with selector 0xae74f986. Mirrors function selector pattern for compactness."
+  },
+  "8084": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standardized interface for zero-knowledge proof metadata discovery (circuit ID, version, keys, schemas).",
+    "notes": "Supports multiple proof systems (Groth16, Plonk, Halo2, zkSTARK, zkVM). Proof-system ID registry extensible. Event-based updates for indexers. Hash + URI pattern for integrity."
+  },
+  "8085": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 8086],
+    "one_line_summary": "Dual-mode fungible tokens supporting transparent (ERC-20) and privacy (ZK-SNARK) modes with seamless conversion.",
+    "notes": "For new token deployments. toPrivate/toPublic conversions bridge modes. Supply invariant: totalSupply = public + privacy supply. Permissionless deployment."
+  }
+}

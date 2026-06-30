@@ -1,0 +1,137 @@
+{
+  "7598": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [1271, 3009],
+    "one_line_summary": "Extends ERC-3009 transfers with ERC-1271 contract wallet signature validation.",
+    "notes": "Enhancement allowing smart contract wallets to authorize transfers via ERC-1271 signatures alongside ECDSA."
+  },
+  "7603": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1155, 165],
+    "one_line_summary": "ERC-1155 extension enabling context-dependent multi-asset output per token.",
+    "notes": "Allows tokens to expose multiple representations based on context (e.g., different media formats for different consumers)."
+  },
+  "7604": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1155, 165, 712, 1271, 2098, 5216],
+    "one_line_summary": "Permit approval flow for ERC-1155 tokens with EIP-712 signatures.",
+    "notes": "Extends ERC-2612/ERC-4494 permit pattern to ERC-1155 multi-asset context. Requires ERC-5216 for amount-based approvals."
+  },
+  "7613": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721],
+    "one_line_summary": "A stateless proxy contract that delegates calls only from its deployer.",
+    "notes": "Enables deterministic account addresses via CREATE2, alternative to clone/beacon proxies with minimal gas and bytecode."
+  },
+  "7615": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "defi",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [6551],
+    "one_line_summary": "Push-based data feed mechanism for atomic publisher-to-subscriber contract updates.",
+    "notes": "Allows publisher contracts to push data to subscriber contracts with conditional and unconditional subscription modes."
+  },
+  "7617": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [5219, 6944],
+    "one_line_summary": "Chunk support for ERC-5219 Web3 URL resolve mode to fetch large resources.",
+    "notes": "Extends Web3 URL standard with chunked fetching via web3-next-chunk header to work around gas limits."
+  },
+  "7618": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [5219, 6944],
+    "one_line_summary": "Content encoding decompression for Web3 URL resolve mode.",
+    "notes": "Supports gzip and brotli decompression for compressed resources in Web3 URL protocol."
+  },
+  "7621": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 173],
+    "one_line_summary": "Multi-asset basket token with weighted constituents and owner-managed rebalancing.",
+    "notes": "Standardizes manager-rebalanced weighted baskets; basket contract is ERC-20 share token. Distinct from ERC-4626/ERC-7575."
+  },
+  "7627": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "End-to-end encrypted messaging protocol for on-chain user communication.",
+    "notes": "Enables registered public key encryption for private messages; supports multiple algorithms (ECDSA, ED25519, X25519)."
+  },
+  "7628": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension adding queryable, transferable ownership shares per token.",
+    "notes": "Bridges ERC-721 uniqueness with ERC-1155-like share mechanics for dividend/rights distribution."
+  },
+  "7629": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721],
+    "one_line_summary": "Unified interface for ERC-20 and ERC-721 tokens with mode conversion support.",
+    "notes": "Proposes single interface and state transitions between fungible and non-fungible modes; addresses fragmentation."
+  },
+  "7631": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721],
+    "one_line_summary": "Linked ERC-20 and ERC-721 contracts with optional per-account NFT skipping.",
+    "notes": "Enables dual-nature token pairs; ERC-20 base syncs with ERC-721 mirror. Skip NFT feature prevents O(n) gas blowup."
+  },
+  "7632": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Adds string name support and bidirectional token-name mapping for NFTs.",
+    "notes": "Allows tokens to be identified by human-readable names; supports both custom and default keccak256-based mapping."
+  },
+  "7634": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension capping the number of times a token can be transferred.",
+    "notes": "Enforces per-token transfer limits; does not count mint/burn. Enables use cases like wear-out mechanics and value preservation."
+  },
+  "7638": {
+    "topic": "account-abstraction",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "Batch calls encoding for smart contract accounts enabling atomic multi-call execution.",
+    "notes": "Compresses multiple calls (to, value, data) into bytes for gas efficiency and atomic bundler-paid transactions."
+  }
+}

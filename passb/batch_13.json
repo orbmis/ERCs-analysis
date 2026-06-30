@@ -1,0 +1,137 @@
+{
+  "5007": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension adding start and end time properties to NFT tokens.",
+    "notes": "Optional composable extension supports splitting/merging time-based NFTs."
+  },
+  "5008": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension adding nonce to prevent marketplace order replay attacks.",
+    "notes": "Nonce increments on token transfer to invalidate stale orders."
+  },
+  "5018": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4804],
+    "one_line_summary": "Filesystem-like interface for reading and writing binary objects in contracts.",
+    "notes": "Supports chunked I/O for large files; enables Web3 resource discovery via EIP-4804."
+  },
+  "5023": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Non-fungible shareable tokens that can be copied and shared while retaining original.",
+    "notes": "Shareable non-transferable variant enables reputation/contribution tracking via share events."
+  },
+  "5050": {
+    "topic": "nft",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [165, 173, 721, 1155, 1820, 4906],
+    "one_line_summary": "Action messaging protocol for interactive NFTs with optional modular state environments.",
+    "notes": "Enables NFT-to-NFT interaction; state contracts broker execution; validation via action hash."
+  },
+  "5058": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721],
+    "one_line_summary": "ERC-721 extension with locking mechanism to prevent transfer while maintaining custody.",
+    "notes": "NFTs remain in owner wallet while locked; enables NFTFi without escrow risk."
+  },
+  "5094": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [681, 831],
+    "one_line_summary": "URL format for representing Ethereum network configurations for wallet integration.",
+    "notes": "Extension of EIP-831; allows deep linking and QR codes for network addition."
+  },
+  "5095": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 2612],
+    "one_line_summary": "Principal tokens (zero-coupon) redeemable for underlying ERC-20 at maturity.",
+    "notes": "Standardizes yield tokenization and fixed-rate money markets; extends ERC-20."
+  },
+  "5114": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Soulbound badge token bound immutably to another NFT at mint time.",
+    "notes": "Non-transferable; requires content-addressable URIs for metadata; bound to NFT personas."
+  },
+  "5115": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 4626],
+    "one_line_summary": "Standardized Yield token interface for composable wrapped yield-bearing assets.",
+    "notes": "More flexible than ERC-4626; supports multiple input/output tokens and reward handling."
+  },
+  "5131": {
+    "topic": "security-permissions",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 181, 634],
+    "one_line_summary": "ENS-based authentication linking secondary wallets to prove primary wallet control.",
+    "notes": "Uses ENS text records for safer signing via secondary wallets; one-to-many auth relationship."
+  },
+  "5139": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 1577],
+    "one_line_summary": "JSON schema format for lists of RPC providers with chain compatibility information.",
+    "notes": "Supports semantic versioning; publishable via ENS or HTTPS; enables provider switching."
+  },
+  "5143": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 4626],
+    "one_line_summary": "ERC-4626 vault extension adding slippage protection for EOA interactions.",
+    "notes": "Overloaded deposit/mint/withdraw/redeem functions with min/max output bounds."
+  },
+  "5164": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Cross-chain execution interface for dispatching and executing messages across EVM chains.",
+    "notes": "MessageDispatcher (origin) and MessageExecutor (destination); unique messageIds prevent replay."
+  },
+  "5169": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 777, 1155],
+    "one_line_summary": "Add scriptURI to token contracts pointing to associated client-side executable scripts.",
+    "notes": "Supports multiple URIs for redundancy; compatible with existing token standards."
+  }
+}

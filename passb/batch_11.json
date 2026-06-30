@@ -1,0 +1,137 @@
+{
+  "4430": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712],
+    "one_line_summary": "Virtual functions and human-readable descriptions for Ethereum transactions.",
+    "notes": "Solves the UX problem of opaque transaction signing by allowing contracts to generate paired descriptions and bytecode."
+  },
+  "4494": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2612, 712, 721, 165, 2098],
+    "one_line_summary": "ERC-712-signed approvals for ERC-721 NFTs enabling gasless permit flows.",
+    "notes": "Extends ERC-2612 permit pattern to NFTs; nonce increments per NFT transfer."
+  },
+  "4519": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 165],
+    "one_line_summary": "NFTs representing physical assets with mutual authentication and secure communication.",
+    "notes": "Extends ERC-721 with asset address, user assignment, and cryptographic key agreement protocols."
+  },
+  "4521": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 20],
+    "one_line_summary": "Adds ERC-20 compatible transfer() function to ERC-721 NFTs.",
+    "notes": "Simple compatibility bridge; allows NFTs to work with ERC-20-aware contracts and wallets."
+  },
+  "4524": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155, 2612, 1046],
+    "one_line_summary": "Extends ERC-20 with ERC-165 interface detection and safeTransfer callbacks.",
+    "notes": "Brings NFT safety patterns (safeTransfer/safeTransferFrom) and EIP-165 to ERC-20 tokens."
+  },
+  "4527": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "QR code data transmission protocol between offline signers and watch-only wallets.",
+    "notes": "Uses UR encoding and animated QR codes; supports key distribution, transactions, and EIP-712 typed data."
+  },
+  "4546": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "Singleton contract for unified asset deposits across ERC-20, ERC-721, ERC-1155, and Ether.",
+    "notes": "Primary purpose is token management/deposit UX; uses ERC-20/721/1155 as infrastructure."
+  },
+  "4626": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 2612],
+    "one_line_summary": "Standard API for tokenized vaults representing shares of underlying ERC-20 tokens.",
+    "notes": "Core DeFi primitive; defines deposit/withdraw/redeem semantics for yield-bearing tokens."
+  },
+  "4671": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Non-tradable tokens (soulbound badges) for diplomas, credentials, and personal achievements.",
+    "notes": "Explicitly non-transferable; represents inherently personal possessions; includes enumerable, delegate, and consensus extensions."
+  },
+  "4675": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1633, 20, 1155, 721, 165],
+    "one_line_summary": "Fractionalize multiple NFTs into fungible shares within a single contract.",
+    "notes": "Each token ID represents a distinct fractionalized NFT; improves on separate ERC-20 deployment pattern."
+  },
+  "4799": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 165],
+    "one_line_summary": "Designate ownership of NFTs held in escrow while preserving original authenticity.",
+    "notes": "Enables rental, collateral, fractional ownership without losing authenticity; creates directed acyclic graph of NFTs."
+  },
+  "4804": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Translate HTTP-style Web3 URLs to EVM call messages for read-only contract execution.",
+    "notes": "Enables direct Web3 access and on-chain web content rendering; supports ENS resolution and method auto-detection."
+  },
+  "4824": {
+    "topic": "governance",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "API standard for DAOs relating on-chain and off-chain membership and proposals.",
+    "notes": "Defines daoURI and JSON-LD schemas for members, proposals, activity log, and governance; enables DAO discoverability."
+  },
+  "4834": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Generic hierarchical name resolution with arbitrary access control, similar to ENS.",
+    "notes": "All domains (including TLDs and root) are contracts; simpler than ENS with standardized access control."
+  },
+  "4883": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Compose SVG NFTs by concatenating rendered SVG strings from other NFTs.",
+    "notes": "Enables on-chain SVG composability; used by Loogies; concatenation order determines rendering (painters model)."
+  }
+}

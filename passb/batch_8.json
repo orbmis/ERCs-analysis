@@ -1,0 +1,137 @@
+{
+  "2544": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "ENS wildcard resolution for subdomains via parent resolver fallback.",
+    "notes": "Introduces optional ExtendedResolver interface for flexible name resolution."
+  },
+  "2569": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155, 20],
+    "one_line_summary": "Save and retrieve SVG images on-chain for tokens.",
+    "notes": "Solves image storage by leveraging compact SVG format; supports ERC-20/721/1155."
+  },
+  "2612": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 712],
+    "one_line_summary": "ERC-20 permit extension allowing approvals via EIP-712 signatures.",
+    "notes": "Enables signature-based allowance without separate approve transaction."
+  },
+  "2615": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension for rental and mortgage functions via lien/user roles.",
+    "notes": "Separates ownership/user/lien-holder roles for property-like NFTs."
+  },
+  "2645": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Hierarchical deterministic wallet derivation path for Layer-2 ZK solutions.",
+    "notes": "Specifies BIP43-compatible derivation path with grinding algorithm for L2 keys."
+  },
+  "2678": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1319],
+    "one_line_summary": "EthPM v3 package manifest format for smart contract distribution.",
+    "notes": "Defines JSON schema for contract packages including sources, compilers, deployments."
+  },
+  "2680": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard layout for Ethereum 2 wallet and keystore storage.",
+    "notes": "Defines directory structure for both hierarchical and non-hierarchical stores."
+  },
+  "2746": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [2535],
+    "one_line_summary": "Rules engine interface for hierarchical rule evaluation on data domains.",
+    "notes": "Enables no-code users to create RuleTrees via predefined actions."
+  },
+  "2767": {
+    "topic": "governance",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 173],
+    "one_line_summary": "Contract ownership governance standard using ERC-20 token voting power.",
+    "notes": "Minimal interface for ERC-20 based governance replacing ERC-173 ownership."
+  },
+  "2770": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 2771],
+    "one_line_summary": "Meta-transaction forwarder contract for ERC-712 signature verification.",
+    "notes": "Status: Withdrawn - singleton implementation deemed not requiring standardization."
+  },
+  "2771": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Protocol for recipients to accept meta-transactions via trusted forwarders.",
+    "notes": "Defines isTrustedForwarder discovery and _msgSender extraction from calldata."
+  },
+  "2848": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "My Own Messages (MOM) - decentralized message board using self-send transactions.",
+    "notes": "Notarizes message multihashes via transaction data; supports ADD/UPDATE/REPLY/ENDORSE operations."
+  },
+  "2876": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Deposit contract interface and address format encoding with 8-byte ID.",
+    "notes": "Enables deposits to single contract with differentiation via encoded nonce/checksum."
+  },
+  "2917": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Staking reward calculation standard based on productivity and time.",
+    "notes": "Standardizes on-chain interest accrual without off-chain computation."
+  },
+  "2942": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2678],
+    "one_line_summary": "EthPM URI scheme for identifying registries, packages, and contract assets.",
+    "notes": "Single-string representation for EthPM assets across chains and registries."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "4885": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155],
+    "one_line_summary": "Subscription tokens giving holders time-limited access to NFTs/semi-fungibles.",
+    "notes": "Bridges subscription mechanics with NFT ownership; subscription balance decreases linearly over time."
+  },
+  "4886": {
+    "topic": "security-permissions",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Register for proxy ownership linking cold wallets to active proxy addresses.",
+    "notes": "Enables proving asset ownership via proxy without direct interaction from cold wallet."
+  },
+  "4906": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Standard MetadataUpdate and BatchMetadataUpdate events for 721/1155 tokens.",
+    "notes": "Lightweight extension enabling third-party platforms to timely update NFT metadata."
+  },
+  "4907": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Dual owner/user roles for 721 NFTs with time-limited rental periods.",
+    "notes": "Enables NFT rentals with automatic expiry; user cannot transfer."
+  },
+  "4910": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721],
+    "one_line_summary": "Hierarchical royalty distribution system for 721 NFTs via Royalty Accounts.",
+    "notes": "Supports multi-level royalty trees; handles complex inheritance and payout logic."
+  },
+  "4931": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Standard interface for upgrading ERC-20 tokens with configurable ratios.",
+    "notes": "Supports both upgrade and optional downgrade; reusable across different token pairs."
+  },
+  "4944": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Single NFT per contract, uniquely identifying token by contract address.",
+    "notes": "Restricts 721 to exactly one token; enables contract as autonomous agent with budget."
+  },
+  "4950": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "Two entangled NFTs per contract for authenticity, royalties, and shared wallet.",
+    "notes": "Enables artist to prove creation; only one transfer possible per pair."
+  },
+  "4955": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155],
+    "one_line_summary": "Vendor-specific metadata namespaces extension for 721/1155 NFTs.",
+    "notes": "Allows project-specific data (e.g. 3D models) in standard JSON metadata without breaking compatibility."
+  },
+  "4972": {
+    "topic": "reputation-identity",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Smart contract account linked to ENS name node, owned by name owner.",
+    "notes": "Enables one-to-one mapping from human-readable name to programmable account."
+  },
+  "4973": {
+    "topic": "nft",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 712, 721, 1271],
+    "one_line_summary": "Non-transferrable account-bound tokens (soulbound) with EIP-712 signature verification.",
+    "notes": "Tokens bind to single account; no transfer interface; can unequip voluntarily."
+  },
+  "4974": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 20, 721],
+    "one_line_summary": "Standardized interface for assigning and managing int8 numerical ratings.",
+    "notes": "Operator-controlled ratings; supports voting weight, experience points, loyalty tracking."
+  },
+  "4987": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155],
+    "one_line_summary": "Interface to query ownership and balance of tokens held by contracts.",
+    "notes": "Separates functional owner from technical owner; enables governance/membership verification despite token deposits."
+  },
+  "5005": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Composable interfaces for modular accounts: Avatars, Modules, Modifiers, Guards.",
+    "notes": "Decouples authentication from execution; enables flexible multi-control and progressive decentralization."
+  },
+  "5006": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155],
+    "one_line_summary": "User role extension for ERC-1155 enabling time-bound rental/usage rights.",
+    "notes": "Parallel to 4907 for semi-fungibles; user cannot transfer."
+  }
+}

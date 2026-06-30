@@ -1,0 +1,137 @@
+{
+  "7641": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension with integrated revenue-sharing and burning mechanism for token holders.",
+    "notes": "Combines ERC-20 with snapshot-based revenue distribution and optional ERC-20 alt token support; burning mechanism provides intrinsic floor value."
+  },
+  "7644": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Extends ERC-721 with time-limited unique name registry mechanism per token.",
+    "notes": "Adds naming system to NFTs with expiry dates ensuring uniqueness and preventing monopolization; compatible with ERC-721."
+  },
+  "7649": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Embeds bonding curve-based liquidity into NFTs via tradable shares without modifying ERC-721.",
+    "notes": "Introduces TradeableShares tied to NFTs with customizable bonding curves and guaranteed creator fees; separate from NFT contract."
+  },
+  "7651": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721],
+    "one_line_summary": "Standard for fractionally represented NFTs coexisting with fungible shares in unified contract.",
+    "notes": "Hybrid standard combining fractional and whole token semantics; distinct events to avoid ERC-20/ERC-721 conflicts; includes optional metadata and banking interfaces."
+  },
+  "7652": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension enabling guarantor role to guarantee NFT buyback at set prices.",
+    "notes": "Introduces guarantee mechanism where DAOs/guarantors offer price guarantees for NFT liquidity; supports multi-guarantor scenarios and sequence establishment."
+  },
+  "7654": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standardizes request-response communication (GET, POST, PUT, OPTIONS) for contracts.",
+    "notes": "Defines contract interaction protocol with self-describing parameter types; enables consistent client-contract communication across different implementations."
+  },
+  "7656": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155, 1167, 4337],
+    "one_line_summary": "Factory for deploying generic services linked to contracts (accounts, NFTs) with deterministic addressing.",
+    "notes": "Extends token-bound accounts concept to any contract type; supports multiple linking modes via bytes12 parameter; uses ERC-1167 minimal proxy pattern."
+  },
+  "7662": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Standard for AI Agent NFTs with encrypted prompts accessible only to token holder.",
+    "notes": "Extends ERC-721 with custom struct for AI agent metadata; recommends encrypted prompt storage with holder-specific decryption; supports dynamic variable injection in prompts."
+  },
+  "7673": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 55],
+    "one_line_summary": "Base256emoji encoding for addresses to improve human-readability and reduce spoofing attacks.",
+    "notes": "Replaces hexadecimal with 256-emoji mapping for addresses; squaring difficulty of spoofing addresses; addresses encoded as 20 emoji instead of 40 hex chars."
+  },
+  "7674": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 1153],
+    "one_line_summary": "ERC-20 extension enabling single-transaction temporary approvals via transient storage.",
+    "notes": "Uses ERC-1153 TSTORE for ephemeral allowances; temporary approval consumed before persistent allowance; enables one-time approvals without leaving standing permissions."
+  },
+  "7677": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 5792],
+    "one_line_summary": "Capability for ERC-4337 wallets to communicate with paymaster web services.",
+    "notes": "Defines JSON-RPC paymaster API (pm_getPaymasterStubData, pm_getPaymasterData) and wallet capability; enables app-specified paymaster via wallet_sendCalls."
+  },
+  "7679": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "Standard interface for smart accounts to expose nonce, calldata, signature encoding logic.",
+    "notes": "Allows vendor-agnostic UserOp construction without account-specific SDKs; IUserOperationBuilder provides getNonce, getCallData, formatSignature functions."
+  },
+  "7681": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 1155],
+    "one_line_summary": "Dual-nature token combining ERC-20 fungible and ERC-1155 semi-fungible in single contract.",
+    "notes": "Unified token sync between standards; optional skip mechanism for smart contracts to avoid ERC-1155 minting overhead; implements both interfaces with distinct events."
+  },
+  "7682": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [5792],
+    "one_line_summary": "EIP-5792 capability indicating wallet access to auxiliary funds beyond on-chain balance.",
+    "notes": "Enables advanced wallets to signal access to off-chain funds or multi-account assets; supports optional requiredAssets metadata for cross-chain/bridge flows."
+  },
+  "7683": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7930],
+    "one_line_summary": "Solver-facing interface for programmable intent protocols with resolver-based order decoding.",
+    "notes": "Standardizes how protocols describe orders to solvers via IResolver; defines steps, variables, payments, assumptions; supports cross-chain via ERC-7930 interoperable addresses."
+  }
+}

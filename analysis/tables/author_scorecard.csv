@@ -1,0 +1,95 @@
+author,n,final,final_rate,stagnant_rate,median_ttf,top_topic
+Zainan Victor Zhou (@xinbenlv),16,4,0.25,0.125,50,nft
+Gavin John (@Pandapip1),13,7,0.538,0.0,358,tokens-fungible
+Francisco Giordano (@frangio),13,7,0.538,0.077,508,infrastructure-meta
+Hadrien Croubois (@Amxx),13,7,0.538,0.077,508,infrastructure-meta
+Jan Turk (@ThunderDeliverer),10,7,0.7,0.1,150,nft
+Ernesto García (@ernestognw),10,4,0.4,0.0,389,infrastructure-meta
+Nick Johnson (@arachnid),10,3,0.3,0.5,1198,infrastructure-meta
+Vitalik Buterin (@vbuterin),10,3,0.3,0.0,654,infrastructure-meta
+Prem Makeig (@nxt3d),10,0,0.0,0.0,,infrastructure-meta
+Steven Pineda (@steven2308),9,7,0.778,0.0,150,nft
+Dror Tirosh (@drortirosh),9,2,0.222,0.0,1320,account-abstraction
+Yoav Weiss (@yoavw),9,2,0.222,0.0,1320,account-abstraction
+Qi Zhou (@qizhou),9,1,0.111,0.111,380,infrastructure-meta
+Alex Forshtat (@forshtat),8,2,0.25,0.0,1320,account-abstraction
+Bruno Škvorc (@Swader),7,7,1.0,0.0,150,nft
+Stevan Bogosavljevic (@stevyhacker),7,7,1.0,0.0,150,nft
+Nick Mudge (@mudgen),7,3,0.429,0.143,970,infrastructure-meta
+Anders (@0xanders),6,5,0.833,0.0,168,nft
+Shahaf Nacson (@shahafn),6,1,0.167,0.0,1707,account-abstraction
+Daniel Lehrner <daniel@io.builders>,6,0,0.0,1.0,,tokens-fungible
+Lukas Rosario (@lukasrosario),6,0,0.0,0.0,,account-abstraction
+Joey Santoro (@joeysantoro),5,5,1.0,0.0,182,defi
+Lance (@LanceSnow),5,4,0.8,0.0,262,nft
+Shrug <shrug@emojidao.org>,5,4,0.8,0.0,262,nft
+Francesco Sullo (@sullof),5,3,0.6,0.0,224,nft
+Nick Johnson <nick@ethereum.org>,5,2,0.4,0.6,603,infrastructure-meta
+Jeroen Offerijns (@hieronx),5,2,0.4,0.0,217,defi
+0age (@0age),5,0,0.0,0.4,,reputation-identity
+Julio Faura <julio@adhara.io>,5,0,0.0,1.0,,tokens-fungible
+Fernando Paris <fer@io.builders>,5,0,0.0,1.0,,tokens-fungible
+Nicolas Deschildre (@nand2),5,0,0.0,0.0,,infrastructure-meta
+Jake Moxey (@jxom),5,0,0.0,0.0,,account-abstraction
+Jordi Baylina <jordi@baylina.cat>,4,4,1.0,0.0,228,infrastructure-meta
+Cicada (@CicadaNCR),4,4,1.0,0.0,150,nft
+Alex Van de Sande <avsa@ethereum.org>,4,2,0.5,0.5,669,account-abstraction
+Piper Merriam (@pipermerriam),4,2,0.5,0.25,379,infrastructure-meta
+Alberto Cuesta Cañada (@alcueca),4,2,0.5,0.25,93,defi
+Richard Moore (@ricmoo),4,1,0.25,0.75,1120,infrastructure-meta
+Nick Gheorghita (@njgheorghita),4,1,0.25,0.5,324,infrastructure-meta
+Pedro Gomes (@pedrouid),4,1,0.25,0.0,2008,infrastructure-meta
+Sam Wilson (@SamWilsn),4,1,0.25,0.25,380,infrastructure-meta
+vectorized (@vectorized),4,1,0.25,0.0,511,nft
+Weiwu Zhang <a@colourful.land>,4,0,0.0,0.75,,reputation-identity
+James Sangalli <j.l.sangalli@gmail.com>,4,0,0.0,0.75,,reputation-identity
+Ricardo Guilherme Schmidt (@3esmit),4,0,0.0,1.0,,infrastructure-meta
+Loredana Cirstea (@loredanacirstea),4,0,0.0,1.0,,infrastructure-meta
+Christian Tzurcanu (@ctzurcanu),4,0,0.0,1.0,,infrastructure-meta
+David Kim (@PowerStream3604),4,0,0.0,0.0,,account-abstraction
+Xiang (@wenzhenxiang),4,0,0.0,0.0,,account-abstraction
+Ben77 (@ben2077),4,0,0.0,0.0,,account-abstraction
+Mingshi S. (@newnewsms),4,0,0.0,0.0,,account-abstraction
+Konrad Kopp (@kopy-kat),4,0,0.0,0.0,,account-abstraction
+Ryan Ghods (@ryanio),4,0,0.0,0.0,,nft
+Fil Makarov (@filmakarov),4,0,0.0,0.0,,account-abstraction
+William Morriss (@wjmelements),4,0,0.0,0.0,,infrastructure-meta
+Derek Rein (@arein),4,0,0.0,0.0,,account-abstraction
+Conner Swenberg (@ilikesymmetry),4,0,0.0,0.0,,infrastructure-meta
+Nick Johnson <arachnid@notdot.net>,3,3,1.0,0.0,716,reputation-identity
+Saber Yu (@OniReimu),3,3,1.0,0.0,672,nft
+Shiping Chen <shiping.chen@data61.csiro.au>,3,3,1.0,0.0,672,nft
+William Entriken (@fulldecent),3,2,0.667,0.0,87,nft
+Samuel Gwlanold Edoumou (@Edoumou),3,2,0.667,0.0,393,defi
+Tim Daubenschütz (@TimDaub),3,2,0.667,0.0,231,nft
+Matt Solomon (@mds1),3,2,0.667,0.333,586,security-permissions
+Kartin <kartin@hyperoracle.io>,3,2,0.667,0.0,282,nft
+Mihai Onila (@MihaiORO),3,2,0.667,0.0,194,nft
+Nick Zeman (@NickZCZ),3,2,0.667,0.0,194,nft
+Narcis Cotaie (@NarcisCRO),3,2,0.667,0.0,194,nft
+Vikram Arun (@vikramarun),3,2,0.667,0.0,217,defi
+ligi (@ligi),3,1,0.333,0.667,2008,infrastructure-meta
+Witek Radomski <witek@enjin.io>,3,1,0.333,0.667,364,nft
+Kristof Gazso (@kristofgazso),3,1,0.333,0.0,1707,account-abstraction
+Andreas Freund (@Therecanbeonlyone1969),3,1,0.333,0.0,485,infrastructure-meta
+cygaar (@cygaar),3,1,0.333,0.333,511,nft
+Vectorized (@Vectorized),3,1,0.333,0.0,888,tokens-fungible
+Chen Liaoyuan (@chenly) <cly@kip.pro>,3,1,0.333,0.0,667,infrastructure-meta
+Brooklyn Zelenka (@expede),3,0,0.0,1.0,,infrastructure-meta
+Carl Beekhuizen (@CarlBeek) <carl@ethereum.org>,3,0,0.0,0.0,,infrastructure-meta
+Auryn Macmillan (@auryn-macmillan),3,0,0.0,0.667,,other
+Richard Meissner (@rmeissner),3,0,0.0,0.0,,infrastructure-meta
+Zihao Chen (@zihaoccc),3,0,0.0,0.0,,reputation-identity
+Wilkins Chung (@wwhchung) <wilkins@manifold.xyz>,3,0,0.0,0.333,,security-permissions
+Christian Fries (@cfries),3,0,0.0,0.0,,defi
+Peter Kohl-Landgraf (@pekola),3,0,0.0,0.0,,defi
+George (@JXRow),3,0,0.0,0.0,,security-permissions
+zeroknots (@zeroknots),3,0,0.0,0.0,,account-abstraction
+Rickey (@HelloRickey),3,0,0.0,0.0,,infrastructure-meta
+Wilson Cusack (@wilsoncusack),3,0,0.0,0.0,,account-abstraction
+Derek Chiang (@derekchiang),3,0,0.0,0.0,,account-abstraction
+Radek Svarz (@radeksvarz),3,0,0.0,0.0,,infrastructure-meta
+Marco Stronati (@paracetamolo),3,0,0.0,0.0,,infrastructure-meta
+Jeff Lau (@jefflau),3,0,0.0,0.0,,infrastructure-meta
+Orca (@0xrcinus),3,0,0.0,0.0,,infrastructure-meta
+Skeletor Spaceman (@skeletor-spaceman),3,0,0.0,0.0,,infrastructure-meta

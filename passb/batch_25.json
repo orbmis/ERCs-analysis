@@ -1,0 +1,137 @@
+{
+  "7498": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 712, 721, 1155, 1271, 7496],
+    "one_line_summary": "NFT redeemable campaigns with onchain/offchain redemptions and dynamic traits.",
+    "notes": "Extends ERC-721/1155 for redeemable entitlements. Integrates ERC-7496 dynamic traits. Uses EIP-712 signatures for optional redemption approval."
+  },
+  "7506": {
+    "topic": "reputation-identity",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 155],
+    "one_line_summary": "On-chain metadata registry for managing ecosystem claims with delegation and EIP-712 signatures.",
+    "notes": "Standardizes hint management for trustworthiness verification. Supports delegated access, EIP-712 meta-transactions. Optional ENS integration for discovery."
+  },
+  "7507": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 4907],
+    "one_line_summary": "Multi-user NFT extension allowing multiple concurrent subscriptions with per-user expiration times.",
+    "notes": "Complements ERC-4907 (single rental) with support for concurrent users. Useful for IP licensing scenarios with time-limited subscriptions."
+  },
+  "7508": {
+    "topic": "nft",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Public on-chain NFT attributes repository with access control and presigned updates.",
+    "notes": "Common-good repository for ERC-721/1155 attributes. Supports multiple attribute types, presigned modifications. Designed for cross-collection interactivity and perpetual on-chain storage."
+  },
+  "7509": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Minimal Entity Component System for smart contracts enabling decoupled data and behavior.",
+    "notes": "Standardizes ECS pattern for smart contracts. World contracts manage entities, components, systems. Facilitates modular architecture and cross-contract applications."
+  },
+  "7510": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 6150],
+    "one_line_summary": "Cross-contract hierarchical NFT relationships enabling multi-parent derivative tokens.",
+    "notes": "Extends ERC-721 with cross-contract parent tracking. Unlike ERC-6150 (same-contract), enables derivative NFTs in new collections from multiple parents."
+  },
+  "7511": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7, 211, 1167, 3855],
+    "one_line_summary": "Minimal proxy contract optimized with PUSH0 opcode reducing deployment and runtime gas.",
+    "notes": "Improves ERC-1167 with PUSH0; 200 gas deployment savings, 5 gas runtime per call. Requires Shanghai+ EVM. Same functionality as prior minimal proxy."
+  },
+  "7512": {
+    "topic": "security-permissions",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 20, 721, 4337, 6900, 1155],
+    "one_line_summary": "On-chain audit report representation with EIP-712 signatures and ERC compliance verification.",
+    "notes": "Standardizes audit metadata for on-chain verification. Tracks auditor, contract instance, ERC compliance. Supports SECP256K1, BLS, ERC1271, SECP256R1 signatures."
+  },
+  "7513": {
+    "topic": "nft",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155, 721],
+    "one_line_summary": "NFTs with embedded executable smart contract logic via intent-centric modules.",
+    "notes": "Fuses NFT with smart contract execution. Smart-Manager tracks verification status. Intent-Proxy enables batch NFT usage. Based on ERC-1155 for reusability."
+  },
+  "7517": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 7053, 1155],
+    "one_line_summary": "AI/ML data mining preference metadata for digital assets respecting creator rights.",
+    "notes": "Extends ERC-721/7053 with dataMiningPreference field. Supports granular consent for data mining, AI training, inference. Aligns with C2PA standards."
+  },
+  "7518": {
+    "topic": "rwa",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155, 3643, 3525, 6909],
+    "one_line_summary": "Security token framework with partitions, dynamic compliance, and voucher-based transfer controls.",
+    "notes": "Extends ERC-1155 with partitions for granular compliance management. Includes token locking, forced transfers, address freezing, payouts. Supports interoperability via wrapping."
+  },
+  "7521": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "Generalized intent framework for smart wallets enabling future-proof flexible intent standards.",
+    "notes": "Entry-point contract for intent execution. Decouples verification from intent handling. MEV searchers (solvers) build IntentSolutions. Supports embedded standard optimizations."
+  },
+  "7522": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "ERC-4337 compatible OIDC ZK verifier enabling social login for smart accounts.",
+    "notes": "Links OIDC identity to ERC-4337 accounts via ZK proofs. Avoids MPC centralization. Supports aggregated proofs for multiple operations."
+  },
+  "7524": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "PLUME deterministic signature scheme producing verifiable nullifiers for anonymous uniqueness.",
+    "notes": "Verifiably deterministic ECDSA-based signatures enabling nullifiers without exporting private keys. Supports ZK voting, sybil resistance, pseudonymous airdrop uniqueness."
+  },
+  "7527": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 20, 5679],
+    "one_line_summary": "Wrap/unwrap ERC-20 or ETH to/from ERC-721 with embedded Function Oracle AMM pricing.",
+    "notes": "Agency/App architecture with FOAMM pricing. Supports custom wrap/unwrap fees. Enables liquidity via internal mint/burn rather than external LPs."
+  }
+}

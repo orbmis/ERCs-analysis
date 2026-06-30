@@ -1,0 +1,137 @@
+{
+  "681": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 67, 137],
+    "one_line_summary": "URL format for payment requests and transactions using ethereum: scheme.",
+    "notes": "Supersedes ERC-67. Uses scientific notation for amounts similar to Bitcoin payment URLs."
+  },
+  "721": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 20, 223, 677, 827],
+    "one_line_summary": "Standard interface for non-fungible tokens with transfer and ownership tracking.",
+    "notes": "Core NFT standard. Optional metadata extension and enumeration extension. Inspired by ERC-20."
+  },
+  "725": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [165, 173],
+    "one_line_summary": "Generic data key/value store and execution interface for smart contract accounts.",
+    "notes": "Two sub-standards: ERC725X (execution) and ERC725Y (data storage). Building blocks for smart contract accounts and upgradable metadata."
+  },
+  "777": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1820, 20, 165, 820, 1820, 223, 672],
+    "one_line_summary": "Token standard with send/receive hooks, operators, and ERC-20 backward compatibility.",
+    "notes": "Uses ERC-1820 registry for hooks. Operators allow delegated sending. Backward compatible with ERC-20."
+  },
+  "801": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "canary contracts",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard interface for canary contracts to signal state (alive/dead).",
+    "notes": "Stagnant status. Used for warrant canaries and status signaling. Minimal specification."
+  },
+  "820": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 214, 672, 1820],
+    "one_line_summary": "Pseudo-introspection registry for interface implementation discovery.",
+    "notes": "Superseded by ERC-1820. Allows any address to register interfaces. Compatible with ERC-165."
+  },
+  "823": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Token exchange standard enabling cross-token swaps and payments.",
+    "notes": "Extends ERC-20 with exchange services. Preserves exchanged tokens in contract rather than destroying them."
+  },
+  "831": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [67, 681],
+    "one_line_summary": "URI format container for Ethereum use-cases with optional prefixes.",
+    "notes": "Generalizes ERC-67 and ERC-681. Uses 'eth:' or 'ethereum:' scheme with extensible prefix system."
+  },
+  "838": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "ABI specification for typed errors in REVERT reason strings.",
+    "notes": "Draft status. Extends ABI to include error declarations with parameters. Enables error parsing by clients."
+  },
+  "875": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Simplified NFT standard with batch transfers and atomic p2p swaps.",
+    "notes": "Withdrawn status. Allows transferring multiple tokens in one transaction. Includes p2p atomic swap functionality."
+  },
+  "884": {
+    "topic": "rwa",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 compatible token for Delaware corporate shares with KYC/AML support.",
+    "notes": "Complies with Delaware General Corporations Law. Requires identity verification. Tracks shareholders and transfer history."
+  },
+  "897": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard interface for proxy contracts to signal implementation address.",
+    "notes": "Stagnant status. Distinguishes forwarding vs upgradeable proxies. Enables source code verification on explorers."
+  },
+  "900": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Simple staking interface for token staking systems.",
+    "notes": "Optional history functions for historical stake tracking. Common interface for staking protocols."
+  },
+  "902": {
+    "topic": "security-permissions",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1066],
+    "one_line_summary": "Token validation protocol for authorization and compliance checks.",
+    "notes": "Uses ERC-1066 status codes. Enables KYC/AML and transfer restrictions without per-token whitelists."
+  },
+  "918": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 777],
+    "one_line_summary": "Mineable token standard using Proof of Work for distribution.",
+    "notes": "Includes delegated minting and merged mining extensions. Alternative to ICO distribution model."
+  }
+}

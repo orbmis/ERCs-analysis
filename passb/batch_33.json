@@ -1,0 +1,137 @@
+{
+  "7818": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension adding expiration mechanism for time-limited tokens.",
+    "notes": "FIFO transfer order recommended. Uses epochs (block-based or time-based) for lazy expiration tracking. Consider L2 timestamp security concerns."
+  },
+  "7820": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Centralized registry for role-based access control across multiple contracts.",
+    "notes": "Enables bulk role grants/revocations. Reduces redundancy vs. bespoke implementations. Admin-only state modifications."
+  },
+  "7821": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7579, 7702, 5792],
+    "one_line_summary": "Minimal batch executor interface for EIP-7702 delegations and atomic call batching.",
+    "notes": "Supports single batch and batch-of-batches modes with optional opData. Designed for maximal simplicity and interoperability."
+  },
+  "7827": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Smart contract interface for managing JSON objects with per-key version history.",
+    "notes": "REST-like interface targeting web2 developers. Gas-heavy on-chain JSON encoding. Recommend client-side efficiency."
+  },
+  "7828": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 7930],
+    "one_line_summary": "Human-readable chain-specific addresses combining ENS with CAIP-350 identifiers.",
+    "notes": "Maps chain labels via on.eth ENS namespace. Supports non-EVM chains. Optional checksums for integrity."
+  },
+  "7829": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension for data asset NFTs with storage proof and multi-reader support.",
+    "notes": "Uses modular data availability layer. Optimistic proof approach for gas efficiency. Supports KZG commitments."
+  },
+  "7831": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 137, 155, 165, 2304],
+    "one_line_summary": "Multi-chain addressing via chain-specific format resolved using ENS on any root chain.",
+    "notes": "Modified ERC-55 checksum wrapping. Separate bridge contracts per chain. Supports arbitrary address lengths."
+  },
+  "7832": {
+    "topic": "nft",
+    "topic_secondary": "governance",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension enabling economically sustainable collaborative collections with dynamic fees.",
+    "notes": "Progressive discount cycles via logarithmic fee reduction. Donation-based engagement model. 720-hour update interval."
+  },
+  "7836": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1193, 5792],
+    "one_line_summary": "JSON-RPC methods for application-signed call preparation before wallet execution.",
+    "notes": "Complements EIP-5792 wallet_sendCalls. Supports session keys and scoped permissions. Multiple key types (secp256k1, p256, WebAuthn)."
+  },
+  "7837": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Fungible tokens that mint new tokens on transfer with per-token native currency fee.",
+    "notes": "Interface-compatible with ERC-20 but behaviorally distinct. Sender balance never reduced. Max supply cap."
+  },
+  "7841": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7683],
+    "one_line_summary": "Standardized mailbox API and message format for cross-chain communication across L2s.",
+    "notes": "Supports both synchronous and asynchronous messaging. VM-agnostic with bytes32 addresses. Modular settlement logic."
+  },
+  "7845": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 1155],
+    "one_line_summary": "Universal data model for orchestrator request/response using JSON-RPC with chain abstraction.",
+    "notes": "Prefers chain abstraction by default. Flexible action types (transfer, swap, call). Non-technical terminology for broader adoption."
+  },
+  "7846": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [5792, 4361, 191],
+    "one_line_summary": "JSON-RPC method for wallet connection with modular capability support including SIWE.",
+    "notes": "Complements EIP-5792. Enables combined connection and authentication in single step. Multiple account support."
+  },
+  "7847": {
+    "topic": "nft",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155],
+    "one_line_summary": "Standardized NFT format for decentralized social media posts adapting Nostr protocol.",
+    "notes": "Uses Schnorr signatures on secp256k1. Supports kind-based event types (0: metadata, 1: content, 6: repost). Compatible with ERC-721/1155."
+  },
+  "7856": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 681, 831],
+    "one_line_summary": "URI scheme for chain-specific payment requests using CAIP-10 identifiers.",
+    "notes": "Format: cspr://recipient/amount/token-address. Supports native currency and ERC-20. Optional callback URLs."
+  }
+}

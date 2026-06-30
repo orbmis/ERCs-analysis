@@ -1,0 +1,137 @@
+{
+  "2266": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Atomic swap-based American call options using HTLCs for token exchange.",
+    "notes": "Tokenized financial derivative with HTLC mechanics; domain-specific use case for DeFi."
+  },
+  "2304": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137],
+    "one_line_summary": "Multi-chain address resolution for ENS supporting arbitrary blockchains.",
+    "notes": "Extends ENS naming with cross-chain address support; identity/naming infrastructure."
+  },
+  "2309": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension for batch transfer/mint events via consecutive token ranges.",
+    "notes": "Scalability extension for NFTs; enables minting/transferring millions of tokens efficiently."
+  },
+  "2333": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "BLS12-381 key derivation from entropy seed using hierarchical tree structure.",
+    "notes": "Cryptographic key management standard; includes post-quantum backup via Lamport signatures."
+  },
+  "2334": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2333],
+    "one_line_summary": "BLS12-381 account hierarchy path specification (m/purpose/coin/account/use).",
+    "notes": "Companion to ERC-2333; defines key path derivation for hierarchical organization."
+  },
+  "2335": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2333, 2334],
+    "one_line_summary": "BLS12-381 keystore JSON format with encryption, verification, and decryption modules.",
+    "notes": "Secure key storage standard; third part of BLS12-381 key management suite."
+  },
+  "2386": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [2334, 2335],
+    "one_line_summary": "Hierarchical deterministic walletstore JSON format for Ethereum 2 key management.",
+    "notes": "Wallet-level storage extending ERC-2334/2335 keystores with HD wallet metadata."
+  },
+  "2390": {
+    "topic": "reputation-identity",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 165, 1062, 1185],
+    "one_line_summary": "Geographic split-horizon DNS for ENS using geohash-based location-aware resolution.",
+    "notes": "Extends ENS with geo-proximal awareness via sparse quadtree; enables geographic routing."
+  },
+  "2400": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 681],
+    "one_line_summary": "URI format for submitted transactions with metadata for decoding and validation.",
+    "notes": "Transaction receipt interchange format; includes method signature and events for UX."
+  },
+  "2470": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1014],
+    "one_line_summary": "Singleton factory enabling deterministic contract deployment via CREATE2 across chains.",
+    "notes": "Keyless deployment using Nick's method; ensures same address on any EVM chain."
+  },
+  "2477": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Token metadata integrity verification via cryptographic hashes (ERC-721/1155).",
+    "notes": "Web3 counterpart to W3C SRI; enables immutability verification of off-chain metadata."
+  },
+  "2494": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Baby Jubjub twisted Edwards elliptic curve for cryptography within zk-SNARK circuits.",
+    "notes": "Cryptographic primitive for ZKPs; enables EdDSA and Pedersen hashing in circuits."
+  },
+  "2520": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1577],
+    "one_line_summary": "Multiple contenthash records per ENS name supporting different distributed hosting systems.",
+    "notes": "Extends ERC-1577 to enable multi-protocol hosting (IPFS, Swarm, Onion, ZeroNet)."
+  },
+  "2525": {
+    "topic": "reputation-identity",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [137, 634, 1193, 2304],
+    "one_line_summary": "ENS-based login system using metadata-stored wallet provider instantiation code.",
+    "notes": "Decentralized wallet discovery via ENS; enables seamless multi-wallet DApp support."
+  },
+  "2535": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Diamonds: modular proxy pattern for unlimited contract functionality via facets.",
+    "notes": "Solves 24KB contract size limit; enables atomic multi-function upgrades via delegatecall."
+  }
+}

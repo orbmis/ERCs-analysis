@@ -1,0 +1,137 @@
+{
+  "7694": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [3668, 7700],
+    "one_line_summary": "Cross-chain storage router protocol extension for Solana blockchain storage operations.",
+    "notes": "Extends EIP-7700 with Solana-specific storage routing; includes EVM-SVM type casting guidance."
+  },
+  "7695": {
+    "topic": "nft",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Ownership delegation and context management for ERC-721 tokens without transfer.",
+    "notes": "Enables delegation of temporary ownership and contextual use while preserving primary owner rights; supports rental, mortgage, BNPL use cases."
+  },
+  "7699": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "ERC-20 extension adding transfer reference fields for payment reconciliation.",
+    "notes": "Enables association of transactions with orders/invoices via optional reference parameter; compatible with existing ERC-20."
+  },
+  "7700": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 3668],
+    "one_line_summary": "Cross-chain storage router protocol for L1/L2/database storage operations via revert events.",
+    "notes": "CCIP-Store specification; defines StorageRoutedToL1/L2/Database routers with deterministic key generation for database storage."
+  },
+  "7710": {
+    "topic": "security-permissions",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1271, 7579, 4337],
+    "one_line_summary": "Standard delegation interface for smart contracts to grant capabilities to other contracts or EOAs.",
+    "notes": "Enables long-lived sessions and bounded permissions via single signature; compatible with ERC-4337 and modular smart accounts."
+  },
+  "7715": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 7710],
+    "one_line_summary": "wallet_requestExecutionPermissions RPC method for DApps to request scoped transaction permissions.",
+    "notes": "Enables permissions without repeated signatures and off-chain transaction execution; integrates with ERC-7710 delegation."
+  },
+  "7720": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension for time-locked token transfers with deferred withdrawal capability.",
+    "notes": "Enables vesting, escrow, and timed reward scenarios with unique deposit IDs tracking unlock times."
+  },
+  "7721": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155],
+    "one_line_summary": "Lockable extension for ERC-1155 enabling transfer restrictions while preserving utility.",
+    "notes": "Supports NFT collateral lending, rental, BNPL without escrow transfer; lock/unlock mechanisms with locker designation."
+  },
+  "7722": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Privacy-preserving opaque token using hashed baskets to conceal on-chain balance information.",
+    "notes": "Uses keccak256(salt, tokenId, value) baskets with oracle-verified reorganization; off-chain storage model for DeFi compliance."
+  },
+  "7726": {
+    "topic": "defi",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7528],
+    "one_line_summary": "Standard oracle interface for asset value quotes using explicit token amounts.",
+    "notes": "getQuote(baseAmount, base, quote) pattern preferred over price factors for security; addresses ETH/BTC/ISO4217 currencies."
+  },
+  "7729": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension adding metadata() URI function for token image and description.",
+    "notes": "Enables memecoins and visual metadata display; backward compatible with existing ERC-20 tokens."
+  },
+  "7730": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 712, 4337],
+    "one_line_summary": "JSON schema for clear-signing structured data with human-readable intent and field formatting.",
+    "notes": "Enables wallet clear-signing for contracts and EIP-712 messages; supports encryption schemes like FHE; addresses phishing risks."
+  },
+  "7734": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Minimalist decentralized identity verification using cryptographic hashes for privacy.",
+    "notes": "createIdentity/verifyIdentity/revokeIdentity pattern; off-chain identity details; events for transparency."
+  },
+  "7738": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [173, 5169],
+    "one_line_summary": "Permissionless registry for associating executable scripts with smart contracts.",
+    "notes": "Allows scripts for contracts without ERC-5169 interface; multichain singleton pattern; owner scripts prioritized."
+  },
+  "7739": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [191, 712, 1271, 5267],
+    "one_line_summary": "Defensive rehashing scheme for ERC-1271 to prevent signature replay across smart accounts.",
+    "notes": "TypedDataSign and PersonalSign workflows; preserves readable nested EIP-712 structures; prevents cross-account replay."
+  }
+}

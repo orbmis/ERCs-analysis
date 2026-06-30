@@ -1,0 +1,137 @@
+{
+  "6105": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 2981],
+    "one_line_summary": "Marketplace functionality for NFT trading with diverse royalty schemes.",
+    "notes": "Enables non-intermediary NFT trading with support for value-added royalties and flexible payment tokens."
+  },
+  "6120": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1014, 1155],
+    "one_line_summary": "Universal router for token spending in transfer-and-call pattern.",
+    "notes": "Replaces approve-then-call with secure transfer-and-call, supports ERC-20/721/1155 via singleton factory pattern."
+  },
+  "6123": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Deterministic protocol for automated settlement of financial derivatives.",
+    "notes": "Removes counterparty risk via on-chain valuation and settlement; supports collateralized and defaultable variants."
+  },
+  "6147": {
+    "topic": "nft",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "NFT/SBT guard role separating holding and transfer rights with expiration.",
+    "notes": "Enables anti-theft, lending, leasing, and SBT management by separating transfer authority from ownership."
+  },
+  "6150": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Filesystem-like hierarchical NFTs with parent-child relationships.",
+    "notes": "Enables nested NFT structures for forums, e-commerce, and org hierarchies with optional enumerable and burnable extensions."
+  },
+  "6170": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Common interface for cross-chain arbitrary message bridges.",
+    "notes": "Standardizes send/receive pattern across competing AMBs; draft status indicates ongoing refinement."
+  },
+  "6220": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 5773, 6059],
+    "one_line_summary": "Composable NFTs with equippable fixed and slot parts via Catalog.",
+    "notes": "Enables NFT composition with cherry-picked parts and equipped child NFTs; supports digital scarcity via exclusive equipping."
+  },
+  "6224": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1967, 5750],
+    "one_line_summary": "Registry system for managing protocol smart contracts with dependency injection.",
+    "notes": "Enables contract upgrades, runtime substitution, and dependency management via ContractsRegistry and Dependant pattern."
+  },
+  "6229": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4626],
+    "one_line_summary": "ERC-4626 vaults extended with lock-in periods and scheduled deposits/redemptions.",
+    "notes": "Allows vaults to lock assets during strategy execution; handles queued operations across vault rounds."
+  },
+  "6239": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 5192],
+    "one_line_summary": "Soulbound tokens with RDF triple metadata for semantic social identity.",
+    "notes": "Extends ERC-5192 with W3C RDF standards; enables linked data layer for interconnected social metadata."
+  },
+  "6268": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155],
+    "one_line_summary": "Untransferability indicator for ERC-1155 semi-fungible and fungible soulbound tokens.",
+    "notes": "Standardizes locked/unlocked status for SBTs across fungibility types via ERC-165 feature detection."
+  },
+  "6315": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 2771],
+    "one_line_summary": "ERC-2771 extension with per-forwarder namespaced addresses for trustless account abstraction.",
+    "notes": "Enables namespaced transactions and Namespaced function variants; allows trustless meta-transactions without per-app trust."
+  },
+  "6327": {
+    "topic": "security-permissions",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "Password-based signing via zero-knowledge proofs for on-chain verification.",
+    "notes": "Provides password-based alternative to private key signing; integrable with AA wallets as plugin."
+  },
+  "6353": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension enabling automatic percentage donations with whitelisted charity addresses.",
+    "notes": "Supports flexible rates and per-holder charity preferences; donation deducted from sender during transfer."
+  },
+  "6357": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Single-contract multicall via delegatecall for atomic multi-function execution.",
+    "notes": "Reduces transaction count for bulk operations; optional payable variant with msg.value splitting."
+  }
+}

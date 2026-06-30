@@ -1,0 +1,137 @@
+{
+  "3561": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1967],
+    "one_line_summary": "Proxy pattern with delayed upgrades and trust minimization period.",
+    "notes": "Extends EIP-1967 transparent proxy with time-delay and zero-trust period mechanism for safer upgradeability."
+  },
+  "3569": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155],
+    "one_line_summary": "NFT metadata sealing standard enabling immutable metadata on decentralized storage.",
+    "notes": "Allows creators to seal metadata for NFTs, preventing changes and enabling batch metadata retrieval."
+  },
+  "3589": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "ERC-721 extension for assembling ether, ERC-20, ERC-721, and ERC-1155 tokens into NFTs.",
+    "notes": "Enables batch asset swapping by packaging diverse assets as a single ERC-721 token."
+  },
+  "3643": {
+    "topic": "rwa",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 173],
+    "one_line_summary": "Institutional-grade security token standard with compliance, identity, and regulatory control.",
+    "notes": "Comprehensive framework for regulated security tokens, includes identity registry, compliance, and trusted issuers. Final status."
+  },
+  "3668": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "CCIP Read protocol for secure off-chain data retrieval by smart contracts.",
+    "notes": "Enables contracts to fetch external data transparently via standardized gateway interface and callback mechanism. Final status."
+  },
+  "3722": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "social media, content posting",
+    "referenced_ercs": [],
+    "one_line_summary": "Minimal smart contract for decentralized social media enabling posts to IPFS.",
+    "notes": "Ridiculously simple contract emitting content and tag as events; builds application state off-chain via indexer."
+  },
+  "3754": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 165],
+    "one_line_summary": "NFT standard for abstract ownership such as rights, memberships, and coupons.",
+    "notes": "Simplifies ERC-721 by removing URI-related fields; designed for representing abstract rights and utilities."
+  },
+  "3770": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 155],
+    "one_line_summary": "Chain-specific address format using human-readable prefix to prevent fund loss in multichain.",
+    "notes": "Addresses ambiguity in EVM multichain by prepending chain shortName to addresses (e.g. eth:0x...)."
+  },
+  "3772": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Lossy compression of uint256 into smaller types for storage cost reduction up to 4x.",
+    "notes": "Divides compressed value into significant bits and shift amount; includes two decompression strategies."
+  },
+  "4337": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 7702, 20],
+    "one_line_summary": "Account abstraction via UserOperations and alt mempool without consensus-layer changes.",
+    "notes": "Defines UserOperation, EntryPoint, bundlers, paymasters, and factories for smart contract-based account validation. Final status."
+  },
+  "4341": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155, 3754, 165],
+    "one_line_summary": "NFT batch standard preserving ordering for logographic characters and emojis.",
+    "notes": "Extends ERC-3754 to retain ordering of NFT sequences, enabling meaning transmission via token IDs."
+  },
+  "4353": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 165, 20, 1155],
+    "one_line_summary": "Interface for querying staked tokens bound to NFTs.",
+    "notes": "Simple interface enabling wallets to display staked token amounts for NFTs, supporting escrow and reward use cases."
+  },
+  "4361": {
+    "topic": "security-permissions",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 137, 155, 191, 1271, 1328],
+    "one_line_summary": "Standard for Ethereum account authentication via signed messages for off-chain sessions.",
+    "notes": "SIWE protocol enabling self-custodial login alternative to centralized IdPs, with EOA and contract account support. Final status."
+  },
+  "4393": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155, 20],
+    "one_line_summary": "Micropayment standard for tipping NFT and multi-token holders via tip tokens.",
+    "notes": "Interface for tip tokens exchanged for ERC-20, enabling batched tipping to NFT holders with gas optimization."
+  },
+  "4400": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 consumer role extension separating utility rights from ownership.",
+    "notes": "Adds consumer address field and changeConsumer method; consumer cannot own/approve/transfer. Final status."
+  }
+}

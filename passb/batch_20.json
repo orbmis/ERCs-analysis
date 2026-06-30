@@ -1,0 +1,137 @@
+{
+  "6358": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 721],
+    "one_line_summary": "Cross-chain token state synchronization protocol enabling global tokens synchronized across multiple blockchains.",
+    "notes": "Primary innovation is synchronization mechanism rather than token standard per se; defines consensus-agnostic cross-chain bridging at contract layer."
+  },
+  "6366": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [6617],
+    "one_line_summary": "Permission token system using bitwise operations to represent authorization in an ecosystem.",
+    "notes": "Extends ERC-6617 to implement access control via uint256 permissions as alternative to ACLs; cross-ecosystem permission delegation."
+  },
+  "6372": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standardized interface for contracts to expose their internal clock value and tracking mechanism.",
+    "notes": "Improves composability by allowing external detection of block-number vs timestamp tracking; supports both native and cross-chain clocks."
+  },
+  "6381": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Public emote repository enabling anyone to react to NFTs using standardized Unicode emojis.",
+    "notes": "Implements feedback-based NFT evolution and valuation via on-chain reactions; deterministic singleton contract for cross-chain compatibility."
+  },
+  "6384": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 2612],
+    "one_line_summary": "Method to retrieve human-readable descriptions of EIP-712 typed data structures via contract.",
+    "notes": "Addresses phishing risk by allowing wallets to query verifying contract for message meaning; contract-controlled description prevents misrepresentation."
+  },
+  "6454": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Minimal extension interface for ERC-721 to detect and enforce non-transferability of specific tokens.",
+    "notes": "Enables verifiable attribution and immutable properties by binding tokens to owners; avoids specifying state management mechanism."
+  },
+  "6464": {
+    "topic": "nft",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Per-token, multi-operator approval extension for ERC-721 enabling fine-grained operator authorization.",
+    "notes": "Addresses setApprovalForAll security risk by allowing multiple specific operators per token with efficient bulk revocation via nonces."
+  },
+  "6492": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1271, 712],
+    "one_line_summary": "Signature validation standard for predeploy contracts using wrapper format to verify counterfactual accounts.",
+    "notes": "Extends ERC-1271 to support signatures from contracts not yet deployed; wraps signature with deploy data and magic bytes for detection."
+  },
+  "6506": {
+    "topic": "governance",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Escrow interface for peer-to-peer governance incentives enabling trustless vote bribing with verification.",
+    "notes": "Supports both on-chain and off-chain voting with optional dispute resolution; enables treasury buyback incentive mechanisms."
+  },
+  "6538": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [712, 1271, 5564],
+    "one_line_summary": "Canonical registry for stealth meta-addresses enabling private asset transfers via stealth addresses.",
+    "notes": "Singleton contract supporting EIP-712 and ERC-1271 signatures for delegation; interoperable with ERC-5564 stealth address generation."
+  },
+  "6551": {
+    "topic": "nft",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1167, 1271],
+    "one_line_summary": "Token-bound accounts system enabling NFTs to own assets and execute operations as smart contract accounts.",
+    "notes": "Deterministic registry using CREATE2 assigns smart accounts to NFTs; counterfactual accounts enable pre-deployment asset custody."
+  },
+  "6596": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155],
+    "one_line_summary": "Comprehensive metadata standard for cultural and historical assets extending ERC-721/1155 with provenance and contextual fields.",
+    "notes": "48 additional JSON properties for museums/institutions; supports search/discovery interoperability with IIIF and OAI protocols."
+  },
+  "6604": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155],
+    "one_line_summary": "Abstract token standard enabling zero-cost off-chain minting with on-demand reification preserving on-chain composability.",
+    "notes": "Supports merkle trees and signatures; tokens exist as messages until reified on-chain; optional dereification for cross-chain/contract movement."
+  },
+  "6617": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Bit-based permission and role system using uint256 bitwise operations for efficient access control.",
+    "notes": "Up to 256 permissions enabling 2^256 unique roles; supports importance ordering via bit position; optional metadata interface for descriptions."
+  },
+  "6662": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 4804],
+    "one_line_summary": "ERC-4337 extension defining on-chain account metadata for user-friendly authentication via relay services.",
+    "notes": "Stores authenticator URIs and authentication schema on-chain; supports end-to-end encryption and signature aggregation for multisig."
+  }
+}

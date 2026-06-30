@@ -1,0 +1,137 @@
+{
+  "7741": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 1271, 2612],
+    "one_line_summary": "EIP-712 based operator authorization with nonce management for meta-transactions.",
+    "notes": "Follows EIP-2612 pattern closely but uses random bytes32 nonces instead of sequential; applies to any operator model contract including EIP-6909 and EIP-7540."
+  },
+  "7743": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 165],
+    "one_line_summary": "ERC-721 extension enabling shared multi-owner NFTs with provider fees and ownership archiving.",
+    "notes": "Deviates from ERC-721 single-owner model by disabling approvals and safe transfers to prevent unintended transfers in co-ownership scenarios; maintains ERC-721 compatibility via supportsInterface."
+  },
+  "7744": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7702],
+    "one_line_summary": "Global bytecode registry enabling trustless contract discovery and verification by bytecode hash.",
+    "notes": "Prevents re-indexing of same bytecode hash to mitigate collision attacks; excludes EIP-7702 delegated accounts; allows bytecode reindexing if original indexed contract self-destructed."
+  },
+  "7746": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Composable security middleware interface for before/after function call validation.",
+    "notes": "Enables modular security layers independent of contract logic; layers can maintain state for complex validations like rate limiting; reverts on validation failure ensure fail-safe."
+  },
+  "7750": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "decentralized-employment-system",
+    "referenced_ercs": [20],
+    "one_line_summary": "On-chain employment system with Soulbound Tokens, labor contracts, escrow payments, and reputation.",
+    "notes": "Uses SBTs for employment history; includes contract execution, salary escrow, dispute resolution via moderators, and review system for reputation; primarily employment/labor focused rather than token or governance."
+  },
+  "7751": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard error wrapping using WrappedError custom error for better revert message handling.",
+    "notes": "Standardizes nested bubbled-up reverts across multiple contracts; enables tools like Etherscan and Foundry to display detailed error traces; allows additional context via details bytes parameter."
+  },
+  "7754": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1193, 712],
+    "one_line_summary": "Tamperproof wallet RPC method for dapp-to-wallet communication via signed requests and DNS verification.",
+    "notes": "Uses dapp DNS records and signed payloads to prevent MITM attacks on wallet interactions; requires <2 hour key caching; supports ES256 and EdDSA signature algorithms."
+  },
+  "7758": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 712, 2612, 777],
+    "one_line_summary": "ERC-20 meta-transaction extension using EIP-712 signatures with random nonces for atomic transfers.",
+    "notes": "Addresses EIP-2612 sequential nonce limitations by using random bytes32 nonces; enables gas delegation, batching, and recipient-triggered transfers; includes optional cancelAuthorization."
+  },
+  "7760": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1967, 1167, 3855],
+    "one_line_summary": "Minimal ERC-1967 upgradeable proxy bytecode standards for transparent, UUPS, and beacon patterns.",
+    "notes": "Provides minimal bytecode variants with optional immutable arguments and onchain implementation queries; deliberately omits PUSH0 for EVM compatibility; does not emit ERC-1967 events in bytecode."
+  },
+  "7765": {
+    "topic": "rwa",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 165],
+    "one_line_summary": "ERC-721 extension for real-world asset NFTs enabling privilege exercise by token holders.",
+    "notes": "Allows exercising real-world privileges via onchain transactions; includes optional metadata extension for privilege URIs; compatible with ERC-721 metadata and enumerable extensions."
+  },
+  "7766": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 7562],
+    "one_line_summary": "ERC-4337 extension for signature aggregation enabling shared validation across bundled UserOperations.",
+    "notes": "Withdrawn due to lack of production adoption of aggregatable signature schemes; defines IAggregator interface for aggregateSignatures and validateSignatures; requires staked aggregators per ERC-7562."
+  },
+  "7769": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 4337, 7562, 7702],
+    "one_line_summary": "JSON-RPC API specification for ERC-4337 bundlers and wallets including debug methods.",
+    "notes": "Standardizes eth_sendUserOperation, eth_estimateUserOperationGas, eth_getUserOperationByHash, eth_getUserOperationReceipt, eth_supportedEntryPoints, eth_chainId methods; includes EIP-7702 authorization support."
+  },
+  "7770": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 standard for partially redeemable synthetic assets backed by collateral with fractional reserve.",
+    "notes": "Tracks totalBorrowedSupply and requiredReserveRatio; supports segregated accounts excluded from reserve calculations; enables lending markets and risk curators to mint fractional reserve tokens."
+  },
+  "7774": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [5219, 6944, 6860],
+    "one_line_summary": "Cache invalidation mechanism for ERC-6944 web3:// resolve mode using EVM events and HTTP headers.",
+    "notes": "Introduces evm-events Cache-Control directive and ClearPathCache event; supports wildcards in cache invalidation paths; maintains cache key-value mapping per chain/contract/pathQuery."
+  },
+  "7776": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "transparent-financial-reporting",
+    "referenced_ercs": [20],
+    "one_line_summary": "Standard API for publishing on-chain financial statements (income statements and balance sheets).",
+    "notes": "Returns financial data as structs with optional detail fields; all values denominated in specified stablecoin; supports balance sheet snapshots and income statements via timestamp parameters."
+  }
+}

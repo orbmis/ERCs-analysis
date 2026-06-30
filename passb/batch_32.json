@@ -1,0 +1,137 @@
+{
+  "7777": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Governance interfaces for human-robot societies with identity and rule management.",
+    "notes": "Defines IUniversalIdentity and IUniversalCharter for managing identities and rule sets for humans and robots."
+  },
+  "7779": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7201, 7702],
+    "one_line_summary": "Interoperable delegated accounts interface for redelegation between wallets post-EIP-7702.",
+    "notes": "Addresses storage management for delegated EOAs, enabling safe migration between wallet implementations."
+  },
+  "7780": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7579, 4337],
+    "one_line_summary": "Validation module extensions for ERC-7579 with policy, signer, and validator types.",
+    "notes": "Introduces policy, signer, stateless validator and pre-validation hook modules for composable account validation."
+  },
+  "7785": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2304],
+    "one_line_summary": "On-chain registration of chain identifiers using ENS and derived hashing.",
+    "notes": "Proposes deriving chain identifiers by hashing chain names and using ENS for decentralized mapping."
+  },
+  "7786": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7930],
+    "one_line_summary": "Cross-chain messaging gateway interface for standardized message sending and receiving.",
+    "notes": "Unified interface for diverse cross-chain messaging protocols using Interoperable Addresses."
+  },
+  "7787": {
+    "topic": "governance",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "DAO governance with soulbound, non-transferable voting power that decays over time.",
+    "notes": "Implements merit-based governance by decoupling governance from economic power with decay mechanics."
+  },
+  "7794": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Cross-network grant registry for tracking and managing grants with lifecycle events.",
+    "notes": "Standardized contract for grant registration, tracking disbursements, and milestone management."
+  },
+  "7795": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155, 5792],
+    "one_line_summary": "Wallet Call API extension for token prerequisites via wallet_sendCalls capabilities.",
+    "notes": "Extends EIP-5792 with token balance, allowance and ownership capability specs for wallets."
+  },
+  "7796": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 7702],
+    "one_line_summary": "JSON-RPC method for block builders enabling preconditions for conditional transaction inclusion.",
+    "notes": "Proposes eth_sendRawTransactionConditional for conditional transaction submission reducing simulation needs."
+  },
+  "7802": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 5679, 20],
+    "one_line_summary": "Standardized crosschain token interface with crosschainMint and crosschainBurn functions.",
+    "notes": "Minimal extensible interface enabling bridges to mint/burn token representations across chains uniformly."
+  },
+  "7803": {
+    "topic": "security-permissions",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 1271, 6492, 7739, 7702],
+    "one_line_summary": "EIP-712 extensions with signing domains and auth method specification for smart contracts.",
+    "notes": "Improves EIP-712 signatures for SCAs by adding replay protection and authentication method coordination."
+  },
+  "7806": {
+    "topic": "account-abstraction",
+    "topic_secondary": "agentic-workflows",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7702, 4337, 6900, 7579, 7521, 20],
+    "one_line_summary": "Intent-centric EOA smart account interface supporting batch execution and gas sponsorship.",
+    "notes": "Enables EOAs to delegate code for intent-based execution via solvers with simplified architecture versus ERC-4337."
+  },
+  "7811": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 155, 721, 5792],
+    "one_line_summary": "JSON-RPC method wallet_getAssets for wallets to declare user asset lists to dapps.",
+    "notes": "Enables wallets to share asset discovery with dapps including off-chain and multi-chain assets."
+  },
+  "7812": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Singleton ZK registry for storing and proving private statements using sparse Merkle trees.",
+    "notes": "Abstract registry system for provable statements enabling zero-knowledge proofs of private data authenticity."
+  },
+  "7813": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Table-based on-chain storage with automatic indexing via standardized events and schema.",
+    "notes": "Flexible storage pattern with schema-aware tables enabling automatic off-chain indexing and introspection."
+  }
+}

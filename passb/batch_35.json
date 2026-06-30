@@ -1,0 +1,137 @@
+{
+  "7908": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Hierarchical deterministic (HD) wallet derivation path standard for treasury management.",
+    "notes": "Specifies BIP-44 compliance with entity/department isolation for enterprise treasury systems."
+  },
+  "7913": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1271, 191, 712, 7562],
+    "one_line_summary": "Interface for verification of non-ethereum signatures via address-less keys.",
+    "notes": "Extends ERC-1271 to support non-ethereum cryptographic curves and signature schemes (secp256r1, RSA, email ZK)."
+  },
+  "7920": {
+    "topic": "security-permissions",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 712, 2612],
+    "one_line_summary": "Single signature scheme for multiple EIP-712 typed-data messages via Merkle tree.",
+    "notes": "Merkle tree approach enables batched signing with independent verifiability; addresses UX friction in multi-step approvals."
+  },
+  "7929": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 6809],
+    "one_line_summary": "Asset-bound tokens permanently linked to other tokens with reveal activation mechanism.",
+    "notes": "Enables asset composability (digital identity, RWA, supply chain) with immutable binding; uses reveal instead of mint."
+  },
+  "7930": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [55, 3770, 7828],
+    "one_line_summary": "Binary format for chain-specific addresses supporting arbitrary blockchains via CAIP-350 profiles.",
+    "notes": "Compact, cross-chain address encoding; flexible for EVM and non-EVM chains; companion to human-readable ERC-7828."
+  },
+  "7936": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1967],
+    "one_line_summary": "Versioned proxy contracts allowing callers to select implementation at call time.",
+    "notes": "Maintains backward compatibility by exposing previous implementations; mitigates malicious upgrade risk."
+  },
+  "7943": {
+    "topic": "rwa",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155, 165, 6909],
+    "one_line_summary": "Compliance interfaces for RWA tokens: forced transfer, freezing, and transfer authorization checks.",
+    "notes": "Minimal, unopinionated standard supporting ERC-20/721/1155; separates account eligibility from transfer-level authorization."
+  },
+  "7945": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Fungible token interface hiding per-account balances for confidential transactions.",
+    "notes": "Enables privacy-preserving token transfers without revealing amounts; supports custom proof systems (Zether, ZK)."
+  },
+  "7946": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 7702, 5792, 1193, 1102, 681, 1328, 831],
+    "one_line_summary": "Unidirectional app-to-wallet protocol for batched transactions via QR/NFC without connection.",
+    "notes": "Privacy-preserving one-way communication; supports static and programmable modes for deterministic call generation on-chain."
+  },
+  "7947": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337, 7702],
+    "one_line_summary": "Account abstraction recovery interface enabling access restoration via custom recovery providers.",
+    "notes": "Flexible recovery provider aggregation; integrates ZK proofs/2FA without mandating specific recovery mechanism."
+  },
+  "7950": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155],
+    "one_line_summary": "String format encoding chain ID and transaction hash for cross-chain transaction lookup.",
+    "notes": "Simple, case-insensitive format: chainId:txHash:tx; enables direct blockchain explorer routing."
+  },
+  "7955": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1014, 7702],
+    "one_line_summary": "Permissionless, deterministic CREATE2 factory deployment across EVM chains via EIP-7702.",
+    "notes": "Uses publicly-known deployer private key with EIP-7702 delegation; mitigates front-running via repeated attempts."
+  },
+  "7962": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 712, 721, 2612, 5564],
+    "one_line_summary": "Token ownership via key hashes instead of addresses for privacy and gas sponsorship.",
+    "notes": "Separates ownership from transaction initiator; supports one-time key use and fresh key rotation per transfer."
+  },
+  "7964": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 1271, 5267],
+    "one_line_summary": "Standard EIP-712 signatures valid across multiple chains by omitting chainId from domain.",
+    "notes": "Array-based encoding of chain-specific operations; enables crosschain intents, governance, and account management."
+  },
+  "7965": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7786, 7930, 7888, 7201],
+    "one_line_summary": "Cryptographic proof-based cross-chain messaging attributes for ERC-7786 gateways.",
+    "notes": "Trustless verification via storage/state proofs; supports multi-hop routing and granular broadcasting via ERC-7930."
+  }
+}

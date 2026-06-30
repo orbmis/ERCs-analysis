@@ -1,0 +1,138 @@
+{
+  "7572": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Standard interface for contract-level metadata via contractURI() function.",
+    "notes": "Provides contract-level metadata discovery mechanism for dapps and indexers; enables rich information display without manual per-dapp configuration."
+  },
+  "7573": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Protocol for secure delivery-versus-payment across two blockchains using cryptographic locking and decryption.",
+    "notes": "Cross-chain DvP using hash-linked contracts and decryption oracles; enables atomic asset-payment exchanges between chains without intermediaries."
+  },
+  "7574": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 5192],
+    "one_line_summary": "Mechanism for issuing non-transferable SBTs as proof of credential verification using zero-knowledge proofs.",
+    "notes": "Extends ERC-721 with credential attestation; SBTs non-transferable per ERC-5192; privacy-preserving on-chain authentication without exposing credential data."
+  },
+  "7575": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 2771, 4626],
+    "one_line_summary": "Multi-asset vault extension to ERC-4626 enabling multiple assets/entry points with single share token.",
+    "notes": "Extends ERC-4626 for multi-asset vaults and pipes; externalizes ERC-20 dependency; optionally includes vault-to-share lookup via ERC-165."
+  },
+  "7578": {
+    "topic": "nft",
+    "topic_secondary": "rwa",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "ERC-721 extension embedding physical asset metadata for redemption, authenticity, and legal framework transparency.",
+    "notes": "Captures issuer, asset holder, storage location, terms, jurisdiction, and declared value; ensures NFT holder can assess redemption risks without legal review."
+  },
+  "7579": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1271, 2771, 4337],
+    "one_line_summary": "Minimal standard interfaces for modular smart accounts and modules ensuring interoperability across implementations.",
+    "notes": "Defines execution, config, fallback, and module interfaces for ERC-4337 accounts; supports validators, executors, fallback handlers, and hooks with minimal constraints on account innovation."
+  },
+  "7580": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standard interface for tracking user actions across dapps to enable advertisement protocols and reward distribution.",
+    "notes": "Enables inter-dapp tracking via onTrackStart/End events; projects can fund users for specific actions while dapps receive proportional rewards."
+  },
+  "7582": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "Minimalist extension to ERC-4337 enabling nonce-based plugin validation for modular smart accounts.",
+    "notes": "Encodes validator identifier in high 192 bits of nonce; minimal footprint—no new functions required; leverages existing EntryPoint accounting and UserOperationEvent."
+  },
+  "7585": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "MixHash algorithm and public data storage proofs for verifying possession of public data on Merkle trees.",
+    "notes": "Combines hashing algorithm selection and file size in 256-bit MixHash; enables game-theoretic storage proof validation without on-chain encryption; defends against sourcing attacks."
+  },
+  "7586": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "Standardized framework for on-chain interest rate swaps enabling fixed/floating rate cash flow exchange.",
+    "notes": "ERC-20 compliant; supports configurable rates, payment frequencies, benchmarks, and oracles; tokenizes swap cash flows; includes termination mechanics."
+  },
+  "7588": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4844],
+    "one_line_summary": "Standard JSON schema for attaching metadata to blobs in EIP-4844 blob transactions.",
+    "notes": "Metadata includes originator, description, content type, extras; optional per-blob metadata overlay; enhances auditability and enables novel blob-based applications."
+  },
+  "7589": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155],
+    "one_line_summary": "Role management system for SFTs enabling expirable, revocable utility delegation via role assignments.",
+    "notes": "Roles expressed as bytes32 with arbitrary _data; supports token commitment abstraction; optional single-tx and role-balance extensions; works with immutable SFTs via external contract."
+  },
+  "7590": {
+    "topic": "nft",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721],
+    "one_line_summary": "ERC-721 extension enabling NFTs to hold and transfer ERC-20 tokens with nonce-based front-running protection.",
+    "notes": "Pull mechanism avoids ERC-20 callback limitation; includes transfer-out nonce to prevent front-running; balanceOfERC20 and transfer methods per token."
+  },
+  "7595": {
+    "topic": "nft",
+    "topic_secondary": "rwa",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721],
+    "one_line_summary": "ERC-721 extension enabling NFT collateralization with ERC-20 tokens for on-chain price floor and sustainable royalties.",
+    "notes": "Supports multiple collateral tokens per NFT; includes harvest (commission exchange), disperse (collective distribution), and VRF preset; EnviousHouse abstraction layer for deployed collections."
+  },
+  "7597": {
+    "topic": "security-permissions",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1271, 2612],
+    "one_line_summary": "Extension to ERC-2612 Permit supporting ERC-1271 contract signature validation for smart contract wallets.",
+    "notes": "Unifies signature validation for EOAs (secp256k1) and contracts (isValidSignature); enables gasless ERC-20 approvals from smart contract wallets; backward-compatible."
+  }
+}

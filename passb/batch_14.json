@@ -1,0 +1,137 @@
+{
+  "5173": {
+    "topic": "nft",
+    "topic_secondary": "defi",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 2981, 1155],
+    "one_line_summary": "Future rewards framework for NFT owners, sharing profits across historical holders.",
+    "notes": "Extends ERC-721 with a multigenerational profit-sharing mechanism via geometric sequences. Uses sliding window to distribute rewards to previous owners when profitable sales occur."
+  },
+  "5185": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155],
+    "one_line_summary": "Controlled NFT metadata updates via recipes and JSONata transformations.",
+    "notes": "Extends ERC-721/ERC-1155 to allow deterministic, on-chain-traceable metadata updates. Uses JSON transformation engine (JSONata) for controlled evolution of NFT properties."
+  },
+  "5187": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1155, 721],
+    "one_line_summary": "Rental extension for ERC-1155 separating usage rights from ownership.",
+    "notes": "Extends ERC-1155 to enable rentals with expirable usage rights. Supports subletting and renewal; ownership transfers independent of active leases."
+  },
+  "5189": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [3074, 20, 777, 4337],
+    "one_line_summary": "Account abstraction via endorsed operations, using off-chain endorser validation.",
+    "notes": "Proposes AA without protocol changes using 'endorser' smart contracts to validate operations. Endorsers signal readiness and dependencies; bundlers evaluate and include transactions in mempool."
+  },
+  "5192": {
+    "topic": "nft",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 165],
+    "one_line_summary": "Minimal soulbound NFT interface marking non-transferrable tokens.",
+    "notes": "Minimal extension of ERC-721 using ERC-165 feature detection. Introduces `locked()` function and events to identify tokens as soulbound (non-transferrable)."
+  },
+  "5202": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [170],
+    "one_line_summary": "Blueprint contract format with on-chain bytecode container for initcode storage.",
+    "notes": "Defines bytecode preamble (0xFE71...) to mark contracts as initcode blueprints. Enables safe on-chain storage of constructor code with version and data section encoding."
+  },
+  "5216": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1155, 20, 165],
+    "one_line_summary": "Granular approval extension for ERC-1155 by token ID and amount.",
+    "notes": "Extends ERC-1155 with approve/allowance pattern inspired by ERC-20. Enables per-ID, per-amount approvals instead of blanket setApprovalForAll."
+  },
+  "5218": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 4907, 5289],
+    "one_line_summary": "NFT copyright license management with tree-structured sublicenses.",
+    "notes": "Extends ERC-721 with license hierarchy. Root license transfers with NFT; holders can create sublicenses. All operations traceable via events."
+  },
+  "5219": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "HTTP-like resource requests from smart contracts via standardized interface.",
+    "notes": "Standardizes contract resource requests with HTTP-like response codes, headers, and body support. Enables contracts to request data from contracts and facilitates decentralized DApp frontends."
+  },
+  "5247": {
+    "topic": "governance",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1202],
+    "one_line_summary": "Executable proposal interface for DAOs and governance contracts.",
+    "notes": "Defines interface to create and execute proposals on-chain. Decoupled from voting (ERC-1202). Enables function calls bundled with targets, values, gas limits."
+  },
+  "5252": {
+    "topic": "account-abstraction",
+    "topic_secondary": "governance",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155, 20, 5114],
+    "one_line_summary": "Personal finance contracts with account-bound tokens for self-sovereign asset management.",
+    "notes": "Extends ERC-5114 with pattern for individual finance contracts + account-bound credentials. Separates investor funds from operator fees; governs via contribution-based voting multipliers."
+  },
+  "5267": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 155, 2612],
+    "one_line_summary": "Retrieval of EIP-712 domain fields for secure signature verification.",
+    "notes": "Standardizes eip712Domain() function to publish domain separator fields. Enables wallets/apps to validate and display signing context; supports extensions via EIP numbers."
+  },
+  "5269": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 5750],
+    "one_line_summary": "ERC detection and discovery by number with caller-aware support query.",
+    "notes": "Alternative to ERC-165 using ERC numbers instead of selector hashes. Caller-aware, supports minor identifiers for sub-features. Emits OnSupportERC events for discovery."
+  },
+  "5289": {
+    "topic": "security-permissions",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 5568],
+    "one_line_summary": "Notary interface enabling legally-binding smart contracts via IPFS documents.",
+    "notes": "Allows contracts to link to legal documents and track signatures. Uses ERC-5568 signals to request wallet signatures. Documents must be permissive, not restrictive."
+  },
+  "5298": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [137, 721, 1155],
+    "one_line_summary": "ENS trust contract holding NFTs on behalf of ENS domain names.",
+    "notes": "Enables tokens to be held by ENS domains rather than wallet addresses. Implements ERC-721/ERC-1155 receivers; claimTo verifies ENS ownership before transferring tokens."
+  }
+}

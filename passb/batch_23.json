@@ -1,0 +1,137 @@
+{
+  "7092": {
+    "topic": "rwa",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155, 3475],
+    "one_line_summary": "Fixed-income bonds with coupon rates, maturity dates, and cross-chain support.",
+    "notes": "Introduces financial bond standard with named variables (coupon, principal, maturity) to improve upon ERC-3475; includes optional ESG parameters and cross-chain interface."
+  },
+  "7093": {
+    "topic": "security-permissions",
+    "topic_secondary": "account-abstraction",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1271, 712],
+    "one_line_summary": "Social recovery interface supporting various guardian types and customizable recovery policies.",
+    "notes": "Separates identity verification (PermissionVerifier) from recovery policy logic (RecoveryPolicyVerifier) to enable flexible guardian types including off-chain identities; draft status."
+  },
+  "7144": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "ERC-20 extension adding validation step for transfers and approvals.",
+    "notes": "Extends ERC-20 with pending validations to prevent wallet draining; transfer/approve create pending validations instead of executing immediately."
+  },
+  "7160": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 4906],
+    "one_line_summary": "Multiple metadata URIs per ERC-721 token with pinning capability.",
+    "notes": "Enables multi-metadata support for NFTs with ability to pin preferred URI; backward compatible with existing ERC-721."
+  },
+  "7196": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Simplified token standard for smart contract wallets, removing approve/allowance/transferFrom.",
+    "notes": "Designed for AA wallets; removes ERC-20 approval mechanism in favor of wallet-level permission management; forward compatible with ERC-20."
+  },
+  "7201": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Namespaced storage layout convention using NatSpec annotation and collision-safe hashing.",
+    "notes": "Standardizes storage location for modular contracts using @custom:storage-location; uses erc7201 formula: keccak256(keccak256(id)-1) & ~0xff."
+  },
+  "7204": {
+    "topic": "account-abstraction",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 20, 4337],
+    "one_line_summary": "Smart contract wallet token management with wallet-level approve and transfer hooks.",
+    "notes": "Enables token asset management within AA wallets via tokenApprove, tokenAllowance, tokenTransfer functions; supports batch operations and transfer hooks."
+  },
+  "7208": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "On-chain data containers abstracting storage from logic via Data Objects and Data Managers.",
+    "notes": "Separates data storage (Data Objects) from logic (Data Managers) using Data Points for indexing; enables data portability between Data Index implementations."
+  },
+  "7231": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1271],
+    "one_line_summary": "Identity-aggregated NFT binding Web2 and Web3 identities to tokens with verification.",
+    "notes": "Extends ERC-721 to aggregate multiple identities (Web2/Web3) with signature-based verification; includes custom schema in metadata."
+  },
+  "7246": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Token encumber mechanism allowing pledge without transfer of ownership.",
+    "notes": "Stronger guarantee than ERC-20 allowance; encumbered tokens reserved but not transferred; useful for collateral and escrow scenarios."
+  },
+  "7254": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Revenue-sharing token distributing profits to holders without locking/staking.",
+    "notes": "Extends ERC-20 with reward mechanisms; tracks inReward/outReward per account and allows periodic reward withdrawals."
+  },
+  "7272": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712],
+    "one_line_summary": "Ethereum Access Token for off-chain service authorization of on-chain function calls.",
+    "notes": "EIP-712 conformant signed messages granting short-lived access to specific functions; includes expiry and replay protection."
+  },
+  "7280": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155, 3525],
+    "one_line_summary": "NFT metadata extension with JSON-LD linked data support.",
+    "notes": "Adds linked_data array to metadata enabling schema-based semantic data; backward compatible with existing NFT metadata."
+  },
+  "7291": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 173, 20, 777, 1155, 1363, 5679, 5192, 5982],
+    "one_line_summary": "Purpose-bound money wrapping digital currency with conditional spending constraints.",
+    "notes": "ERC-1155 wrapper around ERC-20 sovToken implementing programmable money with whitelist/blacklist compliance checks; used for vouchers and escrow."
+  },
+  "7303": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155, 5679],
+    "one_line_summary": "Token-controlled access via ERC-721/1155 control tokens representing privileges.",
+    "notes": "Uses token ownership as access control mechanism; roles granted/revoked via mint/burn of control tokens; visible in wallets."
+  }
+}

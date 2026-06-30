@@ -1,0 +1,137 @@
+{
+  "5753": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Extension enabling NFTs to be locked and unlocked, preventing transfers while preserving utility.",
+    "notes": "Novel locking mechanism for NFTs allowing collateralized loans, rentals, and installment purchases without transferring custody."
+  },
+  "5773": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Multi-Asset NFT standard enabling context-dependent output of different asset formats per token.",
+    "notes": "Enables cross-metaverse compatibility by storing multiple assets with priority ordering; propose-accept pattern for asset changes."
+  },
+  "5791": {
+    "topic": "nft",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [191, 721],
+    "one_line_summary": "Minimal interface linking ERC-721 NFTs to physical chips via signature verification.",
+    "notes": "Bridges on-chain and off-chain ownership of physical items; uses chip signatures to authorize transfers."
+  },
+  "5805": {
+    "topic": "governance",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 712, 721, 6372],
+    "one_line_summary": "Standardizes voting power tracking and delegation with checkpoint support and ERC-712 signing.",
+    "notes": "Supports multiple time-tracking modes (block number, timestamp); essential for DAO voting mechanisms."
+  },
+  "5827": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165],
+    "one_line_summary": "ERC-20 extension enabling auto-renewable allowances that recover over time at specified rates.",
+    "notes": "Enables subscription and recurring payment use cases with automatic allowance recovery instead of unlimited approvals."
+  },
+  "5850": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Standardizes storing complex numbers in bytes32 with real part in LSBs and imaginary in MSBs.",
+    "notes": "Non-domain-specific encoding standard for mathematical computations; supports cartesian, polar, exponential formats."
+  },
+  "5851": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155, 1167, 1967, 3475],
+    "one_line_summary": "Soulbound Token standard for on-chain verifiable credentials with claim-based identity verification.",
+    "notes": "Defines metadata structures for claims and logic operators; supports issuer/verifier separation for KYC/compliance."
+  },
+  "5883": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Social recovery mechanism for token transfers using neighbor approval with reputation scoring.",
+    "notes": "Uses tanh-based reputation formula weighing neighbor rewards and time; addresses lost private key recovery problem."
+  },
+  "5902": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 1820],
+    "one_line_summary": "Event hook standard enabling contracts to respond to events via relayer network without off-chain processes.",
+    "notes": "Pub/sub pattern with registry, publishers, subscribers, and relayers; supports cross-chain messaging."
+  },
+  "5982": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 5750],
+    "one_line_summary": "Role-based access control interface with bytes32 roles mapping to callable methods.",
+    "notes": "Follows ERC-5750 extensibility pattern; separates core, general, and metadata interfaces."
+  },
+  "6047": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Mandates Transfer event emission during ERC-721 contract creation for indexability.",
+    "notes": "Removes exception in ERC-721 to enable complete transfer tracking from minting; aligns with ERC-1155 behavior."
+  },
+  "6059": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Nestable NFTs allowing tokens to be owned by other tokens with parent governance control.",
+    "notes": "Parent-child relationships with propose-accept pattern; enables bundling, collecting, membership, delegation use cases."
+  },
+  "6065": {
+    "topic": "rwa",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Real estate tokenization standard extending ERC-721 with legal agreements, debt tracking, and foreclosure status.",
+    "notes": "Addresses on/off-chain reconciliation for physical assets; requires administrator entity for legal enforcement."
+  },
+  "6066": {
+    "topic": "security-permissions",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155, 1271, 5750],
+    "one_line_summary": "Signature validation standard enabling NFTs to sign and verify messages via isValidSignature(tokenId, hash, data).",
+    "notes": "Extends ERC-1271 for NFT use; enables office/role representation as transferrable NFTs in DAOs."
+  },
+  "6093": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "Standardized custom errors for ERC-20, ERC-721, and ERC-1155 tokens for gas-efficient error reporting.",
+    "notes": "Replaces revert strings with structured errors; provides consistent error decoding across applications."
+  }
+}

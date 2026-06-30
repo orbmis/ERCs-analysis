@@ -1,0 +1,137 @@
+{
+  "1386": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1388, 1387],
+    "one_line_summary": "Attestation management contract for issuing, validating, and revoking cryptographic attestations.",
+    "notes": "Part of attestation ecosystem (1386, 1387, 1388). Enables off-chain signed attestations to be verified on-chain with revocation via bloom filters."
+  },
+  "1387": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1388, 1386],
+    "one_line_summary": "Merkle tree attestations with privacy support for verifying claims without revealing full attestation.",
+    "notes": "Privacy-preserving attestation standard allowing partial revelation via Merkle trees; complements ERC-1386."
+  },
+  "1388": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1387, 1386],
+    "one_line_summary": "Registry for managing lists of trusted attestation issuers with specific capabilities and expiry.",
+    "notes": "Curated registry allowing smart contracts to trust attestation issuers; part of attestation ecosystem."
+  },
+  "1417": {
+    "topic": "governance",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1261],
+    "one_line_summary": "Modular poll standard supporting flexible voting schemes with membership qualification.",
+    "notes": "Modularized governance enabling diverse voting types (token-proportional, quadratic, delegated) via permissioning."
+  },
+  "1438": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "low",
+    "topic_other": "dApp component registry (avatar/badge store) and universal wallet",
+    "referenced_ercs": [20],
+    "one_line_summary": "Avatar store and universal wallet for reusable dApp components across Ethereum ecosystem.",
+    "notes": "Proposes component-based architecture for avatars/badges and unified ERC-20 wallet; falls outside standard taxonomies."
+  },
+  "1444": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1066],
+    "one_line_summary": "Decentralized localization system converting machine codes to human-readable text in any language.",
+    "notes": "Registry and proxy pattern for multilingual message translation; integrates with ERC-1066 status codes."
+  },
+  "1450": {
+    "topic": "rwa",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 6093, 3668, 1820, 1643, 1644],
+    "one_line_summary": "RTA-controlled security token with exclusive transfer authority and KYC/AML compliance mechanisms.",
+    "notes": "Regulated securities with Registered Transfer Agent exclusive control; disables standard ERC-20 transfer/approve; supports recovery and court orders."
+  },
+  "1462": {
+    "topic": "rwa",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 1066, 1444],
+    "one_line_summary": "Base security token with compliance checking functions and legal document attachment.",
+    "notes": "Minimal security token extension adding transfer/mint/burn checks and document references; foundational rather than prescriptive."
+  },
+  "1484": {
+    "topic": "reputation-identity",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [191, 725, 1056],
+    "one_line_summary": "Digital identity aggregator protocol supporting multiple associated addresses and resolver contracts.",
+    "notes": "Un-opinionated identity registry enabling complex identity applications via associated addresses and resolvers; DID-compatible."
+  },
+  "1491": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "low",
+    "topic_other": "human capital accounting tokens based on BDI model",
+    "referenced_ercs": [20, 721, 1155],
+    "one_line_summary": "Human capital accounting standard tracking experience, reputation, and talents via BDI agent model.",
+    "notes": "Speculative proposal applying belief-desire-intention framework to token-based human capital; incomplete implementation status."
+  },
+  "1504": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Upgradable smart contract pattern with separate handler/data contracts and optional voting mechanism.",
+    "notes": "Contract architecture for bug fixes and improvements via handler swapping while preserving data; includes governance component."
+  },
+  "1523": {
+    "topic": "nft",
+    "topic_secondary": "rwa",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Insurance policy standard based on ERC-721 with policy-specific metadata structure.",
+    "notes": "Specialized NFT for insurance contracts with carrier, risk, and premium metadata; applies 721 to regulated assets."
+  },
+  "1538": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [2535],
+    "one_line_summary": "Transparent contract standard enabling atomic function upgrades with event logging.",
+    "notes": "Superseded by ERC-2535 (Diamond); pioneered modular upgradability via delegatecall with documented change history."
+  },
+  "1577": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "ENS contenthash field for mapping names to distributed content via multicodec format.",
+    "notes": "Deprecates ENS 'content' and 'multihash' fields; supports IPFS, Swarm, and other protocols via machine-readable multicodec."
+  },
+  "1581": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "BIP32 key derivation path for non-wallet applications (messaging, signing, etc.).",
+    "notes": "Hierarchical key derivation using m/43'/60'/1581' prefix; enables separate identity keys independent from wallet keys."
+  }
+}

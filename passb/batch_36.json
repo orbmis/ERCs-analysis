@@ -1,0 +1,137 @@
+{
+  "7968": {
+    "topic": "security-permissions",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Third-party authorized token transfers via signed owner approval.",
+    "notes": "Two-phase proposal/approval model with expiry and fallback recovery function for owner control."
+  },
+  "7969": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "DKIM public key hash registry for on-chain email ownership verification.",
+    "notes": "Enables email-based account abstraction via zkEmail; domain-specific key hashes stored on-chain."
+  },
+  "7984": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Privacy-preserving fungible tokens using pointer-based confidential amounts.",
+    "notes": "Account-based model with pointer/commitment pattern for balance/transfer privacy; supports operator model and callbacks."
+  },
+  "7985": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7786],
+    "one_line_summary": "Standard attributes for cross-chain messaging gateways (cancellation, timeout, retry, dependencies).",
+    "notes": "Extends ERC-7786 with message lifecycle control; pluggable attributes for delivery timing/failure handling."
+  },
+  "7988": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [7702, 712, 20],
+    "one_line_summary": "EIP-7702 delegate wallet with batched execution, policy modules, and fee sponsorship.",
+    "notes": "Immutable bytecode for all EOAs using 7702; supports policy/recovery module hooks; gas sponsorship via ETH or ERC-20."
+  },
+  "7992": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "verifiable-ml-inference",
+    "referenced_ercs": [165, 173, 721],
+    "one_line_summary": "Registry and verifier interfaces for ZK-proofs of ML model inferences on-chain.",
+    "notes": "Modular design: separate registry (model commitments) and verifier (proof validation); pluggable proof systems (Groth16, Plonk, STARKs)."
+  },
+  "7994": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 7291],
+    "one_line_summary": "ERC-20 extension with multi-condition unlocking for controlled token disbursement.",
+    "notes": "Generalizes ERC-7291 with composable unlock conditions (time, KYC, whitelist, etc.); enables scholarships, aid, payroll use cases."
+  },
+  "7996": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Feature detection method for contract capabilities lacking ERC-165 interface.",
+    "notes": "Complements ERC-165 with reverse-domain-named features and keccak256-derived 4-byte selectors; used by ENS."
+  },
+  "8000": {
+    "topic": "account-abstraction",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1153, 2771],
+    "one_line_summary": "Operator contract enabling batch calls for non-delegated EOAs via standard interface.",
+    "notes": "Alternative to 7702; uses transient storage for msg.sender context; compatible with ERC-2771 _msgSender pattern."
+  },
+  "8001": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [712, 1271, 2098, 5267],
+    "one_line_summary": "Multi-party agent coordination primitive using EIP-712 attestations and intents.",
+    "notes": "Single-chain intent + per-participant acceptances; canonical participant lists; lifecycle: Proposed → Ready → Executed; privacy/bonding/cross-chain as modules."
+  },
+  "8002": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Trustless singleton SPV gateway for on-chain Bitcoin transaction verification via Merkle proofs.",
+    "notes": "Permissionless block header submission; PoW-based mainchain tracking; enables Bitcoin collateral in DeFi."
+  },
+  "8004": {
+    "topic": "agentic-workflows",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [155, 712, 721, 1271],
+    "one_line_summary": "Trustless agent discovery and trust via identity, reputation, and validation registries.",
+    "notes": "ERC-721 agent identity registry with metadata; reputation scoring on-chain/off-chain; pluggable validation (stake, zkML, TEE)."
+  },
+  "8017": {
+    "topic": "defi",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20],
+    "one_line_summary": "Single-asset payout bucket dispensing entire balance for fixed payment (Dutch auction primitive).",
+    "notes": "Deterministic exchange: fills bucket of payout asset, winner pays fixed amount; analogous to Dutch auction; payment can be ETH or ERC-20."
+  },
+  "8019": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4361],
+    "one_line_summary": "Wallet-managed auto-login policy for SIWE message signing with domain/chain/resource matching.",
+    "notes": "Policy-based auto-signing for trusted SIWE domains; optional ERC-6492 support for hardware wallets via EIP-7702 session keys."
+  },
+  "8023": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [173],
+    "one_line_summary": "Multi-step contract ownership transfer with initiate, confirm, accept stages and time buffer.",
+    "notes": "3-step transfer (original owner initiates/confirms, new owner accepts); optional time-gated buffer for review/rollback; compatible with ERC-173."
+  }
+}

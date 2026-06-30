@@ -1,0 +1,137 @@
+{
+  "7528": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 55, 4626],
+    "one_line_summary": "Address convention for representing ETH in ERC-20 token contexts using 0xeeee...eeee.",
+    "notes": "Complements ERC-4626 and ERC-20 by standardizing ETH representation; used extensively by liquid staking protocols."
+  },
+  "7529": {
+    "topic": "reputation-identity",
+    "topic_secondary": "infrastructure-meta",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1191],
+    "one_line_summary": "Discover and verify smart contracts via DNS TXT records with eTLD+1 domain association.",
+    "notes": "Enables off-chain verification of smart contract ownership using DoH; useful for anti-spoofing and contract discoverability."
+  },
+  "7531": {
+    "topic": "nft",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721],
+    "one_line_summary": "Recognize NFT ownership when staked in pools via RightsHolderChange events.",
+    "notes": "Solves legacy NFT staking challenges by tracking actual owners separately from technical holders; supports flexible rights types."
+  },
+  "7533": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Public Cross Port for connecting EVM chains via pull-based cross-chain messaging with MerkleTree packing.",
+    "notes": "Reduces cross-chain bridges from O(n^2) to O(n); enables redundant bridge verification for enhanced security."
+  },
+  "7535": {
+    "topic": "defi",
+    "topic_secondary": "tokens-fungible",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 4626, 7528],
+    "one_line_summary": "ERC-4626 tokenized vaults with native ETH as underlying asset instead of ERC-20.",
+    "notes": "Extends ERC-4626 specifically for ETH and native assets; primary use case is liquid staking tokens."
+  },
+  "7538": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [20, 1046, 1155],
+    "one_line_summary": "Add multiplier field to ERC-20 and ERC-1155 metadata for fractional token display.",
+    "notes": "Enables fractional/deflation mechanisms without standard decimals; uses ERC-1046 tokenURI for metadata."
+  },
+  "7540": {
+    "topic": "defi",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 4626, 7575],
+    "one_line_summary": "Async deposit/redemption requests for ERC-4626 vaults with pending/claimable/claimed states.",
+    "notes": "Extends ERC-4626 for async vaults (LSTs, RWA protocols); operators can manage requests on behalf of controllers."
+  },
+  "7546": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1967, 7201],
+    "one_line_summary": "Upgradeable Clone pattern combining function-level upgradeability with factory cloneability.",
+    "notes": "Separates Dictionary from Proxy for factory-friendly simultaneous upgrades; addresses ERC-2535 limitations."
+  },
+  "7548": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Protocol for remixing NFTs to create derivative works with traceable relationships on-chain.",
+    "notes": "Extends ERC-721 with remix, license, and network modules; tracks IP lineage through singleton network module."
+  },
+  "7555": {
+    "topic": "account-abstraction",
+    "topic_secondary": "reputation-identity",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "Single sign-on for discovering accounts using non-secp256k1 signing keys (passkeys, etc).",
+    "notes": "Solves account fragmentation for ERC-4337 with alternative signers; redirect-based SSO pattern for key discovery."
+  },
+  "7561": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "Simplified ERC-721 for smart contract wallets; removes approve/safeTransferFrom functions.",
+    "notes": "Forward-compatible simplification designed for contract wallets; shifts approval to wallet level instead of NFT contract."
+  },
+  "7562": {
+    "topic": "account-abstraction",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [4337],
+    "one_line_summary": "Validation scope rules for ERC-4337 account abstraction to prevent DoS via unpaid computation.",
+    "notes": "Defines opcode restrictions, storage isolation, reputation system for bundlers; critical mempool security rules."
+  },
+  "7564": {
+    "topic": "account-abstraction",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 4337],
+    "one_line_summary": "Smart contract wallet interface for managing NFT approvals and transfers with granular controls.",
+    "notes": "Shifts NFT approval control to wallet level with support for batch operations and custom hooks."
+  },
+  "7565": {
+    "topic": "defi",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 4907],
+    "one_line_summary": "Perpetual contract NFTs representing locked assets that can be collateralized for loans.",
+    "notes": "Enables DeFi composability by allowing LP/staking NFTs to be used as collateral; integrates with ERC-4907."
+  },
+  "7566": {
+    "topic": "other",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "On-chain multiplayer game communication",
+    "referenced_ercs": [],
+    "one_line_summary": "Multiplayer game communication protocol using rooms for player grouping and messages for game actions.",
+    "notes": "Room-based architecture with message relay; designed for turn-based/strategy on-chain games rather than real-time."
+  }
+}

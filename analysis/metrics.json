@@ -1,0 +1,1268 @@
+{
+ "total": 600,
+ "status_dist": {
+  "Final": 138,
+  "Withdrawn": 9,
+  "Stagnant": 163,
+  "Draft": 216,
+  "Review": 59,
+  "Last Call": 15
+ },
+ "topic_dist": {
+  "tokens-fungible": 71,
+  "infrastructure-meta": 175,
+  "reputation-identity": 39,
+  "security-permissions": 57,
+  "nft": 136,
+  "other": 9,
+  "defi": 37,
+  "rwa": 13,
+  "account-abstraction": 44,
+  "governance": 10,
+  "agentic-workflows": 9
+ },
+ "confidence_dist": {
+  "high": 532,
+  "medium": 66,
+  "low": 2
+ },
+ "year_range": [
+  "2015",
+  "2026"
+ ],
+ "flagged_for_review": 196,
+ "constant_cols": {
+  "type": [
+   "Standards Track"
+  ],
+  "category": [
+   "ERC"
+  ]
+ },
+ "per_year": {
+  "2015": 1,
+  "2016": 6,
+  "2017": 10,
+  "2018": 64,
+  "2019": 32,
+  "2020": 32,
+  "2021": 33,
+  "2022": 122,
+  "2023": 120,
+  "2024": 93,
+  "2025": 72,
+  "2026": 15
+ },
+ "topic_first_year": {
+  "tokens-fungible": "2015",
+  "infrastructure-meta": "2016",
+  "reputation-identity": "2016",
+  "security-permissions": "2016",
+  "nft": "2018",
+  "other": "2017",
+  "defi": "2018",
+  "rwa": "2018",
+  "account-abstraction": "2018",
+  "governance": "2018",
+  "agentic-workflows": "2024"
+ },
+ "funnel": {
+  "Draft": 216,
+  "Review": 59,
+  "Last Call": 15,
+  "Final": 138,
+  "Stagnant": 163,
+  "Withdrawn": 9
+ },
+ "cohort": {
+  "2015": {
+   "n": 1,
+   "final": 1,
+   "stagnant": 0,
+   "final_rate": 1.0,
+   "stagnant_rate": 0.0
+  },
+  "2016": {
+   "n": 6,
+   "final": 5,
+   "stagnant": 0,
+   "final_rate": 0.833,
+   "stagnant_rate": 0.0
+  },
+  "2017": {
+   "n": 10,
+   "final": 6,
+   "stagnant": 3,
+   "final_rate": 0.6,
+   "stagnant_rate": 0.3
+  },
+  "2018": {
+   "n": 64,
+   "final": 10,
+   "stagnant": 45,
+   "final_rate": 0.156,
+   "stagnant_rate": 0.703
+  },
+  "2019": {
+   "n": 32,
+   "final": 5,
+   "stagnant": 23,
+   "final_rate": 0.156,
+   "stagnant_rate": 0.719
+  },
+  "2020": {
+   "n": 32,
+   "final": 8,
+   "stagnant": 20,
+   "final_rate": 0.25,
+   "stagnant_rate": 0.625
+  },
+  "2021": {
+   "n": 33,
+   "final": 8,
+   "stagnant": 23,
+   "final_rate": 0.242,
+   "stagnant_rate": 0.697
+  },
+  "2022": {
+   "n": 122,
+   "final": 41,
+   "stagnant": 46,
+   "final_rate": 0.336,
+   "stagnant_rate": 0.377
+  },
+  "2023": {
+   "n": 120,
+   "final": 28,
+   "stagnant": 3,
+   "final_rate": 0.233,
+   "stagnant_rate": 0.025
+  },
+  "2024": {
+   "n": 93,
+   "final": 13,
+   "stagnant": 0,
+   "final_rate": 0.14,
+   "stagnant_rate": 0.0
+  },
+  "2025": {
+   "n": 72,
+   "final": 12,
+   "stagnant": 0,
+   "final_rate": 0.167,
+   "stagnant_rate": 0.0
+  },
+  "2026": {
+   "n": 15,
+   "final": 1,
+   "stagnant": 0,
+   "final_rate": 0.067,
+   "stagnant_rate": 0.0
+  }
+ },
+ "time_to_final": {
+  "n": 140,
+  "n_negative_anomalies": 3,
+  "negative_ercs": [
+   5615,
+   7401,
+   7409
+  ],
+  "median_days": 306,
+  "mean_days": 452.7,
+  "p25": 162,
+  "p75": 570,
+  "min": 26,
+  "max": 2317
+ },
+ "time_to_final_by_topic": {
+  "tokens-fungible": {
+   "median_days": 270,
+   "n": 15
+  },
+  "infrastructure-meta": {
+   "median_days": 351,
+   "n": 36
+  },
+  "reputation-identity": {
+   "median_days": 219,
+   "n": 8
+  },
+  "security-permissions": {
+   "median_days": 654,
+   "n": 11
+  },
+  "nft": {
+   "median_days": 248,
+   "n": 48
+  },
+  "defi": {
+   "median_days": 217,
+   "n": 10
+  },
+  "account-abstraction": {
+   "median_days": 812,
+   "n": 4
+  },
+  "rwa": {
+   "median_days": 329,
+   "n": 3
+  }
+ },
+ "withdrawals": [
+  {
+   "erc": 67,
+   "title": "URI Scheme with Metadata, Value and Bytecode",
+   "reason": "Superseded by EIP-681"
+  },
+  {
+   "erc": 875,
+   "title": "Simpler NFT standard with batching and native atomic swaps",
+   "reason": ""
+  },
+  {
+   "erc": 1123,
+   "title": "Revised Ethereum Smart Contract Packaging Standard",
+   "reason": ""
+  },
+  {
+   "erc": 1154,
+   "title": "Oracle Interface",
+   "reason": ""
+  },
+  {
+   "erc": 1538,
+   "title": "Transparent Contract Standard",
+   "reason": ""
+  },
+  {
+   "erc": 2770,
+   "title": "Meta-Transactions Forwarder Contract",
+   "reason": "Singleton implementation does not require standardization."
+  },
+  {
+   "erc": 7766,
+   "title": "Signature Aggregation for ERC-4337",
+   "reason": "No production adoption of aggregateable signature schemes in contemporary AA context. Alternative will be created for Native AA aggregation in the near future."
+  },
+  {
+   "erc": 7897,
+   "title": "Wallet-Linked Services for Smart Accounts",
+   "reason": ""
+  },
+  {
+   "erc": 8109,
+   "title": "Diamonds, Simplified",
+   "reason": "Superseded by EIP-8153"
+  }
+ ],
+ "stale_drafts_count": 99,
+ "stale_drafts_top": [
+  [
+   725,
+   979
+  ],
+  [
+   4972,
+   979
+  ],
+  [
+   5700,
+   979
+  ],
+  [
+   6170,
+   979
+  ],
+  [
+   6327,
+   979
+  ],
+  [
+   6604,
+   979
+  ],
+  [
+   6662,
+   979
+  ],
+  [
+   6682,
+   979
+  ],
+  [
+   6785,
+   979
+  ],
+  [
+   6787,
+   979
+  ],
+  [
+   6806,
+   979
+  ],
+  [
+   6821,
+   979
+  ],
+  [
+   6823,
+   979
+  ],
+  [
+   6864,
+   979
+  ],
+  [
+   6865,
+   979
+  ]
+ ],
+ "top_straddles": [
+  {
+   "primary": "tokens-fungible",
+   "secondary": "nft",
+   "count": 14
+  },
+  {
+   "primary": "nft",
+   "secondary": "tokens-fungible",
+   "count": 12
+  },
+  {
+   "primary": "tokens-fungible",
+   "secondary": "defi",
+   "count": 11
+  },
+  {
+   "primary": "account-abstraction",
+   "secondary": "security-permissions",
+   "count": 9
+  },
+  {
+   "primary": "reputation-identity",
+   "secondary": "nft",
+   "count": 9
+  },
+  {
+   "primary": "nft",
+   "secondary": "defi",
+   "count": 9
+  },
+  {
+   "primary": "defi",
+   "secondary": "tokens-fungible",
+   "count": 8
+  },
+  {
+   "primary": "tokens-fungible",
+   "secondary": "security-permissions",
+   "count": 7
+  },
+  {
+   "primary": "infrastructure-meta",
+   "secondary": "security-permissions",
+   "count": 7
+  },
+  {
+   "primary": "nft",
+   "secondary": "security-permissions",
+   "count": 7
+  },
+  {
+   "primary": "reputation-identity",
+   "secondary": "infrastructure-meta",
+   "count": 5
+  },
+  {
+   "primary": "security-permissions",
+   "secondary": "tokens-fungible",
+   "count": 5
+  }
+ ],
+ "straddle_total": 187,
+ "confidence_by_topic": {
+  "infrastructure-meta": {
+   "high": 149,
+   "medium": 26,
+   "low": 0
+  },
+  "nft": {
+   "high": 129,
+   "medium": 7,
+   "low": 0
+  },
+  "tokens-fungible": {
+   "high": 59,
+   "medium": 12,
+   "low": 0
+  },
+  "security-permissions": {
+   "high": 53,
+   "medium": 4,
+   "low": 0
+  },
+  "account-abstraction": {
+   "high": 43,
+   "medium": 1,
+   "low": 0
+  },
+  "reputation-identity": {
+   "high": 36,
+   "medium": 3,
+   "low": 0
+  },
+  "defi": {
+   "high": 33,
+   "medium": 4,
+   "low": 0
+  },
+  "rwa": {
+   "high": 12,
+   "medium": 1,
+   "low": 0
+  },
+  "governance": {
+   "high": 8,
+   "medium": 2,
+   "low": 0
+  },
+  "other": {
+   "high": 3,
+   "medium": 4,
+   "low": 2
+  },
+  "agentic-workflows": {
+   "high": 7,
+   "medium": 2,
+   "low": 0
+  }
+ },
+ "top_pagerank": [
+  {
+   "erc": 165,
+   "title": "Standard Interface Detection",
+   "pagerank": 0.1558,
+   "in_degree": 177,
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 721,
+   "title": "Non-Fungible Token Standard",
+   "pagerank": 0.0642,
+   "in_degree": 145,
+   "topic": "nft"
+  },
+  {
+   "erc": 20,
+   "title": "Token Standard",
+   "pagerank": 0.061,
+   "in_degree": 104,
+   "topic": "tokens-fungible"
+  },
+  {
+   "erc": 1155,
+   "title": "Multi Token Standard",
+   "pagerank": 0.0198,
+   "in_degree": 60,
+   "topic": "nft"
+  },
+  {
+   "erc": 137,
+   "title": "Ethereum Domain Name Service - Specification",
+   "pagerank": 0.0146,
+   "in_degree": 19,
+   "topic": "reputation-identity"
+  },
+  {
+   "erc": 1271,
+   "title": "Standard Signature Validation Method for Contracts",
+   "pagerank": 0.0132,
+   "in_degree": 27,
+   "topic": "security-permissions"
+  },
+  {
+   "erc": 4337,
+   "title": "Account Abstraction Using Alt Mempool",
+   "pagerank": 0.0082,
+   "in_degree": 14,
+   "topic": "account-abstraction"
+  },
+  {
+   "erc": 7930,
+   "title": "Interoperable Addresses",
+   "pagerank": 0.0068,
+   "in_degree": 9,
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 55,
+   "title": "Mixed-case checksum address encoding",
+   "pagerank": 0.0065,
+   "in_degree": 9,
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 2612,
+   "title": "Permit Extension for EIP-20 Signed Approvals",
+   "pagerank": 0.0063,
+   "in_degree": 7,
+   "topic": "tokens-fungible"
+  },
+  {
+   "erc": 191,
+   "title": "Signed Data Standard",
+   "pagerank": 0.006,
+   "in_degree": 11,
+   "topic": "security-permissions"
+  },
+  {
+   "erc": 173,
+   "title": "Contract Ownership Standard",
+   "pagerank": 0.0049,
+   "in_degree": 10,
+   "topic": "security-permissions"
+  },
+  {
+   "erc": 4626,
+   "title": "Tokenized Vaults",
+   "pagerank": 0.0045,
+   "in_degree": 8,
+   "topic": "defi"
+  },
+  {
+   "erc": 2771,
+   "title": "Secure Protocol for Native Meta Transactions",
+   "pagerank": 0.0041,
+   "in_degree": 5,
+   "topic": "account-abstraction"
+  },
+  {
+   "erc": 7579,
+   "title": "Minimal Modular Smart Accounts",
+   "pagerank": 0.0039,
+   "in_degree": 4,
+   "topic": "account-abstraction"
+  }
+ ],
+ "top_required_by": [
+  {
+   "erc": 165,
+   "title": "Standard Interface Detection",
+   "in_degree": 177
+  },
+  {
+   "erc": 721,
+   "title": "Non-Fungible Token Standard",
+   "in_degree": 145
+  },
+  {
+   "erc": 20,
+   "title": "Token Standard",
+   "in_degree": 104
+  },
+  {
+   "erc": 1155,
+   "title": "Multi Token Standard",
+   "in_degree": 60
+  },
+  {
+   "erc": 1271,
+   "title": "Standard Signature Validation Method for Contracts",
+   "in_degree": 27
+  },
+  {
+   "erc": 137,
+   "title": "Ethereum Domain Name Service - Specification",
+   "in_degree": 19
+  },
+  {
+   "erc": 4337,
+   "title": "Account Abstraction Using Alt Mempool",
+   "in_degree": 14
+  },
+  {
+   "erc": 191,
+   "title": "Signed Data Standard",
+   "in_degree": 11
+  },
+  {
+   "erc": 173,
+   "title": "Contract Ownership Standard",
+   "in_degree": 10
+  },
+  {
+   "erc": 55,
+   "title": "Mixed-case checksum address encoding",
+   "in_degree": 9
+  },
+  {
+   "erc": 7930,
+   "title": "Interoperable Addresses",
+   "in_degree": 9
+  },
+  {
+   "erc": 4626,
+   "title": "Tokenized Vaults",
+   "in_degree": 8
+  },
+  {
+   "erc": 2612,
+   "title": "Permit Extension for EIP-20 Signed Approvals",
+   "in_degree": 7
+  },
+  {
+   "erc": 1167,
+   "title": "Minimal Proxy Contract",
+   "in_degree": 6
+  },
+  {
+   "erc": 1967,
+   "title": "Proxy Storage Slots",
+   "in_degree": 6
+  }
+ ],
+ "depth_dist": {
+  "0": 197,
+  "1": 162,
+  "2": 192,
+  "3": 41,
+  "4": 5,
+  "5": 3
+ },
+ "isolated_count": 154,
+ "top_referenced": [
+  {
+   "erc": 721,
+   "title": "Non-Fungible Token Standard",
+   "mentions": 188
+  },
+  {
+   "erc": 165,
+   "title": "Standard Interface Detection",
+   "mentions": 186
+  },
+  {
+   "erc": 20,
+   "title": "Token Standard",
+   "mentions": 160
+  },
+  {
+   "erc": 1155,
+   "title": "Multi Token Standard",
+   "mentions": 91
+  },
+  {
+   "erc": 712,
+   "title": "(external EIP)",
+   "mentions": 52
+  },
+  {
+   "erc": 4337,
+   "title": "Account Abstraction Using Alt Mempool",
+   "mentions": 33
+  },
+  {
+   "erc": 1271,
+   "title": "Standard Signature Validation Method for Contracts",
+   "mentions": 32
+  },
+  {
+   "erc": 155,
+   "title": "(external EIP)",
+   "mentions": 26
+  },
+  {
+   "erc": 137,
+   "title": "Ethereum Domain Name Service - Specification",
+   "mentions": 24
+  },
+  {
+   "erc": 7702,
+   "title": "(external EIP)",
+   "mentions": 15
+  },
+  {
+   "erc": 191,
+   "title": "Signed Data Standard",
+   "mentions": 13
+  },
+  {
+   "erc": 2612,
+   "title": "Permit Extension for EIP-20 Signed Approvals",
+   "mentions": 13
+  },
+  {
+   "erc": 173,
+   "title": "Contract Ownership Standard",
+   "mentions": 12
+  },
+  {
+   "erc": 55,
+   "title": "Mixed-case checksum address encoding",
+   "mentions": 12
+  },
+  {
+   "erc": 5792,
+   "title": "(external EIP)",
+   "mentions": 10
+  }
+ ],
+ "formal_vs_informal": [
+  {
+   "erc": 165,
+   "requires_edges": 177,
+   "body_mentions": 186,
+   "title": "Standard Interface Detection"
+  },
+  {
+   "erc": 721,
+   "requires_edges": 145,
+   "body_mentions": 188,
+   "title": "Non-Fungible Token Standard"
+  },
+  {
+   "erc": 20,
+   "requires_edges": 104,
+   "body_mentions": 160,
+   "title": "Token Standard"
+  },
+  {
+   "erc": 1155,
+   "requires_edges": 60,
+   "body_mentions": 91,
+   "title": "Multi Token Standard"
+  },
+  {
+   "erc": 712,
+   "requires_edges": 43,
+   "body_mentions": 52,
+   "title": "(external EIP)"
+  },
+  {
+   "erc": 1271,
+   "requires_edges": 27,
+   "body_mentions": 32,
+   "title": "Standard Signature Validation Method for Contracts"
+  },
+  {
+   "erc": 155,
+   "requires_edges": 22,
+   "body_mentions": 26,
+   "title": "(external EIP)"
+  },
+  {
+   "erc": 4337,
+   "requires_edges": 14,
+   "body_mentions": 33,
+   "title": "Account Abstraction Using Alt Mempool"
+  },
+  {
+   "erc": 137,
+   "requires_edges": 19,
+   "body_mentions": 24,
+   "title": "Ethereum Domain Name Service - Specification"
+  },
+  {
+   "erc": 191,
+   "requires_edges": 11,
+   "body_mentions": 13,
+   "title": "Signed Data Standard"
+  },
+  {
+   "erc": 173,
+   "requires_edges": 10,
+   "body_mentions": 12,
+   "title": "Contract Ownership Standard"
+  },
+  {
+   "erc": 7702,
+   "requires_edges": 7,
+   "body_mentions": 15,
+   "title": "(external EIP)"
+  },
+  {
+   "erc": 55,
+   "requires_edges": 9,
+   "body_mentions": 12,
+   "title": "Mixed-case checksum address encoding"
+  },
+  {
+   "erc": 2612,
+   "requires_edges": 7,
+   "body_mentions": 13,
+   "title": "Permit Extension for EIP-20 Signed Approvals"
+  },
+  {
+   "erc": 7930,
+   "requires_edges": 9,
+   "body_mentions": 9,
+   "title": "Interoperable Addresses"
+  }
+ ],
+ "influence_by_topic": {
+  "infrastructure-meta": {
+   "mean_in_degree": 1.6,
+   "sum_in_degree": 280,
+   "n": 175
+  },
+  "nft": {
+   "mean_in_degree": 1.65,
+   "sum_in_degree": 224,
+   "n": 136
+  },
+  "tokens-fungible": {
+   "mean_in_degree": 1.83,
+   "sum_in_degree": 130,
+   "n": 71
+  },
+  "security-permissions": {
+   "mean_in_degree": 1.12,
+   "sum_in_degree": 64,
+   "n": 57
+  },
+  "account-abstraction": {
+   "mean_in_degree": 0.68,
+   "sum_in_degree": 30,
+   "n": 44
+  },
+  "reputation-identity": {
+   "mean_in_degree": 0.74,
+   "sum_in_degree": 29,
+   "n": 39
+  },
+  "defi": {
+   "mean_in_degree": 0.41,
+   "sum_in_degree": 15,
+   "n": 37
+  },
+  "rwa": {
+   "mean_in_degree": 0,
+   "sum_in_degree": 0,
+   "n": 13
+  },
+  "governance": {
+   "mean_in_degree": 0.1,
+   "sum_in_degree": 1,
+   "n": 10
+  },
+  "other": {
+   "mean_in_degree": 0,
+   "sum_in_degree": 0,
+   "n": 9
+  },
+  "agentic-workflows": {
+   "mean_in_degree": 0.56,
+   "sum_in_degree": 5,
+   "n": 9
+  }
+ },
+ "top_authors": [
+  {
+   "author": "Zainan Victor Zhou (@xinbenlv)",
+   "erc_count": 16
+  },
+  {
+   "author": "Gavin John (@Pandapip1)",
+   "erc_count": 13
+  },
+  {
+   "author": "Francisco Giordano (@frangio)",
+   "erc_count": 13
+  },
+  {
+   "author": "Hadrien Croubois (@Amxx)",
+   "erc_count": 13
+  },
+  {
+   "author": "Nick Johnson (@arachnid)",
+   "erc_count": 10
+  },
+  {
+   "author": "Jan Turk (@ThunderDeliverer)",
+   "erc_count": 10
+  },
+  {
+   "author": "Vitalik Buterin (@vbuterin)",
+   "erc_count": 10
+  },
+  {
+   "author": "Ernesto Garc\u00eda (@ernestognw)",
+   "erc_count": 10
+  },
+  {
+   "author": "Prem Makeig (@nxt3d)",
+   "erc_count": 10
+  },
+  {
+   "author": "Dror Tirosh (@drortirosh)",
+   "erc_count": 9
+  },
+  {
+   "author": "Yoav Weiss (@yoavw)",
+   "erc_count": 9
+  },
+  {
+   "author": "Qi Zhou (@qizhou)",
+   "erc_count": 9
+  },
+  {
+   "author": "Steven Pineda (@steven2308)",
+   "erc_count": 9
+  },
+  {
+   "author": "Alex Forshtat (@forshtat)",
+   "erc_count": 8
+  },
+  {
+   "author": "Nick Mudge (@mudgen)",
+   "erc_count": 7
+  }
+ ],
+ "team_size": {
+  "mean": 2.65,
+  "median": 2.0,
+  "max": 20,
+  "solo": 221,
+  "dist": {
+   "2": 142,
+   "1": 221,
+   "3": 90,
+   "6": 22,
+   "5": 40,
+   "4": 61,
+   "10": 2,
+   "11": 2,
+   "7": 11,
+   "17": 1,
+   "12": 1,
+   "9": 2,
+   "13": 1,
+   "20": 2,
+   "14": 1,
+   "8": 1
+  }
+ },
+ "final_rate_solo_vs_team": {
+  "solo": {
+   "n": 221,
+   "final_rate": 0.186
+  },
+  "team": {
+   "n": 379,
+   "final_rate": 0.256
+  }
+ },
+ "distinct_committers": {
+  "mean": 3.46,
+  "max": 21
+ },
+ "top_connectors": [
+  {
+   "author": "Francisco Giordano (@frangio)",
+   "distinct_coauthors": 44
+  },
+  {
+   "author": "Hadrien Croubois (@Amxx)",
+   "distinct_coauthors": 37
+  },
+  {
+   "author": "Vitalik Buterin (@vbuterin)",
+   "distinct_coauthors": 37
+  },
+  {
+   "author": "vectorized (@vectorized)",
+   "distinct_coauthors": 34
+  },
+  {
+   "author": "Yoav Weiss (@yoavw)",
+   "distinct_coauthors": 29
+  },
+  {
+   "author": "Wilkins Chung (@wwhchung) <wilkins@manifold.xyz>",
+   "distinct_coauthors": 24
+  },
+  {
+   "author": "Prem Makeig (@nxt3d)",
+   "distinct_coauthors": 24
+  },
+  {
+   "author": "Nick Johnson (@Arachnid)",
+   "distinct_coauthors": 23
+  },
+  {
+   "author": "Marco Stronati (@paracetamolo)",
+   "distinct_coauthors": 23
+  },
+  {
+   "author": "Jeff Lau (@jefflau)",
+   "distinct_coauthors": 23
+  },
+  {
+   "author": "Sam Kaufman (@SampkaML)",
+   "distinct_coauthors": 23
+  },
+  {
+   "author": "Yuliya Alexiev (@yuliyaalexiev)",
+   "distinct_coauthors": 23
+  }
+ ],
+ "maturity_overall": {
+  "has_security_considerations": 0.848,
+  "has_test_cases": 0.238,
+  "has_reference_impl": 0.507
+ },
+ "maturity_by_status": {
+  "Final": {
+   "has_security_considerations": 0.884,
+   "has_test_cases": 0.304,
+   "has_reference_impl": 0.616
+  },
+  "non-Final": {
+   "has_security_considerations": 0.838,
+   "has_test_cases": 0.219,
+   "has_reference_impl": 0.474
+  }
+ },
+ "final_missing_security": [
+  {
+   "erc": 20,
+   "title": "Token Standard"
+  },
+  {
+   "erc": 55,
+   "title": "Mixed-case checksum address encoding"
+  },
+  {
+   "erc": 137,
+   "title": "Ethereum Domain Name Service - Specification"
+  },
+  {
+   "erc": 162,
+   "title": "Initial ENS Hash Registrar"
+  },
+  {
+   "erc": 165,
+   "title": "Standard Interface Detection"
+  },
+  {
+   "erc": 181,
+   "title": "ENS support for reverse resolution of Ethereum addresses"
+  },
+  {
+   "erc": 190,
+   "title": "Ethereum Smart Contract Packaging Standard"
+  },
+  {
+   "erc": 191,
+   "title": "Signed Data Standard"
+  },
+  {
+   "erc": 600,
+   "title": "Ethereum purpose allocation for Deterministic Wallets"
+  },
+  {
+   "erc": 601,
+   "title": "Ethereum hierarchy for deterministic wallets"
+  },
+  {
+   "erc": 721,
+   "title": "Non-Fungible Token Standard"
+  },
+  {
+   "erc": 777,
+   "title": "Token Standard"
+  },
+  {
+   "erc": 820,
+   "title": "Pseudo-introspection Registry Contract"
+  },
+  {
+   "erc": 1155,
+   "title": "Multi Token Standard"
+  },
+  {
+   "erc": 1167,
+   "title": "Minimal Proxy Contract"
+  },
+  {
+   "erc": 1820,
+   "title": "Pseudo-introspection Registry Contract"
+  }
+ ],
+ "final_missing_tests": 96,
+ "tests_by_topic": {
+  "infrastructure-meta": 0.257,
+  "nft": 0.338,
+  "tokens-fungible": 0.254,
+  "security-permissions": 0.105,
+  "account-abstraction": 0.023,
+  "reputation-identity": 0.256,
+  "defi": 0.189,
+  "rwa": 0.154,
+  "governance": 0.3,
+  "other": 0.444,
+  "agentic-workflows": 0.111
+ },
+ "complexity": {
+  "word_median": 1484.5,
+  "word_mean": 1951,
+  "word_max": 18789,
+  "section_median": 14.0
+ },
+ "wordcount_by_topic": {
+  "infrastructure-meta": 1302,
+  "nft": 1509,
+  "tokens-fungible": 1504,
+  "security-permissions": 1128,
+  "account-abstraction": 1695,
+  "reputation-identity": 1634,
+  "defi": 1594,
+  "rwa": 2505,
+  "governance": 1289,
+  "other": 1444,
+  "agentic-workflows": 3103
+ },
+ "longest_specs": [
+  {
+   "erc": 8257,
+   "title": "Agent Tool Registry",
+   "words": 18789,
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 1450,
+   "title": "RTA-Controlled Security Token",
+   "words": 17023,
+   "topic": "rwa"
+  },
+  {
+   "erc": 7730,
+   "title": "Structured Data Clear Signing Format",
+   "words": 12313,
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 8273,
+   "title": "Attestation-Gated Agentic Actions",
+   "words": 9114,
+   "topic": "agentic-workflows"
+  },
+  {
+   "erc": 8180,
+   "title": "Blob Authenticated Messaging",
+   "words": 8652,
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 4910,
+   "title": "Royalty Bearing NFTs",
+   "words": 8069,
+   "topic": "nft"
+  },
+  {
+   "erc": 7508,
+   "title": "Dynamic On-Chain Token Attributes Repository",
+   "words": 7962,
+   "topic": "nft"
+  },
+  {
+   "erc": 998,
+   "title": "Composable Non-Fungible Token",
+   "words": 7877,
+   "topic": "nft"
+  },
+  {
+   "erc": 777,
+   "title": "Token Standard",
+   "words": 7730,
+   "topic": "tokens-fungible"
+  },
+  {
+   "erc": 1155,
+   "title": "Multi Token Standard",
+   "words": 7723,
+   "topic": "nft"
+  }
+ ],
+ "quadrant": {
+  "infrastructure-meta": {
+   "recent_count": 64,
+   "total": 175,
+   "final_rate": 0.206,
+   "recent_share": 0.366
+  },
+  "nft": {
+   "recent_count": 22,
+   "total": 136,
+   "final_rate": 0.36,
+   "recent_share": 0.162
+  },
+  "tokens-fungible": {
+   "recent_count": 24,
+   "total": 71,
+   "final_rate": 0.225,
+   "recent_share": 0.338
+  },
+  "security-permissions": {
+   "recent_count": 16,
+   "total": 57,
+   "final_rate": 0.193,
+   "recent_share": 0.281
+  },
+  "account-abstraction": {
+   "recent_count": 21,
+   "total": 44,
+   "final_rate": 0.091,
+   "recent_share": 0.477
+  },
+  "reputation-identity": {
+   "recent_count": 7,
+   "total": 39,
+   "final_rate": 0.205,
+   "recent_share": 0.179
+  },
+  "defi": {
+   "recent_count": 7,
+   "total": 37,
+   "final_rate": 0.243,
+   "recent_share": 0.189
+  },
+  "rwa": {
+   "recent_count": 5,
+   "total": 13,
+   "final_rate": 0.231,
+   "recent_share": 0.385
+  },
+  "governance": {
+   "recent_count": 2,
+   "total": 10,
+   "final_rate": 0.1,
+   "recent_share": 0.2
+  },
+  "other": {
+   "recent_count": 3,
+   "total": 9,
+   "final_rate": 0.0,
+   "recent_share": 0.333
+  },
+  "agentic-workflows": {
+   "recent_count": 9,
+   "total": 9,
+   "final_rate": 0.111,
+   "recent_share": 1.0
+  }
+ },
+ "velocity_by_final_year": {
+  "2018": 455,
+  "2019": 366,
+  "2020": 994,
+  "2021": 324,
+  "2022": 190,
+  "2023": 217,
+  "2024": 361,
+  "2025": 293,
+  "2026": 359
+ }
+}

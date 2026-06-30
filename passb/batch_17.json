@@ -1,0 +1,137 @@
+{
+  "5625": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 1155],
+    "one_line_summary": "Extension adding decentralized storage metadata to ERC-721/1155 NFT tokens.",
+    "notes": "Provides optional dStorage JSON schema property for NFT metadata, compatible with existing standards without interface changes."
+  },
+  "5630": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1271, 4337],
+    "one_line_summary": "Encryption/decryption interface using Ethereum keys and secp256k1 curve via RPC methods.",
+    "notes": "Proposes eth_getEncryptionPublicKey and eth_performECDH RPC methods for direct-to-address encryption; includes contract encryption support via encryptTo method similar to EIP-1271."
+  },
+  "5633": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1155],
+    "one_line_summary": "ERC-1155 extension for composable soulbound tokens preventing transfer.",
+    "notes": "Adds isSoulbound per-token-ID property to ERC-1155; tokens marked soulbound cannot transfer but can mint/burn."
+  },
+  "5635": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "medium",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155, 2981],
+    "one_line_summary": "Oracle for registering and retrieving NFT licensing agreements for derivative works.",
+    "notes": "Defines dNFT (derivative NFT) licensing registry supporting exclusive/non-exclusive agreements with royalty tracking; compatible with ERC-2981."
+  },
+  "5639": {
+    "topic": "security-permissions",
+    "topic_secondary": "governance",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [],
+    "one_line_summary": "Delegation registry allowing vault wallets to grant asset control to delegate wallets.",
+    "notes": "Enables wallet/contract/token-level delegation for safer authentication without sharing signing keys; supports read-only access patterns."
+  },
+  "5643": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721],
+    "one_line_summary": "ERC-721 extension for subscription NFTs with expiration and renewal functionality.",
+    "notes": "Adds subscription lifecycle methods (renew, cancel, expiresAt, isRenewable) for time-limited NFT memberships/passes."
+  },
+  "5646": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165],
+    "one_line_summary": "Interface for unambiguous identification of mutable token state via fingerprint.",
+    "notes": "Provides deterministic state fingerprint without requiring knowledge of implementation details; enables protocol support for mutable tokens."
+  },
+  "5679": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 165, 721, 1155],
+    "one_line_summary": "Consistent minting and burning interface extension for ERC-20/721/1155 tokens.",
+    "notes": "Standardizes mint/burn methods across token types with consistent event emission and supply tracking."
+  },
+  "5700": {
+    "topic": "nft",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155],
+    "one_line_summary": "Interface for binding fungible and non-fungible tokens to NFTs for bundled transfers.",
+    "notes": "Enables N:1 token-to-NFT bundling; tokens transfer with bound NFTs until owner unbinds them; supports ERC-721 and ERC-1155."
+  },
+  "5719": {
+    "topic": "security-permissions",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [1271],
+    "one_line_summary": "Non-interactive replacement of stale smart contract wallet signatures via off-chain URI.",
+    "notes": "Allows wallets to expose getAlternativeSignature URI for clients to refresh invalid signatures due to configuration changes."
+  },
+  "5725": {
+    "topic": "defi",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [721, 20, 165],
+    "one_line_summary": "ERC-721 standard for vesting NFTs releasing underlying tokens over time.",
+    "notes": "Enables transferable liquid vesting contracts with configurable vesting curves; replaces traditional SAFT with on-chain semi-liquid assets."
+  },
+  "5727": {
+    "topic": "reputation-identity",
+    "topic_secondary": "nft",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 712, 721, 3525, 4906, 5192, 5484],
+    "one_line_summary": "Semi-fungible soulbound token interface for non-transferable identity/credential tokens.",
+    "notes": "Combines fungible/non-fungible token storage in slots; includes governance, delegation, expiration, and recovery extensions."
+  },
+  "5732": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "security-permissions",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 1271],
+    "one_line_summary": "General commit interface for commit-reveal schemes without standardized reveal.",
+    "notes": "Provides IERC_COMMIT_CORE and IERC_COMMIT_GENERAL for privacy-preserving interactions; compatible with EIP-1271 signatures."
+  },
+  "5744": {
+    "topic": "tokens-fungible",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [20, 2612],
+    "one_line_summary": "ERC-20 extension enabling tokens to become fungible after maturity period.",
+    "notes": "Tokens remain non-fungible until maturity; adds balanceOfMatured and getMints methods for tracking vesting/deposit-locked receipt tokens."
+  },
+  "5750": {
+    "topic": "infrastructure-meta",
+    "topic_secondary": "",
+    "topic_confidence": "high",
+    "topic_other": "",
+    "referenced_ercs": [165, 721, 1155, 777, 2535, 1271],
+    "one_line_summary": "Standardizes using final bytes parameter for extensible method behavior across ERCs.",
+    "notes": "Enables backward-compatible extensibility for existing methods via unstructured data parameter; multiple existing ERCs already partially compliant."
+  }
+}
