@@ -1,0 +1,5 @@
+erc,standard,title,status,in_degree,forum_views,primary_metric,primary_value,extra
+20,ERC-20,Token Standard,Final,104,0,token contracts deployed,1582182,{}
+721,ERC-721,Non-Fungible Token Standard,Final,145,0,NFT collections deployed,276994,{}
+1155,ERC-1155,Multi Token Standard,Final,60,0,multi-token collections deployed,130262,{}
+4337,ERC-4337,Account Abstraction Using Alt Mempool,Final,14,41639,user operations,4650036,"{""smart_accounts"": 986466, ""bundlers"": 837}"

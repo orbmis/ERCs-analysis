@@ -1,0 +1,87 @@
+{
+ "as_of": "2026-06-30",
+ "chain": "ethereum",
+ "coverage_note": "Direct on-chain adoption is measurable only for standards that emit standardized events/contracts. 4 marquee standards have mass footprints; the other 596 ERCs have no directly-measurable mainnet adoption.",
+ "marquee": [
+  {
+   "erc": 20,
+   "standard": "ERC-20",
+   "status": "Final",
+   "in_degree": 104,
+   "forum_views": 0,
+   "primary_metric": "token contracts deployed",
+   "primary_value": 1582182,
+   "extra": {}
+  },
+  {
+   "erc": 721,
+   "standard": "ERC-721",
+   "status": "Final",
+   "in_degree": 145,
+   "forum_views": 0,
+   "primary_metric": "NFT collections deployed",
+   "primary_value": 276994,
+   "extra": {}
+  },
+  {
+   "erc": 1155,
+   "standard": "ERC-1155",
+   "status": "Final",
+   "in_degree": 60,
+   "forum_views": 0,
+   "primary_metric": "multi-token collections deployed",
+   "primary_value": 130262,
+   "extra": {}
+  },
+  {
+   "erc": 4337,
+   "standard": "ERC-4337",
+   "status": "Final",
+   "in_degree": 14,
+   "forum_views": 41639,
+   "primary_metric": "user operations",
+   "primary_value": 4650036,
+   "extra": {
+    "smart_accounts": 986466,
+    "bundlers": 837
+   }
+  }
+ ],
+ "erc4337_growth": [
+  {
+   "yr": "2023",
+   "userops": 12021,
+   "active_accounts": 1877
+  },
+  {
+   "yr": "2024",
+   "userops": 111275,
+   "active_accounts": 26205
+  },
+  {
+   "yr": "2025",
+   "userops": 1609578,
+   "active_accounts": 385327
+  },
+  {
+   "yr": "2026",
+   "userops": 2917162,
+   "active_accounts": 635383
+  }
+ ],
+ "adopted_are_foundational": {
+  "all_four_status": [
+   "Final",
+   "Final",
+   "Final",
+   "Final"
+  ],
+  "all_four_in_degree": {
+   "20": 104,
+   "721": 145,
+   "1155": 60,
+   "4337": 14
+  },
+  "note": "All four adopted standards are Final and rank in the top of the dependency graph."
+ }
+}

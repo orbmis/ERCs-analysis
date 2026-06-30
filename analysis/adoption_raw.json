@@ -1,0 +1,30 @@
+{
+ "source": "Dune Analytics (Spellbook: tokens.erc20, tokens.nft, account_abstraction_erc4337.userops)",
+ "chain": "ethereum",
+ "as_of": "2026-06-30",
+ "queries": {
+  "token_standards": {
+   "sql": "SELECT 'erc20' AS standard, count(*) AS deployments FROM tokens.erc20 WHERE blockchain='ethereum' UNION ALL SELECT standard, count(*) FROM tokens.nft WHERE blockchain='ethereum' GROUP BY standard",
+   "rows": [
+    {"standard": "erc20", "deployments": 1582182},
+    {"standard": "erc721", "deployments": 276994},
+    {"standard": "erc1155", "deployments": 130262}
+   ]
+  },
+  "erc4337_totals": {
+   "sql": "SELECT count(*) AS userops, count(distinct sender) AS smart_accounts, count(distinct bundler) AS bundlers FROM account_abstraction_erc4337.userops WHERE blockchain='ethereum'",
+   "rows": [
+    {"userops": 4650036, "smart_accounts": 986466, "bundlers": 837}
+   ]
+  },
+  "erc4337_by_year": {
+   "sql": "SELECT date_trunc('year', block_time) AS yr, count(*) AS userops, count(distinct sender) AS active_accounts FROM account_abstraction_erc4337.userops WHERE blockchain='ethereum' GROUP BY 1 ORDER BY 1",
+   "rows": [
+    {"yr": "2023", "userops": 12021, "active_accounts": 1877},
+    {"yr": "2024", "userops": 111275, "active_accounts": 26205},
+    {"yr": "2025", "userops": 1609578, "active_accounts": 385327},
+    {"yr": "2026", "userops": 2917162, "active_accounts": 635383}
+   ]
+  }
+ }
+}

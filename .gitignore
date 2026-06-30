@@ -1,3 +1,5 @@
 ERCs/
 .venv/
 analysis/discussions/
+.dune_key
+.dune_qid
