@@ -31,7 +31,8 @@ Nine studies converge on five theses about the ERC ecosystem:
 10. [On-chain adoption](#10-on-chain-adoption)
 11. [Cross-cutting synthesis](#11-cross-cutting-synthesis)
 12. [Limitations](#12-limitations)
-13. [Reproducibility & artifact index](#13-reproducibility--artifact-index)
+13. [Future work](#13-future-work)
+14. [Reproducibility & artifact index](#14-reproducibility--artifact-index)
 
 ---
 
@@ -234,7 +235,17 @@ The nine studies reinforce one structural picture of the ERC ecosystem:
 
 ---
 
-## 13. Reproducibility & artifact index
+## 13. Future work
+
+Natural extensions, deliberately deferred — each would *refine* the picture rather than change the theses above:
+
+- **L2 adoption breadth (§10).** The on-chain pass counts Ethereum mainnet only. The same multi-chain Dune Spellbook tables would extend all four marquee standards (ERC-20/721/1155/4337) across the major L2s. Expected to raise the *magnitudes* substantially — ERC-4337 is predominantly an L2 phenomenon and ERC-1155 (gaming) skews to Polygon — and to show *where* each standard actually lives, but not to alter the core findings (adoption is concentrated on the foundational core, and lags standardization). Low effort; gated mainly on Dune credits.
+- **More adopted standards.** Adoption is currently measured for the four standards with clean on-chain signatures. Candidates with plausible coverage — ERC-4626 (vaults), ERC-2981 (royalties), ERC-6551 (token-bound accounts), ERC-1167 (minimal-proxy clones) — could be added, with diminishing returns past the marquee set and more work per standard.
+- **Other directions.** A human/LLM audit of the 196 review-flagged topic rows to harden the classifier; text/sentiment analysis of the discussion threads (beyond volume); and an interactive dashboard over the four CSVs.
+
+---
+
+## 14. Reproducibility & artifact index
 
 | Artifact | Description |
 |---|---|
