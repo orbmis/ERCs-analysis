@@ -1,19 +1,19 @@
 # The Ethereum ERC Standards Ecosystem — A Comprehensive Data Analysis
 
-*A consolidated report synthesizing eight analyses of all 600 Ethereum ERCs in the local corpus (proposals created 2015–2026). It covers how the standards corpus formed, what it contains, how proposals mature (or don't), how influence and authorship are structured, how rigorous the specs are, and how the community discusses them. Every figure and statistic is reproducible from the scripts in this repository.*
+*A consolidated report synthesizing nine analyses of all 600 Ethereum ERCs in the local corpus (proposals created 2015–2026). It covers how the standards corpus formed, what it contains, how proposals mature (or don't), how influence and authorship are structured, how rigorous the specs are, how the community discusses them, and how widely they're used on-chain. Every figure and statistic is reproducible from the scripts in this repository.*
 
-*This document is a unified read of six standalone analyses, which remain available with fuller detail: [`ERC_ANALYSIS.md`](ERC_ANALYSIS.md) (foundation), [`FURTHER_ANALYSIS.md`](FURTHER_ANALYSIS.md) (network/survival/predictor deep dives), [`EXTERNAL_EIP_GRAPH.md`](EXTERNAL_EIP_GRAPH.md), [`TIMESERIES_ANALYSIS.md`](TIMESERIES_ANALYSIS.md), [`DISCUSSION_ANALYSIS.md`](DISCUSSION_ANALYSIS.md), and the build [`_run_report.md`](../_run_report.md).*
+*This document is a unified read of seven standalone analyses, which remain available with fuller detail: [`ERC_ANALYSIS.md`](ERC_ANALYSIS.md) (foundation), [`FURTHER_ANALYSIS.md`](FURTHER_ANALYSIS.md) (network/survival/predictor deep dives), [`EXTERNAL_EIP_GRAPH.md`](EXTERNAL_EIP_GRAPH.md), [`TIMESERIES_ANALYSIS.md`](TIMESERIES_ANALYSIS.md), [`DISCUSSION_ANALYSIS.md`](DISCUSSION_ANALYSIS.md), [`ONCHAIN_ADOPTION.md`](ONCHAIN_ADOPTION.md), and the build [`_run_report.md`](../_run_report.md).*
 
 ---
 
 ## Executive summary
 
-Eight studies converge on five theses about the ERC ecosystem:
+Nine studies converge on five theses about the ERC ecosystem:
 
-1. **A tiny core carries the whole system.** Four standards (ERC-165, 721, 20, 1155) plus EIP-712 underpin the entire dependency graph; a handful of teams (OpenZeppelin, ENS, the ERC-4337 group, RMRK) and individuals (Nick Johnson, Francisco Giordano, Vitalik Buterin) dominate authorship, collaboration, and the persistent contributor base simultaneously.
+1. **A tiny core carries the whole system.** Four standards (ERC-165, 721, 20, 1155) plus EIP-712 underpin the entire dependency graph; a handful of teams (OpenZeppelin, ENS, the ERC-4337 group, RMRK) and individuals (Nick Johnson, Francisco Giordano, Vitalik Buterin) dominate authorship, collaboration, and the persistent contributor base simultaneously. **On-chain usage confirms it**: just four standards account for millions of deployments/operations while the other ~596 have no measurable mainnet footprint — adoption, influence, and finalization all peak on the same handful.
 2. **Domain determines destiny.** Whether and how fast a proposal finalizes is driven far more by *what* it is than *who* writes it: NFT extensions finalize fast and often; account-abstraction grinds for ~4 years at a 15% two-year success rate.
 3. **The funnel is leaky by design — and getting leakier.** Only 23% of ERCs reach Final; survival analysis says fewer than a third *ever* will; 78% of authors write exactly one ERC; most Drafts die after a single commit; contributor retention has fallen from 53% (2017) to ~11% (recent cohorts).
-4. **The frontier has rotated to agents and accounts.** Token and NFT standards are largely settled; account-abstraction and autonomous-agent standards are where the newest, slowest, longest, most-debated, and least-tested work now concentrates — high activity, low consolidation, in security-critical territory.
+4. **The frontier has rotated to agents and accounts.** Token and NFT standards are largely settled; account-abstraction and autonomous-agent standards are where the newest, slowest, longest, most-debated, and least-tested work now concentrates — high activity, low consolidation, in security-critical territory. And **adoption lags standardization by years**: ERC-4337 on-chain usage grew ~240× from 2023→2025, long after its proposal peak, so today's frontier specs are tomorrow's live infrastructure.
 5. **Discussion confers legitimacy, not delay.** Engagement rises monotonically toward Final and silence is near-fatal (10% finalization), yet the *volume* of debate has no relationship to finalization speed — slowness comes from spec difficulty, not argument.
 
 ---
@@ -28,9 +28,10 @@ Eight studies converge on five theses about the ERC ecosystem:
 7. [Authorship, collaboration & retention](#7-authorship-collaboration--retention)
 8. [Rigor & complexity](#8-rigor--complexity)
 9. [Community discussion & engagement](#9-community-discussion--engagement)
-10. [Cross-cutting synthesis](#10-cross-cutting-synthesis)
-11. [Limitations](#11-limitations)
-12. [Reproducibility & artifact index](#12-reproducibility--artifact-index)
+10. [On-chain adoption](#10-on-chain-adoption)
+11. [Cross-cutting synthesis](#11-cross-cutting-synthesis)
+12. [Limitations](#12-limitations)
+13. [Reproducibility & artifact index](#13-reproducibility--artifact-index)
 
 ---
 
@@ -186,43 +187,67 @@ Forum/issue engagement was joined for **580/600 ERCs** (504 ethereum-magicians D
 
 ---
 
-## 10. Cross-cutting synthesis
+## 10. On-chain adoption
 
-The eight studies reinforce one structural picture of the ERC ecosystem:
+Which ERCs are actually *used*, not merely proposed or finalized? On-chain usage is only directly measurable for standards that leave a curated fingerprint (a known contract type or event), so this is necessarily a **marquee-standards** view — and that fact is itself a finding. Sourced from Dune Analytics (Ethereum mainnet, as of 2026-06-30):
 
-- **Concentration everywhere.** The same small core dominates every axis at once — the bedrock standards (165/721/20/1155/EIP-712) in the dependency graph, the same teams and individuals in authorship and the co-authorship network, and the same persistent names in contributor retention. The ecosystem is a thin, load-bearing core wrapped in a wide, transient periphery (154 isolated standards, 78% one-and-done authors, 99 abandoned Drafts).
-- **Outcome is structural, not individual.** Domain predicts finalization speed and odds; collaboration helps; effort alone doesn't. NFT extensions are a fast, high-success assembly line; account-abstraction is a slow, expert, low-success frontier.
-- **A leaky-by-design funnel.** <31% ever finalize, the window effectively closes at three years, and every engagement metric (commits, retention, discussion) shows the same shape: a few proposals attract sustained support and graduate, the rest lapse.
-- **The frontier rotated — and carries a risk flag.** Agents and accounts now dominate recent filings (§3), the longest specs (§8), the slowest finalization (§5), and the hottest debates (§9) — while having the **lowest test coverage** (§8). High-activity, security-critical, under-tested, not-yet-consolidated: the place to watch, and to worry about.
-- **Discussion is a legitimacy signal, not a brake.** It is necessary (silence ⇒ ~10% finalization) but not sufficient, and its volume is decoupled from speed. The forum is where standards earn standing, not where they get stuck.
+![Marquee adoption](figures/adoption_marquee.png)
+
+| Standard | Status | Dep. in-degree | On-chain footprint |
+|---|---|---|---|
+| ERC-20 | Final | 104 | **1,582,182** token contracts |
+| ERC-721 | Final | 145 | **276,994** collections |
+| ERC-1155 | Final | 60 | **130,262** collections |
+| ERC-4337 | Final | 14 | **4,650,036** user-ops · **986,466** smart accounts |
+
+Two findings close the "proposed vs. adopted" loop the local data alone couldn't:
+
+- **Adoption ⊆ influence ⊆ finalization.** Every mass-adopted standard is `Final` and sits at the top of the dependency graph — the same bedrock that dominates dependencies and discussion. Of 600 proposals only ~a dozen have meaningful on-chain life and four dominate; adoption is even more concentrated than influence. (ERC-20 leads on *deployments*, ERC-721 on *dependencies*, ERC-4337 on *activity*.)
+- **Adoption lags standardization by 2–4 years.** ERC-4337 was proposed in 2021 but usage only exploded later — user-ops grew **12K (2023) → 111K (2024) → 1.6M (2025) → 2.9M (2026 partial)**, a ~240× jump. The proposal wave is a *leading indicator*; this reframes AA's slow finalization and thin testing as multi-year spec→adoption lag rather than dysfunction.
+
+![ERC-4337 growth](figures/adoption_erc4337_growth.png)
 
 ---
 
-## 11. Limitations
+## 11. Cross-cutting synthesis
+
+The nine studies reinforce one structural picture of the ERC ecosystem:
+
+- **Concentration everywhere.** The same small core dominates every axis at once — the bedrock standards (165/721/20/1155/EIP-712) in the dependency graph, the same teams and individuals in authorship and the co-authorship network, the same persistent names in contributor retention, and the same four standards in on-chain adoption. The ecosystem is a thin, load-bearing core wrapped in a wide, transient periphery (154 isolated standards, 78% one-and-done authors, 99 abandoned Drafts, ~596 standards with no measurable mainnet footprint).
+- **Outcome is structural, not individual.** Domain predicts finalization speed and odds; collaboration helps; effort alone doesn't. NFT extensions are a fast, high-success assembly line; account-abstraction is a slow, expert, low-success frontier.
+- **A leaky-by-design funnel.** <31% ever finalize, the window effectively closes at three years, and every engagement metric (commits, retention, discussion) shows the same shape: a few proposals attract sustained support and graduate, the rest lapse.
+- **The frontier rotated — and carries a risk flag.** Agents and accounts now dominate recent filings (§3), the longest specs (§8), the slowest finalization (§5), and the hottest debates (§9) — while having the **lowest test coverage** (§8). High-activity, security-critical, under-tested, not-yet-consolidated: the place to watch, and to worry about. And it is no longer just paper — ERC-4337 adoption is compounding ~240×/2yr (§10), so the risk is live.
+- **Discussion is a legitimacy signal, not a brake.** It is necessary (silence ⇒ ~10% finalization) but not sufficient, and its volume is decoupled from speed. The forum is where standards earn standing, not where they get stuck.
+- **Standardization leads adoption by years.** Proposals precede on-chain use by 2–4 years (§10), so the proposal record is a forecast: today's agentic/AA spec activity maps the live infrastructure of the late 2020s.
+
+---
+
+## 12. Limitations
 
 - **Snapshot + reconstructed history.** Current `status` is exact; transition dates are parsed from git diffs across the 2023 EIPs→ERCs migration. Three renumbered ERCs (5615, 7401, 7409) have `created` later than their git `Final` date and are excluded from timing.
 - **Topics are model-assigned** (Haiku, 11-value vocabulary; 89% high-confidence; 196 rows flagged for review).
 - **Graph caveats.** PageRank is distorted by external-EIP dependency sinks, so in-degree is used for influence; the `required_by` predictor feature is endogenous.
 - **Survival** treats Stagnant/Withdrawn as censored (could revive); treating them as terminal would lower finalization probabilities further.
-- **Engagement** measures *interest*, not on-chain *adoption* (the deferred join #10); Discourse caps participant counts at ~24, so posts/views are the unbiased metrics; view counts are cumulative (a mild age confound).
+- **Engagement** measures *interest*; Discourse caps participant counts at ~24, so posts/views are the unbiased metrics; view counts are cumulative (a mild age confound).
+- **On-chain adoption (§10) is Ethereum-mainnet only** — a large undercount of L2 usage (especially ERC-4337/1155) — and is measurable only for the marquee standards with curated on-chain signatures; deployment ≠ active use.
 - **Author identity is string-based**, so handle/email variants can split a person into multiple nodes. **2026 is a partial year.**
 
 ---
 
-## 12. Reproducibility & artifact index
+## 13. Reproducibility & artifact index
 
 | Artifact | Description |
 |---|---|
 | `erc_dataset.csv` | 600 ERCs × 30 columns (frontmatter, topic, dependency graph, structure flags) |
 | `erc_temporal.csv` | git-derived lifecycle dates, commit counts, committers, time-to-Final |
 | `erc_discussions.csv` | forum/issue engagement (views, posts, participants, reactions) |
+| `erc_adoption.csv` | on-chain adoption (Dune) for marquee standards, joined to status/in-degree |
 | `analysis/*_metrics.json` | every computed statistic, per study |
 | `analysis/tables/*.csv` | per-year, cohort, topic-temporal, author-scorecard, combined-influence tables |
-| `analysis/figures/*.png` | 36 charts |
+| `analysis/figures/*.png` | 38 charts |
 | `pass_ad.py`, `pass_c.py`, `merge.py` | dataset build (Passes A/A2/D, C, merge) |
 | `compute.py`, `further.py`, `timeseries.py`, `build_ext_graph.py` | analyses (foundation, deep dives, eras, external graph) |
 | `fetch_discussions.py`, `analyze_discussions.py` | discussion join + analysis |
+| `run_dune.py`, `build_adoption.py` | Dune API runner + on-chain adoption build (key from gitignored `.dune_key`) |
 
-**Detailed source reports:** [`ERC_ANALYSIS.md`](ERC_ANALYSIS.md) · [`FURTHER_ANALYSIS.md`](FURTHER_ANALYSIS.md) · [`EXTERNAL_EIP_GRAPH.md`](EXTERNAL_EIP_GRAPH.md) · [`TIMESERIES_ANALYSIS.md`](TIMESERIES_ANALYSIS.md) · [`DISCUSSION_ANALYSIS.md`](DISCUSSION_ANALYSIS.md) · [`_run_report.md`](../_run_report.md)
-
-*Deferred: join #10 (on-chain adoption via Dune/Etherscan) — the one signal that would separate proposed/finalized standards from those actually used in production.*
+**Detailed source reports:** [`ERC_ANALYSIS.md`](ERC_ANALYSIS.md) · [`FURTHER_ANALYSIS.md`](FURTHER_ANALYSIS.md) · [`EXTERNAL_EIP_GRAPH.md`](EXTERNAL_EIP_GRAPH.md) · [`TIMESERIES_ANALYSIS.md`](TIMESERIES_ANALYSIS.md) · [`DISCUSSION_ANALYSIS.md`](DISCUSSION_ANALYSIS.md) · [`ONCHAIN_ADOPTION.md`](ONCHAIN_ADOPTION.md) · [`_run_report.md`](../_run_report.md)
