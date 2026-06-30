@@ -1,0 +1,385 @@
+{
+ "coverage": {
+  "sources": {
+   "none": 16,
+   "github": 76,
+   "magicians": 505,
+   "other": 3
+  },
+  "magicians_ok": 504,
+  "magicians_fail": 1,
+  "github_ok": 76
+ },
+ "distributions": {
+  "n": 504,
+  "views": {
+   "median": 2255.0,
+   "mean": 3058,
+   "max": 41639
+  },
+  "posts": {
+   "median": 8.0,
+   "max": 306
+  },
+  "participants": {
+   "median": 4.0,
+   "max": 24
+  }
+ },
+ "by_status": {
+  "Draft": {
+   "n": 215,
+   "median_views": 1177,
+   "median_posts": 5,
+   "median_participants": 3
+  },
+  "Review": {
+   "n": 59,
+   "median_views": 2005,
+   "median_posts": 8,
+   "median_participants": 3
+  },
+  "Last Call": {
+   "n": 13,
+   "median_views": 2471,
+   "median_posts": 12,
+   "median_participants": 5
+  },
+  "Final": {
+   "n": 117,
+   "median_views": 3327,
+   "median_posts": 16,
+   "median_participants": 6
+  },
+  "Stagnant": {
+   "n": 96,
+   "median_views": 3168.0,
+   "median_posts": 7.0,
+   "median_participants": 4.0
+  },
+  "Withdrawn": {
+   "n": 4,
+   "median_views": 923.5,
+   "median_posts": 3.5,
+   "median_participants": 1.5
+  }
+ },
+ "by_topic": {
+  "infrastructure-meta": {
+   "n": 147,
+   "median_views": 1814,
+   "median_posts": 8
+  },
+  "nft": {
+   "n": 123,
+   "median_views": 2815,
+   "median_posts": 8
+  },
+  "tokens-fungible": {
+   "n": 55,
+   "median_views": 1758,
+   "median_posts": 9
+  },
+  "security-permissions": {
+   "n": 47,
+   "median_views": 2406,
+   "median_posts": 9
+  },
+  "account-abstraction": {
+   "n": 43,
+   "median_views": 1779,
+   "median_posts": 6
+  },
+  "reputation-identity": {
+   "n": 26,
+   "median_views": 3078.5,
+   "median_posts": 8.5
+  },
+  "defi": {
+   "n": 31,
+   "median_views": 2217,
+   "median_posts": 8
+  },
+  "rwa": {
+   "n": 11,
+   "median_views": 2024,
+   "median_posts": 9
+  },
+  "governance": {
+   "n": 7,
+   "median_views": 2168,
+   "median_posts": 7
+  },
+  "other": {
+   "n": 5,
+   "median_views": 247,
+   "median_posts": 3
+  },
+  "agentic-workflows": {
+   "n": 9,
+   "median_views": 959,
+   "median_posts": 15
+  }
+ },
+ "final_vs_nonfinal": {
+  "Final": {
+   "n": 117,
+   "median_views": 3327,
+   "median_posts": 16,
+   "median_participants": 6
+  },
+  "non_Final": {
+   "n": 387,
+   "median_views": 1977,
+   "median_posts": 7,
+   "median_participants": 3
+  }
+ },
+ "corr_logviews_final": {
+  "r": 0.242,
+  "p": 0.0
+ },
+ "corr_posts_ttf": {
+  "rho": 0.042,
+  "p": 0.6531,
+  "n": 115
+ },
+ "corr_views_indegree": {
+  "rho": 0.274,
+  "p": 0.0
+ },
+ "most_viewed": [
+  {
+   "erc": 4337,
+   "title": "Account Abstraction Using Alt Mempool",
+   "views": 41639,
+   "posts": 148,
+   "status": "Final",
+   "topic": "account-abstraction"
+  },
+  {
+   "erc": 4626,
+   "title": "Tokenized Vaults",
+   "views": 22401,
+   "posts": 109,
+   "status": "Final",
+   "topic": "defi"
+  },
+  {
+   "erc": 4973,
+   "title": "Account-bound Tokens",
+   "views": 20873,
+   "posts": 176,
+   "status": "Review",
+   "topic": "nft"
+  },
+  {
+   "erc": 6551,
+   "title": "Non-fungible Token Bound Accounts",
+   "views": 20673,
+   "posts": 224,
+   "status": "Review",
+   "topic": "nft"
+  },
+  {
+   "erc": 6900,
+   "title": "Modular Smart Contract Accounts",
+   "views": 16177,
+   "posts": 54,
+   "status": "Draft",
+   "topic": "account-abstraction"
+  },
+  {
+   "erc": 8004,
+   "title": "Trustless Agents",
+   "views": 15997,
+   "posts": 252,
+   "status": "Draft",
+   "topic": "agentic-workflows"
+  },
+  {
+   "erc": 1077,
+   "title": "Gas relay for contract calls",
+   "views": 15105,
+   "posts": 28,
+   "status": "Stagnant",
+   "topic": "account-abstraction"
+  },
+  {
+   "erc": 1078,
+   "title": "Universal login / signup using ENS subdomains",
+   "views": 15105,
+   "posts": 28,
+   "status": "Stagnant",
+   "topic": "account-abstraction"
+  },
+  {
+   "erc": 1066,
+   "title": "Status Codes",
+   "views": 14946,
+   "posts": 50,
+   "status": "Stagnant",
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 6065,
+   "title": "Real Estate Token",
+   "views": 14176,
+   "posts": 21,
+   "status": "Review",
+   "topic": "rwa"
+  },
+  {
+   "erc": 600,
+   "title": "Ethereum purpose allocation for Deterministic Wallets",
+   "views": 13052,
+   "posts": 39,
+   "status": "Final",
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 601,
+   "title": "Ethereum hierarchy for deterministic wallets",
+   "views": 13052,
+   "posts": 39,
+   "status": "Final",
+   "topic": "infrastructure-meta"
+  },
+  {
+   "erc": 1775,
+   "title": "App Keys, application specific wallet accounts",
+   "views": 13052,
+   "posts": 39,
+   "status": "Stagnant",
+   "topic": "security-permissions"
+  },
+  {
+   "erc": 4907,
+   "title": "Rental NFT, an Extension of EIP-721",
+   "views": 13031,
+   "posts": 41,
+   "status": "Final",
+   "topic": "nft"
+  },
+  {
+   "erc": 3770,
+   "title": "Chain-specific addresses",
+   "views": 12830,
+   "posts": 32,
+   "status": "Draft",
+   "topic": "infrastructure-meta"
+  }
+ ],
+ "most_discussed": [
+  {
+   "erc": 8183,
+   "title": "Agentic Commerce",
+   "posts": 306,
+   "participants": 24,
+   "status": "Draft"
+  },
+  {
+   "erc": 8004,
+   "title": "Trustless Agents",
+   "posts": 252,
+   "participants": 24,
+   "status": "Draft"
+  },
+  {
+   "erc": 6551,
+   "title": "Non-fungible Token Bound Accounts",
+   "posts": 224,
+   "participants": 24,
+   "status": "Review"
+  },
+  {
+   "erc": 4973,
+   "title": "Account-bound Tokens",
+   "posts": 176,
+   "participants": 24,
+   "status": "Review"
+  },
+  {
+   "erc": 4337,
+   "title": "Account Abstraction Using Alt Mempool",
+   "posts": 148,
+   "participants": 24,
+   "status": "Final"
+  },
+  {
+   "erc": 5630,
+   "title": "New approach for encryption / decryption",
+   "posts": 131,
+   "participants": 23,
+   "status": "Draft"
+  },
+  {
+   "erc": 5528,
+   "title": "Refundable Fungible Token",
+   "posts": 120,
+   "participants": 24,
+   "status": "Final"
+  },
+  {
+   "erc": 6454,
+   "title": "Minimal Transferable NFT detection interface",
+   "posts": 120,
+   "participants": 12,
+   "status": "Final"
+  },
+  {
+   "erc": 7208,
+   "title": "On-Chain Data Containers",
+   "posts": 120,
+   "participants": 24,
+   "status": "Final"
+  },
+  {
+   "erc": 7943,
+   "title": "uRWA - Universal Real World Asset Interface",
+   "posts": 116,
+   "participants": 24,
+   "status": "Final"
+  },
+  {
+   "erc": 4626,
+   "title": "Tokenized Vaults",
+   "posts": 109,
+   "participants": 24,
+   "status": "Final"
+  },
+  {
+   "erc": 4804,
+   "title": "Web3 URL to EVM Call Message Translation",
+   "posts": 97,
+   "participants": 16,
+   "status": "Final"
+  },
+  {
+   "erc": 6860,
+   "title": "Web3 URL to EVM Call Message Translation",
+   "posts": 97,
+   "participants": 16,
+   "status": "Draft"
+  },
+  {
+   "erc": 5114,
+   "title": "Soulbound Badge",
+   "posts": 95,
+   "participants": 18,
+   "status": "Last Call"
+  },
+  {
+   "erc": 3722,
+   "title": "Poster",
+   "posts": 81,
+   "participants": 16,
+   "status": "Stagnant"
+  }
+ ],
+ "silent": {
+  "n": 112,
+  "final_rate": 0.098,
+  "stagnant_rate": 0.062
+ }
+}
